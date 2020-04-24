@@ -11,7 +11,8 @@ export default () => (
         <NavBackground />
         <Container sx={{
             width: '100%', 
-            maxWidth: 'xl'
+            maxWidth: 'xl',
+            mb: ['5em', '15em']
         }}>
             <Container
                 sx={{
