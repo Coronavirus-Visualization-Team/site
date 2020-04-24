@@ -52,6 +52,7 @@ export default merge(base, {
     circle: 9999,
   },
   initialColorModeName: "light",
+  useColorSchemeMediaQuery: true,
   colors: {
     ...palette,
     text: palette.white,
@@ -61,17 +62,6 @@ export default merge(base, {
     secondary: palette.muted,
     muted: palette.smoke,
     accent: palette.pink,
-    // modes: {
-    //   dark: {
-    //     text: palette.white,
-    //     background: palette.darker,
-    //     sunken: palette.darkless,
-    //     primary: palette.cyan,
-    //     secondary: palette.muted,
-    //     accent: palette.pink,
-    //     muted: palette.darkless,
-    //   },
-    // },
   },
   variants: {
     sheet: {
@@ -84,10 +74,8 @@ export default merge(base, {
   styles: {
     hr: {
       border: 0,
-      height: 4,
-      bg: "muted",
-      borderRadius: 2,
-      my: [3, 4],
+      borderBottom: "1px solid",
+      borderColor: "border",
     },
     pre: {
       p: 3,
