@@ -34,6 +34,14 @@ export default merge(base, {
     title: 1.5,
     body: 1.625,
   },
+  links: {
+    nav: {
+      color: "text",
+      ":hover": {
+        color: "text",
+      },
+    },
+  },
   sizes: {
     container: 768,
     xl: 1024,
@@ -46,8 +54,8 @@ export default merge(base, {
   initialColorModeName: "light",
   colors: {
     ...palette,
-    text: palette.black,
-    background: palette.white,
+    text: palette.white,
+    background: palette.black,
     sunken: palette.snow,
     primary: palette.blue,
     secondary: palette.muted,
