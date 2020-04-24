@@ -42,6 +42,12 @@ export default merge(base, {
       },
     },
   },
+  background: {
+    gradient: 'linear-gradient(147.71deg, #168CA6 17.12%, #20E8C4 90.62%)'
+  },  
+  shadows: {
+    base: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
+  },
   sizes: {
     container: 768,
     xl: 1024,
@@ -50,13 +56,15 @@ export default merge(base, {
     base: 6,
     extra: 9,
     circle: 9999,
+    project: 40,
+    button: 60
   },
   initialColorModeName: "light",
   useColorSchemeMediaQuery: true,
   colors: {
     ...palette,
     text: palette.white,
-    background: palette.black,
+    background: palette.white,
     sunken: palette.snow,
     primary: palette.blue,
     secondary: palette.muted,
@@ -130,5 +138,15 @@ export default merge(base, {
         color: "primary",
       },
     },
+    projectPicker: {
+      fontSize: [12], 
+      borderBottom: '3px solid rgba(255, 255, 255, 0.15)',
+      pb: 2,
+      transition: '0.15s', 
+      '&:hover': {
+        borderBottom: '3px solid rgba(255, 255, 255, 1)',
+        cursor: 'pointer'
+      }
+    }
   },
 })

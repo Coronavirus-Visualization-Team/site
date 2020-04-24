@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 import theme from "../gatsby-plugin-theme-ui"
-import { Styled, jsx, Text } from "theme-ui"
+import { Styled, jsx, Text, Divider} from "theme-ui"
 
 export default () => (
   <>
