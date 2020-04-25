@@ -56,7 +56,7 @@ export const NavBackground = () => {
         background: "gradient",
         width: "100%",
         minWidth: "100%",
-        height: "300px",
+        height: ["400px", "450px"],
       }}
     ></Container>
   )
