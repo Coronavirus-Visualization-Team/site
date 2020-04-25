@@ -1,5 +1,5 @@
 backend:
-  name: CVT-posts
+  name: github
   repo: Coronavirus-Visualization-Team/site
 media_folder: static/assets
 public_folder: /assets
