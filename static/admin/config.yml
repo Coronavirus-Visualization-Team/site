@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: test-repo
   repo: Coronavirus-Visualization-Team/site
 media_folder: static/assets
 public_folder: /assets
@@ -12,4 +12,5 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: featured, label: Featured, widget: boolean, default: false}
       - { name: body, label: Body, widget: markdown }
