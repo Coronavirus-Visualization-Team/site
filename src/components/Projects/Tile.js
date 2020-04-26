@@ -9,13 +9,13 @@ const Tile = ({ title, img }) => {
         <Box 
         sx = {{
             width: '100%',
-            height: '300px',
+            height: ['fit-content', '300px'],
             boxShadow: 'base',
             bg: 'white',
             p: 4,
             borderRadius: 'tile',
             color: 'black',
-            mb: 60
+            mb: [0, 60]
 
         }}>
             <Text
@@ -31,10 +31,10 @@ const Tile = ({ title, img }) => {
             <Image src = {img}
                     sx = {{
                         width: '100%',
-                        height: '300px',
+                        height: ['auto','300px'],
                         borderRadius: 'tile',
                         boxShadow: 'base',
-                        ml: '10px',
+                        ml: [0, '10px'],
                         transition: '0.2s', 
                         '&:hover': {boxShadow: 'hover', cursor: 'pointer'}
                     }}
