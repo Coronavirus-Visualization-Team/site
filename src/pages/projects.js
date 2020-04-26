@@ -9,7 +9,7 @@ import Tile from "../components/Projects/Tile"
 
 const Projects = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
-
+ 
   return (
     <>
       <Container
@@ -50,7 +50,7 @@ const Projects = ({ data }) => {
         {posts && (
           <Grid columns={[2]} gap={[50, 50]}>
             {posts.map(({ node: post }) => {
-              return <Tile title={post.frontmatter.title} />
+              return <Tile title={post.frontmatter.title} img={post.frontmatter.image} />
             })}
           </Grid>
         )}
@@ -80,6 +80,7 @@ export default () => (
                 path
                 title
                 featured
+                image
                 date(formatString: "MMMM DD, YYYY")
               }
             }
