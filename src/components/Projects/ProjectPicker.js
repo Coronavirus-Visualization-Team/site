@@ -14,7 +14,6 @@ const ProjectPicker = () => {
                 width: '100%',
                 maxWidth: 'xl',
                 display: 'inline-block',
-                mb: 50
             }}>
             <Container
                 sx={{

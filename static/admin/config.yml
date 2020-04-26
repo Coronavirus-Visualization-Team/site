@@ -12,6 +12,8 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: featured, label: Featured, widget: boolean, default: false}
+      - { name: image, label: Thumbnail Image, widget: image, default: ../img/placeholder.jpg, media_library: {config: {multiple: true}}}
       - { name: body, label: Body, widget: markdown }
   - name: partners
     label: Partners

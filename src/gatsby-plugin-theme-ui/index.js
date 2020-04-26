@@ -44,9 +44,10 @@ export default merge(base, {
   },
   background: {
     gradient: 'linear-gradient(147.71deg, #168CA6 17.12%, #20E8C4 90.62%)'
-  },  
+  },
   shadows: {
     base: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
+    hover: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)'
   },
   sizes: {
     container: 768,
@@ -57,7 +58,8 @@ export default merge(base, {
     extra: 9,
     circle: 9999,
     project: 40,
-    button: 60
+    button: 60,
+    tile: 20
   },
   initialColorModeName: "light",
   useColorSchemeMediaQuery: true,
@@ -139,14 +141,32 @@ export default merge(base, {
       },
     },
     projectPicker: {
-      fontSize: [12], 
+      fontSize: [12],
       borderBottom: '3px solid rgba(255, 255, 255, 0.15)',
       pb: 2,
-      transition: '0.15s', 
+      transition: '0.15s',
       '&:hover': {
         borderBottom: '3px solid rgba(255, 255, 255, 1)',
         cursor: 'pointer'
       }
-    }
+    },
+    headerText: {
+      color: "#000",
+      fontWeight: "500",
+      fontSize: [28, 30, 32],
+      lineHeights: [80],
+      paddingTop: [25, 35, 45],
+    },
+    subHeader: {
+      color: "#545353",
+      fontSize: [20, 22, 24],
+      fontWeight: "500"
+    },
+    bodyText: {
+      color: "#545353",
+      fontSize: [16, 18, 20],
+      fontWeight: "450",
+      lineHeight: 2
+    },
   },
 })

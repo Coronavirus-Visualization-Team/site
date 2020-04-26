@@ -15,6 +15,13 @@ module.exports = {
         path: `${__dirname}/partners`,
       },
     },
-    'gatsby-transformer-remark'
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/projects`,
+        name: `markdown-pages`,
+      },
+    },
+    `gatsby-transformer-remark`
   ]
 }
