@@ -31,7 +31,9 @@ const FeaturedProject = ({ img }) => {
                 bg: 'white',
                 background: 'gradient',
                 borderRadius: 'button',
-                boxShadow: 'base'
+                boxShadow: 'base',
+                transition: '0.2s', 
+                '&:hover': {boxShadow: 'hover', cursor: 'pointer'}
             }}
                 mr={2}>Learn More</Button>
         </Container>

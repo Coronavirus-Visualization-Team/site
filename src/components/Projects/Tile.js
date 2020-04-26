@@ -34,7 +34,9 @@ const Tile = ({ title, img }) => {
                         height: '300px',
                         borderRadius: 'tile',
                         boxShadow: 'base',
-                        ml: '10px'
+                        ml: '10px',
+                        transition: '0.2s', 
+                        '&:hover': {boxShadow: 'hover', cursor: 'pointer'}
                     }}
                     />
 
