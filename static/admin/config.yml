@@ -13,3 +13,10 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+  - name: partners
+    label: Partners
+    folder: partners
+    create: true
+    fields:
+      - { name: name, label: Name }
+      - { name: image, label: Image, widget: image }

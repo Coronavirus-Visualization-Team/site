@@ -7,6 +7,14 @@ module.exports = {
       options: {
         component: require.resolve(`./src/components/layout.js`)
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `partners`,
+        path: `${__dirname}/partners`,
+      },
+    },
+    'gatsby-transformer-remark'
   ]
 }
