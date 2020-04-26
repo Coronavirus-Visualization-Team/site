@@ -57,7 +57,8 @@ export default merge(base, {
     extra: 9,
     circle: 9999,
     project: 40,
-    button: 60
+    button: 60,
+    tile: 20
   },
   initialColorModeName: "light",
   useColorSchemeMediaQuery: true,

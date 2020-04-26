@@ -7,6 +7,14 @@ module.exports = {
       options: {
         component: require.resolve(`./src/components/layout.js`)
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/blog`,
+        name: `markdown-pages`,
+      },
+    },
+    `gatsby-transformer-remark`
   ]
 }
