@@ -28,14 +28,13 @@ const Tile = ({ title, img }) => {
                     
                     
             </Text>
-            <Image src = {CoronaImg}
+            <Image src = {img}
                     sx = {{
                         width: '100%',
                         height: '300px',
                         borderRadius: 'tile',
                         boxShadow: 'base',
                         ml: '10px'
-                        
                     }}
                     />
 

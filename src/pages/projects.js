@@ -80,6 +80,7 @@ export default () => (
                 path
                 title
                 featured
+                image
                 date(formatString: "MMMM DD, YYYY")
               }
             }
