@@ -241,7 +241,9 @@ const SocialIcon = (props) => {
         p: "1.05em",
         ml: [2, 4],
         mr: [2, null],
-        my: 2
+        my: 2,
+        display: 'flex', 
+        alignItems: 'center'
     }}>
       <Image src={props.image} />
     </Button>

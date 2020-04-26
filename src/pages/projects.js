@@ -48,7 +48,7 @@ const Projects = ({ data }) => {
         }}
       >
         {posts && (
-          <Grid columns={[2]} gap={[50, 50]}>
+          <Grid columns={[1, 2]} gap={[25, 50]}>
             {posts.map(({ node: post }) => {
               return <Tile title={post.frontmatter.title} img={post.frontmatter.image} />
             })}
