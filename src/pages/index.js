@@ -6,8 +6,9 @@ import { Styled, jsx, Text, Divider, Box, Container, Grid, Image } from "theme-u
 import Tile from "../components/Projects/Tile"
 
 const IndexPage = (props) => {
-  const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter;
-  console.log(data);
+  const partnersData = props.data.partners.edges;
+  const projectsData = props.data.projects.edges;
+  console.log(projectsData);
 
   return (
     <Box
@@ -48,8 +49,13 @@ const IndexPage = (props) => {
       >
         <Grid width={["45%"]} gap={["10%"]}>
           {/** TODO: Use CMS to get 4 projects and put them here */}
-          <Tile />
-          <Tile />
+          {projectsData.map((item) => {
+            const data = item.node.childMarkdownRemark.frontmatter;
+
+            return (
+              <Tile title={data.title} img={data.image} />
+            )
+          })}
         </Grid>
       </Container>
 
@@ -57,7 +63,7 @@ const IndexPage = (props) => {
         sx={{
           width: "100%",
           textAlign: "center",
-          mt: 5,
+          mt: '6.5em',
           color: "black",
           fontSize: [1, 2],
           textDecoration: "none"
@@ -88,7 +94,7 @@ const IndexPage = (props) => {
           mt: 4
         }}
       >
-        {props.data.allFile.edges.map((item) => {
+        {partnersData.map((item) => {
           const data = item.node.childMarkdownRemark.frontmatter;
 
           return (
@@ -163,7 +169,7 @@ export default IndexPage;
 
 export const query = graphql`
   query {
-    allFile (filter: {sourceInstanceName: {eq: "partners"}}) {
+    partners: allFile(filter: {sourceInstanceName: {eq: "partners"}}) {
       edges {
         node {
           childMarkdownRemark {
@@ -174,5 +180,17 @@ export const query = graphql`
         }
       }
     }
+  },
+  projects: allFile(filter: {sourceInstanceName: {eq: "markdown-pages"}} limit: 4) {
+    edges {
+      node {
+        childMarkdownRemark {
+          frontmatter {
+            title
+            image
+        }
+      }
+    }
   }
+},
 }`
