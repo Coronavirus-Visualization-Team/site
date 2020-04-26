@@ -19,6 +19,7 @@
   "dependencies": {
     "@theme-ui/preset-base": "^0.3.0",
     "gatsby": "^2.20.29",
+    "gatsby-cli": "^2.11.22",
     "gatsby-plugin-layout": "^1.2.3",
     "gatsby-plugin-netlify-cms": "^4.2.5",
     "gatsby-plugin-theme-ui": "^0.3.0",

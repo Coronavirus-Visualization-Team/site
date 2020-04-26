@@ -1,15 +1,15 @@
 /** @jsx jsx */
 import React, { useEffect } from "react"
 import theme from "../gatsby-plugin-theme-ui"
-import PropTypes from 'prop-types'
-import { graphql, StaticQuery } from 'gatsby'
+import PropTypes from "prop-types"
+import { graphql, StaticQuery } from "gatsby"
 import { Container, Styled, jsx, Text, Divider, Grid } from "theme-ui"
 import ProjectPicker from "../components/Projects/ProjectPicker"
 import Tile from "../components/Projects/Tile"
 
 const Projects = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
-  
+
   return (
     <>
       <Container
@@ -38,7 +38,7 @@ const Projects = ({ data }) => {
             }}
           >
             Here are some of the featured work we're doing.
-        </Text>
+          </Text>
           <ProjectPicker />
         </Container>
       </Container>
@@ -47,12 +47,13 @@ const Projects = ({ data }) => {
           maxWidth: "xl",
         }}
       >
-        {posts && 
-        <Grid columns = {[2]} gap={[50, 50]}>
-          {posts.map(({node: post}) => {
-            return( <Tile title = {post.frontmatter.title}/>)
-          })}
-        </Grid>}
+        {posts && (
+          <Grid columns={[2]} gap={[50, 50]}>
+            {posts.map(({ node: post }) => {
+              return <Tile title={post.frontmatter.title} />
+            })}
+          </Grid>
+        )}
       </Container>
     </>
   )
@@ -64,13 +65,13 @@ Projects.propTypes = {
       edges: PropTypes.array,
     }),
   }),
-};
+}
 
 export default () => (
   <StaticQuery
     query={graphql`
       query ProjectQuery {
-        allMarkdownRemark{
+        allMarkdownRemark {
           edges {
             node {
               excerpt(pruneLength: 400)
