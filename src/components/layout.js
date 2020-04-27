@@ -23,6 +23,7 @@ export const Header = () => (
       position: "relative",
     }}
   >
+    <Link to="/">
     <Image
       sx={{
         width: "10em",
@@ -30,6 +31,7 @@ export const Header = () => (
       }}
       src={Logo}
     />
+    </Link>
     <Box sx={{ mx: "auto" }} />
     <Link to="/projects">
       <NavLink>Projects</NavLink>
