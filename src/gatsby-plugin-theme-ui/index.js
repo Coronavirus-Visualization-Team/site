@@ -47,6 +47,7 @@ export default merge(base, {
   },
   shadows: {
     base: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
+    hover: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)'
   },
   sizes: {
     container: 768,
@@ -57,7 +58,8 @@ export default merge(base, {
     extra: 9,
     circle: 9999,
     project: 40,
-    button: 60
+    button: 60,
+    tile: 20
   },
   initialColorModeName: "light",
   useColorSchemeMediaQuery: true,
