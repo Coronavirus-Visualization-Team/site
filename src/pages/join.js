@@ -1,33 +1,36 @@
 /** @jsx jsx */
 import React from "react"
-import { Box, Button, Container, Grid, Image, jsx, Text } from "theme-ui"
+import { graphql } from "gatsby"
+import { Box, Button, Grid, Image, jsx, Text } from "theme-ui"
 import HeaderImage from "../components/Join/HeaderImage"
 
-export default () => (
-  <>
-    <Container
-      sx={ {
-        width: "100%",
-        maxWidth: "xl",
-      } }
-    >
+const JoinPage = (props) => {
+  const partnersData = props.data.partners.edges
+  console.log("here")
+  console.log(partnersData)
+  return (
+    <>
       <HeaderImage />
-      <Text sx={ {
-        variant: "styles.headerText"
-      } }>
+      <Text
+        sx={ {
+          variant: "styles.headerText"
+        } }
+      >
         Our mission.
       </Text>
       <Text sx={ { variant: "styles.bodyText" } }>
-        We collaborate on data visualization and analytics projects, economic research, and policy writing to better inform and government entities on the impact of COVID-19, clear misconceptions, and show the good that is happening.
+        We collaborate on data visualization and analytics projects, economic
+        research, and policy writing to better inform and government entities on
+        the impact of COVID-19, clear misconceptions, and show the good that is
+        happening.
       </Text>
-
-
 
       <Text sx={ { variant: "styles.headerText" } }>
         Let’s accomplish things together.
       </Text>
       <Text sx={ { variant: "styles.subHeader" } }>
-        Join our global organization comprised of students from institutions and more:
+        Join our global organization comprised of students from institutions and
+        more:
       </Text>
       <Box
         sx={ {
@@ -46,20 +49,39 @@ export default () => (
         </Grid>
       </Box>
 
-
-
-      <Text sx={ { variant: "styles.subHeader", py: 15 } }>We’re also partnered with these organizations: </Text>
+      <Text sx={ { variant: "styles.subHeader", py: 15 } }>
+        We’re also partnered with these organizations:{ " " }
+      </Text>
       <Grid width={ ["25%"] } gap={ ["2%"] }>
-        <Image src="https://placehold.it/1708x1152" />
-        <Image src="https://placehold.it/1708x1152" />
-        <Image src="https://placehold.it/1708x1152" />
-        <Image src="https://placehold.it/1708x1152" />
-        <Image src="https://placehold.it/1708x1152" />
-        <Image src="https://placehold.it/1708x1152" />
+        { partnersData.map((item) => {
+          const data = item.node.childMarkdownRemark.frontmatter
+
+          return (
+            <Box
+              sx={ {
+                width: ["45%", "30%"],
+                display: "flex",
+                justifyContent: "center"
+              } }
+            >
+              <Image
+                src={ data.image }
+                alt={ data.name }
+                sx={ {
+                  mb: 3,
+                  objectFit: "contain"
+                } }
+              />
+            </Box>
+          )
+        }) }
       </Grid>
       <Text sx={ { variant: "styles.headerText" } }>Individuals</Text>
-      <Text
-        sx={ { variant: "styles.bodyText" } }>We're looking for driven and talented individuals to join our team remotely. Learn more about our teams here and our current, ongoing projects here.</Text>
+      <Text sx={ { variant: "styles.bodyText" } }>
+        We're looking for driven and talented individuals to join our team
+        remotely. Learn more about our teams here and our current, ongoing
+        projects here.
+      </Text>
       <Button
         as="a"
         href="https://google.com"
@@ -75,12 +97,14 @@ export default () => (
       >
         Join Us
       </Button>
-
-
 
       <Text sx={ { variant: "styles.headerText" } }>Organizations</Text>
-      <Text
-        sx={ { variant: "styles.bodyText" } }>We’re looking to form partnerships and project collaborations with organizations that either have data we can use or seek data. We welcome organizations who are willing to provide mentorship and resources to help us fulfill our mission. </Text>
+      <Text sx={ { variant: "styles.bodyText" } }>
+        We’re looking to form partnerships and project collaborations with
+        organizations that either have data we can use or seek data. We welcome
+        organizations who are willing to provide mentorship and resources to help
+        us fulfill our mission.{ " " }
+      </Text>
       <Button
         as="a"
         href="https://google.com"
@@ -96,6 +120,22 @@ export default () => (
       >
         Join Us
       </Button>
-    </Container>
-  </>
-)
+    </>
+  )
+}
+export default JoinPage
+export const query = graphql`
+    query {
+        partners: allFile(filter: {sourceInstanceName: {eq: "partners"}}) {
+            edges {
+                node {
+                    childMarkdownRemark {
+                        frontmatter {
+                            name
+                            image
+                        }
+                    }
+                }
+            }
+        }
+    }`
