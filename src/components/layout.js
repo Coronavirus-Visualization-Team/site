@@ -49,7 +49,6 @@ export const Header = () => (
 )
 
 export const NavBackground = () => {
-  console.log(window.location.href)
   return (
     <Container
       sx={{
