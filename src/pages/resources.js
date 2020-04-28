@@ -2,7 +2,6 @@
 import React from "react"
 import theme from "../gatsby-plugin-theme-ui"
 import { Styled, jsx, Text, Divider, Box, Embed } from "theme-ui"
-import { Helmet } from "react-helmet"
 
 export default () => (
   <Box
@@ -13,7 +12,6 @@ export default () => (
       flexDirection: "column"
     }}
   >
-    <Helmet title="CVT | Resources" />
     <Text
       sx={{
         fontSize: [3, 4],
@@ -31,7 +29,7 @@ export default () => (
     >
       Our team crowdsourced these resources and opportunities to learn new skills, join initiatives, and attend online events—all for free.
     </Text>
-
+    
     <Box
       sx={{
         width: "100%",
