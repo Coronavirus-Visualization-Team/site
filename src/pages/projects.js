@@ -52,9 +52,10 @@ const Projects = ({ data }) => {
         {posts && (
           <Grid columns={[1, 2]} gap={[25, 50]}>
             {posts.map(({ node: post }) => {
-              console.log(post.frontmatter.slug)
-              return <Tile title={post.frontmatter.title} img={post.frontmatter.image} slug={post.frontmatter.slug} />
-
+              return <Tile 
+              slug={post.frontmatter.slug} 
+              title={post.frontmatter.title} 
+              img={post.frontmatter.image} />
             })}
           </Grid>
         )}
@@ -75,15 +76,17 @@ export default () => (
   <StaticQuery
     query={graphql`
       query ProjectQuery {
-        allMarkdownRemark {
+        allMarkdownRemark (
+          filter: { frontmatter: { templateKey: { eq: "project" } } }
+        ) {
           edges {
             node {
               excerpt(pruneLength: 400)
               id
               frontmatter {
                 path
-                title
                 slug
+                title
                 featured
                 image
                 date(formatString: "MMMM DD, YYYY")
