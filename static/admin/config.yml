@@ -9,6 +9,8 @@ collections:
     folder: projects
     create: true
     fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "project"}
+      - { name: slug, label: Slug }
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
