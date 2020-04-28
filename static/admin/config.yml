@@ -24,3 +24,12 @@ collections:
     fields:
       - { name: name, label: Name }
       - { name: image, label: Image, widget: image }
+  - name: team
+    label: Team
+    folder: team
+    create: true
+    fields:
+      - { name: name, label: "Full Name" }
+      - { name: executive, label: "Executive director?", widget: boolean }
+      - { name: position, label: "Position (required if executive director)", required: false }
+      - { name: image, label: "Photo (required if executive director) (Must be square or it will get stretched)", widget: image, required: false }
