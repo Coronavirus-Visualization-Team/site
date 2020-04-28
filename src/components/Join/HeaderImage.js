@@ -9,7 +9,8 @@ const HeaderImage = () => {
         sx={ {
           p: 0,
           maxWidth: "xl",
-          position: "relative"
+          position: "relative",
+          minHeight: 300
         } }>
         <Image src="https://placehold.it/1708x1152"
           sx={ {
