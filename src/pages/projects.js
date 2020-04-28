@@ -6,12 +6,14 @@ import { graphql, StaticQuery } from "gatsby"
 import { Container, Styled, jsx, Text, Divider, Grid } from "theme-ui"
 import ProjectPicker from "../components/Projects/ProjectPicker"
 import Tile from "../components/Projects/Tile"
+import { Helmet } from "react-helmet"
 
 const Projects = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
- 
+
   return (
     <>
+      <Helmet title="CVT | Projects" />
       <Container
         sx={{
           width: "100%",

@@ -2,6 +2,7 @@
 import React from "react"
 import theme from "../gatsby-plugin-theme-ui"
 import { Styled, jsx, Text, Box, Image, Grid } from "theme-ui"
+import { Helmet } from "react-helmet"
 
 export default () => (
     <Box
@@ -11,16 +12,17 @@ export default () => (
         flexDirection: "column"
       }}
     >
+      <Helmet title="CVT | Team" />
       <Text
         sx={{
           fontSize: [3, 4],
           alignItems: 'center'
         }}
       >
-        Executive Directors 
+        Executive Directors
         </Text>
-        
-        <Grid 
+
+        <Grid
         gap={2}
         columns={[ 2, null, 4 ]}
         >
@@ -57,23 +59,7 @@ export default () => (
             FirstName LastName
             FirstName LastName
             FirstName LastName
-        </Box>        
-        <Box>
-            FirstName LastName
-            FirstName LastName
-            FirstName LastName
-            FirstName LastName
-            FirstName LastName
-            FirstName LastName
-        </Box>        
-        <Box>
-            FirstName LastName
-            FirstName LastName
-            FirstName LastName
-            FirstName LastName
-            FirstName LastName
-            FirstName LastName
-        </Box>        
+        </Box>
         <Box>
             FirstName LastName
             FirstName LastName
@@ -89,7 +75,7 @@ export default () => (
             FirstName LastName
             FirstName LastName
             FirstName LastName
-        </Box>        
+        </Box>
         <Box>
             FirstName LastName
             FirstName LastName
@@ -97,7 +83,7 @@ export default () => (
             FirstName LastName
             FirstName LastName
             FirstName LastName
-        </Box>        
+        </Box>
         <Box>
             FirstName LastName
             FirstName LastName
@@ -105,7 +91,23 @@ export default () => (
             FirstName LastName
             FirstName LastName
             FirstName LastName
-        </Box>        
+        </Box>
+        <Box>
+            FirstName LastName
+            FirstName LastName
+            FirstName LastName
+            FirstName LastName
+            FirstName LastName
+            FirstName LastName
+        </Box>
+        <Box>
+            FirstName LastName
+            FirstName LastName
+            FirstName LastName
+            FirstName LastName
+            FirstName LastName
+            FirstName LastName
+        </Box>
         </Grid>
         </Text>
       </Box>
