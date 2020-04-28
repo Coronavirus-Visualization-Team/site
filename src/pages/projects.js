@@ -6,12 +6,14 @@ import { graphql, StaticQuery } from "gatsby"
 import { Container, Styled, jsx, Text, Divider, Grid } from "theme-ui"
 import ProjectPicker from "../components/Projects/ProjectPicker"
 import Tile from "../components/Projects/Tile"
+import { Helmet } from "react-helmet"
 
 const Projects = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
- 
+
   return (
     <>
+      <Helmet title="CVT | Projects" />
       <Container
         sx={{
           width: "100%",
@@ -50,7 +52,10 @@ const Projects = ({ data }) => {
         {posts && (
           <Grid columns={[1, 2]} gap={[25, 50]}>
             {posts.map(({ node: post }) => {
-              return <Tile title={post.frontmatter.title} img={post.frontmatter.image} />
+              return <Tile
+              slug={post.frontmatter.slug}
+              title={post.frontmatter.title}
+              img={post.frontmatter.image} />
             })}
           </Grid>
         )}
@@ -71,13 +76,16 @@ export default () => (
   <StaticQuery
     query={graphql`
       query ProjectQuery {
-        allMarkdownRemark {
+        allMarkdownRemark (
+          filter: { frontmatter: { templateKey: { eq: "project" } } }
+        ) {
           edges {
             node {
               excerpt(pruneLength: 400)
               id
               frontmatter {
                 path
+                slug
                 title
                 featured
                 image

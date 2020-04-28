@@ -3,6 +3,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Box, Button, Grid, Image, jsx, Text } from "theme-ui"
 import HeaderImage from "../components/Join/HeaderImage"
+import { Helmet } from "react-helmet"
 
 const JoinPage = (props) => {
   const partnersData = props.data.partners.edges
@@ -10,6 +11,7 @@ const JoinPage = (props) => {
   console.log(partnersData)
   return (
     <>
+      <Helmet title="CVT | Join" />
       <HeaderImage />
       <Text
         sx={ {
@@ -49,7 +51,7 @@ const JoinPage = (props) => {
         </Grid>
       </Box>
 
-      <Text sx={ { variant: "styles.subHeader", py: 15 } }>
+      <Text sx={ { variant: "styles.subHeader", py: [15, 25, 35] } }>
         We’re also partnered with these organizations:{ " " }
       </Text>
       <Grid width={ ["25%"] } gap={ ["2%"] }>
