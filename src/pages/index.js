@@ -53,7 +53,7 @@ const IndexPage = (props) => {
             const data = item.node.childMarkdownRemark.frontmatter;
 
             return (
-              <Tile title={data.title} img={data.image} />
+              <Tile title={data.title} img={data.image} slug={data.slug}/>
             )
           })}
         </Grid>
@@ -187,6 +187,7 @@ export const query = graphql`
         childMarkdownRemark {
           frontmatter {
             title
+            slug
             image
         }
       }
