@@ -4,9 +4,10 @@ import theme from "../../gatsby-plugin-theme-ui"
 import { Container, Styled, jsx, Box, Grid, Text, Image } from "theme-ui"
 import CoronaImg from './corona.jpg'
  
-const Tile = ({ title, img }) => {
+const Tile = ({ title, img, slug }) => {
     return(
         <Box 
+        onClick = {() => window.location.href = `/projects/${slug}`}
         sx = {{
             width: '100%',
             height: ['fit-content', '300px'],
@@ -25,8 +26,6 @@ const Tile = ({ title, img }) => {
                     mb: '15px'
                 }}>
                     {title}
-                    
-                    
             </Text>
             <Image src = {img}
                     sx = {{
