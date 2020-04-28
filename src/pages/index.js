@@ -51,10 +51,8 @@ const IndexPage = (props) => {
           {/** TODO: Use CMS to get 4 projects and put them here */}
           {projectsData.map((item) => {
             const data = item.node.childMarkdownRemark.frontmatter;
-
             return (
-              <Tile title={data.title} img={data.image} slug={data.slug}/>
-            )
+              <Tile title={data.title} img={data.image} slug={data.slug}/>)
           })}
         </Grid>
       </Container>
