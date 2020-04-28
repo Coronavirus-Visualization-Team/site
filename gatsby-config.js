@@ -29,6 +29,17 @@ module.exports = {
         name: `markdown-pages`,
       },
     },
-    `gatsby-transformer-remark`
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-164762906-1",
+        head: false,
+        anonymize: true,
+        respectDNT: false,
+        defer: true
+      },
+    },
   ]
 }

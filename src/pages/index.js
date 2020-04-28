@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { Helmet } from "react-helmet"
 import theme from "../gatsby-plugin-theme-ui"
 import { Styled, jsx, Text, Divider, Box, Container, Grid, Image } from "theme-ui"
 import Tile from "../components/Projects/Tile"
@@ -8,7 +9,6 @@ import Tile from "../components/Projects/Tile"
 const IndexPage = (props) => {
   const partnersData = props.data.partners.edges;
   const projectsData = props.data.projects.edges;
-  console.log(projectsData);
 
   return (
     <Box
@@ -19,6 +19,7 @@ const IndexPage = (props) => {
         flexDirection: "column"
       }}
     >
+      <Helmet title="CVT | Home" />
       <Text
         sx={{
           fontSize: [1, 3],
