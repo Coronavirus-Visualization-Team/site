@@ -38,7 +38,6 @@ const Tile = ({ title, img, slug }) => {
                         '&:hover': {boxShadow: 'hover', cursor: 'pointer'}
                     }}
                     />
-
         </Box>
     )
 }

@@ -28,7 +28,7 @@ export default ({ data }) => {
             <Image sx = {{
                 mt: 20
             }}
-            src = {frontmatter.image}/>
+            src = {`../${frontmatter.image}`}/>
             <Text sx = {{
                 color: 'black',
                 mt: 50
