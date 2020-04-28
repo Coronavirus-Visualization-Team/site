@@ -51,10 +51,8 @@ const IndexPage = (props) => {
           {/** TODO: Use CMS to get 4 projects and put them here */}
           {projectsData.map((item) => {
             const data = item.node.childMarkdownRemark.frontmatter;
-
             return (
-              <Tile title={data.title} img={data.image} />
-            )
+              <Tile title={data.title} img={data.image} slug={data.slug}/>)
           })}
         </Grid>
       </Container>
@@ -187,6 +185,7 @@ export const query = graphql`
         childMarkdownRemark {
           frontmatter {
             title
+            slug
             image
         }
       }
