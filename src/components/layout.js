@@ -2,7 +2,7 @@
 import React from "react"
 import { Container, Box, NavLink, Avatar, Divider, jsx, Image, Text, Input, Button } from "theme-ui"
 import { Link } from "gatsby"
-import Logo from "./cvt-logo.svg"
+import Logo from "./cvtlogo.svg"
 
 import TwitterLogo from "./social-icons/Twitter.png"
 import InstagramLogo from "./social-icons/Instagram.png"
@@ -49,6 +49,7 @@ export const Header = () => (
 )
 
 export const NavBackground = () => {
+  console.log(window.location.href)
   return (
     <Container
       sx={{
