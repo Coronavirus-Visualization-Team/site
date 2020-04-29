@@ -1,6 +1,6 @@
 ---
 name: Jessica Nemeth
-executive: false
+executive: true
 position: Writer - Policy
-image: ../assets/default_exec_image.png
+image: /assets/jessica.png
 ---
