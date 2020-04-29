@@ -2,7 +2,7 @@
 import React, { useState } from "react"
 import theme from "../../gatsby-plugin-theme-ui"
 import { Container, Image, jsx } from "theme-ui"
-
+import HeroImage from "./headerimage.jpg"
 const HeaderImage = () => {
   return (
       <Container
@@ -12,12 +12,12 @@ const HeaderImage = () => {
           position: "relative",
           minHeight: 300
         } }>
-        <Image src="https://placehold.it/1708x1152"
+        <Image src={ HeroImage }
           sx={ {
             width: "100%",
             borderRadius: "project",
             height: "auto",
-            boxShadow: "base",
+            // boxShadow: "base",
             objectFit: "cover"
           } } />
       </Container>

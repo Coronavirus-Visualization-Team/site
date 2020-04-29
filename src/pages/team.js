@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet"
 
 const TeamPage = (props) => {
   const teamData = props.data.team.edges;
-  
+
   return (
     <Box
       sx={{
@@ -23,10 +23,10 @@ const TeamPage = (props) => {
           mb: 4
         }}
       >
-        Executive Directors 
+        Executive Directors
       </Text>
-        
-        <Grid 
+
+        <Grid
         gap={2}
         width={[128, null, 192]}
         >
@@ -36,7 +36,7 @@ const TeamPage = (props) => {
             if(!data.executive) {
               return null;
             }
-            
+
             return (
               <Box
                 sx={{
@@ -46,11 +46,10 @@ const TeamPage = (props) => {
                   borderRadius: '10px',
                   ":hover > #overlay": {
                     opacity: 1
-                  }
+                  },
                 }}
               >
-                <Image src={data.image} sx={{ width: '100%', height: '100%' }} />
-
+                <Image src={data.image} sx={{ width: '100%', height: '100%', borderRadius: "10px" }} />
                 <Box
                   sx={{
                     position: 'absolute',
@@ -58,11 +57,8 @@ const TeamPage = (props) => {
                     bottom: 0,
                     left: 0,
                     right: 0,
-
                     borderRadius: '10px',
-
                     transition: 'ease-in-out 0.12s',
-
                     backgroundColor: 'black',
                     opacity: 0
                   }}
@@ -100,7 +96,7 @@ const TeamPage = (props) => {
       <Text
         sx={ { variant: "styles.bodyText" } }
       >
-        
+
       {/** width={[ 128, null, 192 ]} */}
       <Grid columns={[ 2, null, 4 ]}>
         {teamData.map((item) => {
@@ -109,7 +105,7 @@ const TeamPage = (props) => {
             if(data.executive) {
               return null;
             }
-            
+
             return (
               <Text>
                 {data.name}
