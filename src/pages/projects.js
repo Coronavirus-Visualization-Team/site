@@ -18,7 +18,7 @@ const Projects = ({ data }) => {
         sx={{
           width: "100%",
           maxWidth: "xl",
-          mb: ["5em", "15em"],
+          mb: ["5em", "14em"],
         }}
       >
         <Container
@@ -41,7 +41,7 @@ const Projects = ({ data }) => {
           >
             Here are some of the featured work we're doing.
           </Text>
-          <ProjectPicker />
+          <ProjectPicker posts={posts}/>
         </Container>
       </Container>
       <Container

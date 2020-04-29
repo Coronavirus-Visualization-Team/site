@@ -151,6 +151,16 @@ export default merge(base, {
         cursor: "pointer",
       },
     },
+    projectPickerActive: {
+      fontSize: [12],
+      borderBottom: '3px solid rgba(255, 255, 255, 1)',
+      pb: 2,
+      transition: '0.15s',
+      '&:hover': {
+        borderBottom: '3px solid rgba(255, 255, 255, 1)',
+        cursor: 'pointer'
+      }
+    },
     headerText: {
       color: "#000",
       fontWeight: "500",
