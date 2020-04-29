@@ -1,6 +1,6 @@
 ---
 name: Ethan Wainer
-executive: false
+executive: true
 position: Website, Data Analysis
-image: ../assets/default_exec_image.png
+image: /assets/ethan.png
 ---
