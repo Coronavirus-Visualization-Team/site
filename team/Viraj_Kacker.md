@@ -1,6 +1,6 @@
 ---
 name: Viraj Kacker
-executive: false
+executive: true
 position: Research, Data Analysis, Data Viz
-image: ../assets/default_exec_image.png
+image: /assets/viraj.png
 ---
