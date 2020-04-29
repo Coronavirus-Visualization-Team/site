@@ -1,6 +1,6 @@
 ---
 name: Marco Antonio
-executive: false
+executive: true
 position: Writing
-image: ../assets/default_exec_image.png
+image: /assets/marco.png
 ---
