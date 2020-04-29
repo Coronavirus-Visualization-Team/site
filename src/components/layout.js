@@ -1,6 +1,17 @@
 /** @jsx jsx */
 import React from "react"
-import { Container, Box, NavLink, Avatar, Divider, jsx, Image, Text, Input, Button } from "theme-ui"
+import {
+  Container,
+  Box,
+  NavLink,
+  Avatar,
+  Divider,
+  jsx,
+  Image,
+  Text,
+  Input,
+  Button,
+} from "theme-ui"
 import { Link } from "gatsby"
 import favicon from "../../static/assets/favicon.ico"
 import Logo from "./cvtlogo.svg"
@@ -19,7 +30,7 @@ export const Header = () => (
       display: "flex",
       alignItems: "center",
       py: 4,
-      "a+a": { ml: [3, 4] },
+      "a+a": { ml: [4] },
       zIndex: 10,
       position: "relative",
     }}
@@ -28,13 +39,13 @@ export const Header = () => (
       <link rel="icon" href={favicon} />
     </Helmet>
     <Link to="/">
-    <Image
-      sx={{
-        width: "10em",
-        height: "auto",
-      }}
-      src={Logo}
-    />
+      <Image
+        sx={{
+          width: ["0em", "6em", "10em"],
+          height: "auto",
+        }}
+        src={Logo}
+      />
     </Link>
     <Box sx={{ mx: "auto" }} />
     <Link to="/projects">
@@ -82,15 +93,17 @@ export const Footer = () => (
     }}
   >
     <Divider
-    sx={{
-      mb: 4
-    }} />
+      sx={{
+        mb: 4,
+      }}
+    />
 
     <Text
       sx={{
         fontSize: [2, 3],
         color: "black",
-      }}>
+      }}
+    >
       Stay Updated
     </Text>
 
@@ -103,7 +116,7 @@ export const Footer = () => (
         flexDirection: ["column", "row"],
         alignItems: [null, "center"],
         justifyContent: ["center", null],
-        py: 4
+        py: 4,
       }}
     >
       {/** Mailchimp Identifiers */}
@@ -119,7 +132,7 @@ export const Footer = () => (
           borderRadius: "0",
           mr: [0, 4],
           mb: [4, 0],
-          flex: "1.2"
+          flex: "1.2",
         }}
       />
 
@@ -132,7 +145,7 @@ export const Footer = () => (
           borderRadius: "0",
           mr: [0, 4],
           mb: [4, 0],
-          flex: "1.2"
+          flex: "1.2",
         }}
       />
 
@@ -145,7 +158,7 @@ export const Footer = () => (
           borderRadius: "0",
           mr: [0, 4],
           mb: [4, 0],
-          flex: "1.2"
+          flex: "1.2",
         }}
       />
 
@@ -154,11 +167,11 @@ export const Footer = () => (
         sx={{
           fontSize: [14, 18],
           px: 3,
-          bg: 'white',
-          background: 'gradient',
-          borderRadius: 'button',
-          boxShadow: 'base',
-          flex: "1"
+          bg: "white",
+          background: "gradient",
+          borderRadius: "button",
+          boxShadow: "base",
+          flex: "1",
         }}
       >
         Subscribe
@@ -183,23 +196,26 @@ export const Footer = () => (
           sx={{
             // vvv To turn logo black
             filter: "invert(100%)",
-            maxWidth: 200
+            maxWidth: 200,
           }}
-          src={Logo} />
+          src={Logo}
+        />
 
         <Text
           sx={{
             fontSize: [1, 2],
             color: "darker",
-          }}>
-            Coronavirus Visualization Team
+          }}
+        >
+          Coronavirus Visualization Team
         </Text>
 
-        <Link to="/privacy"
+        <Link
+          to="/privacy"
           sx={{
             fontSize: [0, 1],
             color: "dark",
-            textDecoration: "none"
+            textDecoration: "none",
           }}
         >
           Privacy Policy
@@ -215,42 +231,56 @@ export const Footer = () => (
           alignItems: [null, "center"],
           ml: [null, "auto"],
           pt: [4, 0],
-          maxWidth: [null, "300px"]
+          maxWidth: [null, "300px"],
         }}
       >
-
-        <SocialIcon link="https://instagram.com/joincvt" image={InstagramLogo} />
+        <SocialIcon
+          link="https://instagram.com/joincvt"
+          image={InstagramLogo}
+        />
         <SocialIcon link="https://twitter.com/joincvt" image={TwitterLogo} />
-        <SocialIcon link="mailto:coronavirusvisualizationteam@gmail.com" image={MailLogo} />
-        <SocialIcon link="https://linkedin.com/company/coronavirus-visualization-team" image={LinkedInLogo} />
-        <SocialIcon link="https://medium.com/coronavirus-visualization-team" image={MediumLogo} />
-        <SocialIcon link="https://github.com/Coronavirus-Visualization-Team" image={GithubLogo} />
-
+        <SocialIcon
+          link="mailto:coronavirusvisualizationteam@gmail.com"
+          image={MailLogo}
+        />
+        <SocialIcon
+          link="https://linkedin.com/company/coronavirus-visualization-team"
+          image={LinkedInLogo}
+        />
+        <SocialIcon
+          link="https://medium.com/coronavirus-visualization-team"
+          image={MediumLogo}
+        />
+        <SocialIcon
+          link="https://github.com/Coronavirus-Visualization-Team"
+          image={GithubLogo}
+        />
       </Box>
     </Box>
   </Box>
 )
 
 // Social icons for us in footer
-const SocialIcon = (props) => {
+const SocialIcon = props => {
   return (
     <Button
       as="a"
       href={props.link}
       target="_blank"
       sx={{
-        background: 'gradient',
-        borderRadius: 'button',
-        boxShadow: 'base',
+        background: "gradient",
+        borderRadius: "button",
+        boxShadow: "base",
         width: 60,
         height: 60,
         p: "1.05em",
         ml: [2, 4],
         mr: [2, null],
         my: 2,
-        display: 'flex',
-        alignItems: 'center'
-    }}>
+        display: "flex",
+        alignItems: "center",
+      }}
+    >
       <Image src={props.image} />
     </Button>
   )

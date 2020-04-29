@@ -5,8 +5,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: require.resolve(`./src/components/layout.js`)
-      }
+        component: require.resolve(`./src/components/layout.js`),
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -38,8 +38,17 @@ module.exports = {
         head: false,
         anonymize: true,
         respectDNT: false,
-        defer: true
+        defer: true,
       },
     },
-  ]
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Circular Std"],
+          urls: ["/fonts/stylesheet.css"],
+        },
+      },
+    },
+  ],
 }
