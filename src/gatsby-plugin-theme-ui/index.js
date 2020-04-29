@@ -40,6 +40,7 @@ export default merge(base, {
       ":hover": {
         color: "text",
       },
+      cursor: "pointer",
     },
   },
   background: {
@@ -168,5 +169,9 @@ export default merge(base, {
       fontWeight: "450",
       lineHeight: 2
     },
+    // collegeLogo: {
+    //   height: [50, 75, 100],
+    //   width: [50, 75, 100]
+    // }
   },
 })

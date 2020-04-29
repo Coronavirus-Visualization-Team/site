@@ -2,8 +2,9 @@
 import React from "react"
 import { Container, Box, NavLink, Avatar, Divider, jsx, Image, Text, Input, Button } from "theme-ui"
 import { Link } from "gatsby"
+import favicon from "../../static/assets/favicon.ico"
 import Logo from "./cvtlogo.svg"
-
+import { Helmet } from "react-helmet"
 import TwitterLogo from "./social-icons/Twitter.png"
 import InstagramLogo from "./social-icons/Instagram.png"
 import MailLogo from "./social-icons/Mail.png"
@@ -23,6 +24,9 @@ export const Header = () => (
       position: "relative",
     }}
   >
+    <Helmet>
+      <link rel="icon" href={favicon} />
+    </Helmet>
     <Link to="/">
     <Image
       sx={{
@@ -106,7 +110,7 @@ export const Footer = () => (
       <Input type="hidden" name="u" value="296f4b87de1255e43330d3eed" />
       <Input type="hidden" name="id" value="fd200b5e7b" />
 
-      <Input 
+      <Input
         placeholder="First Name"
         name="MERGE1"
         id="MERGE1"
@@ -119,7 +123,7 @@ export const Footer = () => (
         }}
       />
 
-      <Input 
+      <Input
         placeholder="Last Name"
         name="MERGE2"
         id="MERGE2"
@@ -132,7 +136,7 @@ export const Footer = () => (
         }}
       />
 
-      <Input 
+      <Input
         placeholder="Email"
         name="MERGE0"
         id="MERGE0"
@@ -175,7 +179,7 @@ export const Footer = () => (
           alignItems: ["center", "flex-start"],
         }}
       >
-        <Image 
+        <Image
           sx={{
             // vvv To turn logo black
             filter: "invert(100%)",
@@ -230,7 +234,7 @@ export const Footer = () => (
 // Social icons for us in footer
 const SocialIcon = (props) => {
   return (
-    <Button 
+    <Button
       as="a"
       href={props.link}
       target="_blank"
@@ -244,7 +248,7 @@ const SocialIcon = (props) => {
         ml: [2, 4],
         mr: [2, null],
         my: 2,
-        display: 'flex', 
+        display: 'flex',
         alignItems: 'center'
     }}>
       <Image src={props.image} />

@@ -5,6 +5,13 @@ import { Box, Button, Grid, Image, jsx, Text } from "theme-ui"
 import HeaderImage from "../components/Join/HeaderImage"
 import { Helmet } from "react-helmet"
 
+import HarvardLogo from "../../static/img/harvard.png"
+import BerkeleyLogo from "../../static/img/berkeley.png"
+import CmuLogo from "../../static/img/cmu.png"
+import StanfordLogo from "../../static/img/stanford.png"
+import ColumbiaLogo from "../../static/img/columbia.png"
+import MitLogo from "../../static/img/mit.png"
+
 const JoinPage = (props) => {
   const partnersData = props.data.partners.edges
   console.log("here")
@@ -42,12 +49,12 @@ const JoinPage = (props) => {
         } }
       >
         <Grid width={ ["15%"] } gap={ ["2%"] }>
-          <Image src="https://placehold.it/1708x1152" />
-          <Image src="https://placehold.it/1708x1152" />
-          <Image src="https://placehold.it/1708x1152" />
-          <Image src="https://placehold.it/1708x1152" />
-          <Image src="https://placehold.it/1708x1152" />
-          <Image src="https://placehold.it/1708x1152" />
+          <Image src={ StanfordLogo }  />
+          <Image src={ BerkeleyLogo } />
+          <Image src={ CmuLogo } />
+          <Image src={ HarvardLogo } />
+          <Image src={ MitLogo }/>
+          <Image src={ ColumbiaLogo } />
         </Grid>
       </Box>
 
@@ -86,7 +93,7 @@ const JoinPage = (props) => {
       </Text>
       <Button
         as="a"
-        href="https://google.com"
+        href="http://bit.ly/CVT-apply"
         sx={ {
           fontSize: [14, 18],
           px: 3,
@@ -109,7 +116,7 @@ const JoinPage = (props) => {
       </Text>
       <Button
         as="a"
-        href="https://google.com"
+        href="mailto:coronavirusvisualizationteam@gmail.com"
         sx={ {
           fontSize: [14, 18],
           px: 3,
