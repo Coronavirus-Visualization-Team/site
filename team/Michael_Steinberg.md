@@ -1,6 +1,6 @@
 ---
 name: Michael Steinberg
-executive: false
+executive: true
 position: Data Analysis
-image: ../assets/default_exec_image.png
+image: /assets/michael.png
 ---
