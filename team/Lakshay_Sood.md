@@ -1,6 +1,6 @@
 ---
 name: Lakshay Sood
-executive: false
+executive: true
 position: Research
-image: ../assets/default_exec_image.png
+image: /assets/screen_shot_2020-04-30_at_7.38.png
 ---
