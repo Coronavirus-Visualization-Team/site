@@ -1,6 +1,6 @@
 ---
 name: Theodore Horn
-executive: false
+executive: true
 position: Internal Affairs
-image: ../assets/default_exec_image.png
+image: /assets/headshot.jpg
 ---
