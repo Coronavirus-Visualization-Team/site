@@ -48,12 +48,54 @@ const JoinPage = props => {
         }}
       >
         <Grid width={["15%"]} gap={["2%"]}>
-          <Image src={StanfordLogo} />
-          <Image src={BerkeleyLogo} />
-          <Image src={CmuLogo} />
-          <Image src={HarvardLogo} />
-          <Image src={MitLogo} />
-          <Image src={ColumbiaLogo} />
+          <Image 
+            src={StanfordLogo} 
+            sx={{
+              mb: 2,
+              objectFit: "contain",
+              width: ["55%", "50%"],
+            }}
+          />
+          <Image 
+            src={BerkeleyLogo} 
+            sx={{
+              mb: 2,
+              objectFit: "contain",
+              width: ["75%", "70%"],
+            }}
+          />
+          <Image 
+            src={CmuLogo} 
+            sx={{
+              mb: 2,
+              objectFit: "contain",
+              width: ["75%", "70%"],
+            }}
+          />
+          <Image 
+            src={HarvardLogo} 
+            sx={{
+              mb: 2,
+              objectFit: "contain",
+              width: ["75%", "70%"],
+            }}
+          />
+          <Image 
+            src={MitLogo} 
+            sx={{
+              mb: 2,
+              objectFit: "contain",
+              width: ["75%", "70%"],
+            }}
+          />
+          <Image 
+            src={ColumbiaLogo} 
+            sx={{
+              mb: 2,
+              objectFit: "contain",
+              width: ["75%", "70%"],
+            }}
+          />
         </Grid>
       </Box>
 
@@ -76,7 +118,7 @@ const JoinPage = props => {
                 src={data.image}
                 alt={data.name}
                 sx={{
-                  mb: 3,
+                  mb: 2,
                   objectFit: "contain",
                 }}
               />
