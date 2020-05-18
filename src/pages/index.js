@@ -23,7 +23,8 @@ const IndexPage = (props) => {
       <Text
         sx={{
           fontSize: [1, 3],
-          maxWidth: ["100%", "90%"]
+          maxWidth: ["100%", "90%"],
+          m: "4vh 4vw"
         }}
       >
         We're the Coronavirus Visualization Team,  a crowdsourced student network of data scientists and analysts, developers, and communicators working to better visualize and share the impacts, present and future, of COVID-19.
@@ -76,7 +77,7 @@ const IndexPage = (props) => {
         sx={{
           width: "100%",
           textAlign: "center",
-          mt: 6,
+          mt: 4,
           color: "black",
           fontSize: [3, 4]
         }}
@@ -151,7 +152,7 @@ const IndexPage = (props) => {
 
         <Link
           sx={{
-            color: "blue",
+            color: "black",
             fontSize: [1, 2],
             textDecoration: "none"
           }}
