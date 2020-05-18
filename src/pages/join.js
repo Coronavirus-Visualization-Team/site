@@ -53,7 +53,7 @@ const JoinPage = props => {
             sx={{
               mb: 2,
               objectFit: "contain",
-              width: ["55%", "50%"],
+              width: ["65%", "60%"],
             }}
           />
           <Image 
@@ -61,7 +61,7 @@ const JoinPage = props => {
             sx={{
               mb: 2,
               objectFit: "contain",
-              width: ["75%", "70%"],
+              width: ["85%", "85%"],
             }}
           />
           <Image 
@@ -69,7 +69,7 @@ const JoinPage = props => {
             sx={{
               mb: 2,
               objectFit: "contain",
-              width: ["75%", "70%"],
+              width: ["95%", "90%"],
             }}
           />
           <Image 
@@ -77,7 +77,7 @@ const JoinPage = props => {
             sx={{
               mb: 2,
               objectFit: "contain",
-              width: ["75%", "70%"],
+              width: ["95%", "90%"],
             }}
           />
           <Image 
@@ -85,7 +85,7 @@ const JoinPage = props => {
             sx={{
               mb: 2,
               objectFit: "contain",
-              width: ["75%", "70%"],
+              width: ["95%", "90%"],
             }}
           />
           <Image 
@@ -93,7 +93,7 @@ const JoinPage = props => {
             sx={{
               mb: 2,
               objectFit: "contain",
-              width: ["75%", "70%"],
+              width: ["95%", "95%"],
             }}
           />
         </Grid>
