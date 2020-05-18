@@ -101,6 +101,7 @@ const JoinPage = props => {
           borderRadius: "button",
           boxShadow: "base",
           flex: "1",
+          mt: 4
         }}
       >
         Join Us
@@ -124,6 +125,7 @@ const JoinPage = props => {
           borderRadius: "button",
           boxShadow: "base",
           flex: "1",
+          mt: 4
         }}
       >
         Join Us
