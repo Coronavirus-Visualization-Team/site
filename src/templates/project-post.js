@@ -29,9 +29,16 @@ export default ({ data }) => {
                 color: 'white'
             }}/>
             <Image sx = {{
-                mt: 20
+                mt: 20,
+                width: "100%",
             }}
             src = {`../${frontmatter.image}`}/>
+            <Text sx = {{
+                color: 'black',
+                textAlign: 'center'
+            }}>
+                {frontmatter.label}
+            </Text>
             <Text sx = {{
                 color: 'black',
                 mt: 50
@@ -52,6 +59,7 @@ export const query = graphql`
                 frontmatter {
                     title
                     image
+                    label
                 }
             }
         }
