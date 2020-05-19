@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from "gatsby"
 import { Container, Styled, jsx, Text, Divider, Grid, Box, Image } from "theme-ui"
+import { Helmet } from "react-helmet"
 
 export default ({ data }) => {
     const { edges: posts} = data.allMarkdownRemark
@@ -9,6 +10,8 @@ export default ({ data }) => {
     console.log(posts[0].node.html)
     console.log(data)
     return (
+        <>
+        <Helmet title={frontmatter.title} />
         <Container
             sx = {{
                 maxWidth: 'xl',
@@ -36,6 +39,7 @@ export default ({ data }) => {
                 {html.replace(/<p>/g,'').replace('</p>','')}
             </Text>
         </Container>
+        </>
     )
 }
 
