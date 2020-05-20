@@ -17,7 +17,7 @@ const HeaderImage = () => {
             width: "100%",
             borderRadius: "project",
             height: "auto",
-            // boxShadow: "base",
+            boxShadow: "base",
             objectFit: "cover"
           } } />
       </Container>
