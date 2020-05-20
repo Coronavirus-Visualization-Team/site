@@ -17,7 +17,8 @@ export default () => (
     <Text
       sx={{
         fontSize: [3, 4],
-        maxWidth: ["100%", "65%"]
+        maxWidth: ["100%", "65%"],
+        mb: 3
       }}
     >
       Want to get involved in combating COVID-19?
@@ -39,7 +40,7 @@ export default () => (
       }}
     >
       <Embed
-        src="https://airtable.com/embed/shrviRYlIVs70A3gl?backgroundColor=teal"
+        src="https://airtable.com/embed/shrDmhfiEGNl5hmrL?backgroundColor=teal"
         sx={{
           background: "transparent",
           border: "1px solid #ccc",
@@ -89,8 +90,7 @@ export default () => (
       }}
     >
       <Embed
-        // TODO: Replace this URL with the correct URL
-        src="https://airtable.com/embed/shrviRYlIVs70A3gl?backgroundColor=teal"
+        src="https://airtable.com/embed/shr6ByY3nznfVWut1?backgroundColor=teal"
         sx={{
           background: "transparent",
           border: "1px solid #ccc",
