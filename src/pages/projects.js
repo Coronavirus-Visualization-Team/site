@@ -89,6 +89,7 @@ export default () => (
                 title
                 featured
                 image
+                label
                 date(formatString: "MMMM DD, YYYY")
               }
             }

@@ -30,7 +30,7 @@ const Tile = ({ title, img, slug }) => {
             <Image src = {img}
                     sx = {{
                         width: '100%',
-                        height: ['auto','300px'],
+                        height: ['auto','250px'],
                         borderRadius: 'tile',
                         boxShadow: 'base',
                         ml: [0, '10px'],
