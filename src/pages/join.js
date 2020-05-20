@@ -109,7 +109,6 @@ const JoinPage = props => {
           return (
             <Box
               sx={{
-                width: ["45%", "30%"],
                 display: "flex",
                 justifyContent: "center",
               }}
