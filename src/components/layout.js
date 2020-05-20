@@ -41,7 +41,7 @@ export const Header = () => (
     <Link to="/">
       <Image
         sx={{
-          width: ["0em", "6em", "10em"],
+          width: ["6em", "10em"],
           height: "auto",
         }}
         src={Logo}
