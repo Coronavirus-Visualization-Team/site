@@ -1,5 +1,5 @@
 ---
 name: Data Science @ Georgia Tech
 image: ../assets/ds-gt.png
-website: https://www.coved.org
+website: https://cse.gatech.edu/content/data-science-and-engineering
 ---
