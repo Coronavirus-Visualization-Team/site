@@ -110,7 +110,7 @@ const IndexPage = (props) => {
                 justifyContent: "center"
               }}
             >
-              <Link to={data.website}>
+              <a href={data.website} target="_blank">
                 <Image
                   src={data.image}
                   alt={data.name}
@@ -119,7 +119,7 @@ const IndexPage = (props) => {
                     objectFit: "contain"
                   }}
                 />
-              </Link>
+              </a>
             </Box>
           )
         })}
@@ -183,6 +183,7 @@ export const query = graphql`
             frontmatter {
               name
               image
+              website
           }
         }
       }
