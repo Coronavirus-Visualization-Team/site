@@ -100,6 +100,8 @@ const IndexPage = (props) => {
         {partnersData.map((item) => {
           const data = item.node.childMarkdownRemark.frontmatter;
 
+          console.log(data)
+
           return (
             <Box
               sx={{
@@ -108,10 +110,7 @@ const IndexPage = (props) => {
                 justifyContent: "center"
               }}
             >
-              <Link
-                to={data.website}
-                target="_blank"
-              >
+              <Link to={data.website}>
                 <Image
                   src={data.image}
                   alt={data.name}
