@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from "react"
+import React, { useState } from "react"
 import {
   Container,
   Box,
@@ -23,45 +23,112 @@ import GithubLogo from "./social-icons/GitHub.png"
 import MediumLogo from "./social-icons/Medium.png"
 import LinkedInLogo from "./social-icons/LinkedIn.png"
 
-export const Header = () => (
-  <Box
-    as="header"
-    sx={{
-      display: "flex",
-      alignItems: "center",
-      py: 4,
-      "a+a": { ml: [4] },
-      zIndex: 10,
-      position: "relative",
-    }}
-  >
-    <Helmet>
-      <link rel="icon" href={favicon} />
-    </Helmet>
-    <Link to="/">
-      <Image
-        sx={{
-          width: ["6em", "10em"],
-          height: "auto",
-        }}
-        src={Logo}
-      />
-    </Link>
-    <Box sx={{ mx: "auto" }} />
-    <Link to="/projects">
-      <NavLink>Projects</NavLink>
-    </Link>
-    <Link to="/team">
-      <NavLink>Our Team</NavLink>
-    </Link>
-    <Link to="/join">
-      <NavLink>Join Us</NavLink>
-    </Link>
-    <Link to="/resources">
-      <NavLink>Resources</NavLink>
-    </Link>
-  </Box>
-)
+export const Header = () => {
+  const [show, toggleShow] = useState(false)
+  return(
+    <Box
+      as="header"
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        py: 4,
+        height: '100px',
+        "a+a": { ml: [4] },
+        zIndex: 10,
+        position: "relative",
+      }}
+    >
+      <Helmet>
+        <link rel="icon" href={favicon} />
+      </Helmet>
+      <Link to="/">
+        <Image
+          sx={{
+            width: ["6em", "10em"],
+            height: "auto",
+          }}
+          src={Logo}
+        />
+      </Link>
+      <Box sx={{ mx: "auto" }} />
+      <div sx = {{display: ['none', 'block']}}>
+        <Link to="/projects">
+          <NavLink>Projects</NavLink>
+        </Link>
+        <Link to="/team">
+          <NavLink>Our Team</NavLink>
+        </Link>
+        <Link to="/join">
+          <NavLink>Join Us</NavLink>
+        </Link>
+        <Link to="/resources">
+          <NavLink>Resources</NavLink>
+        </Link>
+      </div>
+      <div sx={{display: ['block', 'none'],
+                transform: show ? 'translateX(-150px)' : null,
+                transition: 'all 0.2s cubic-bezier(.25, .8, .25, 1)', 
+                '&:hover': {cursor: 'pointer'}
+              }}
+            onClick={() => toggleShow(!show)}>
+        <p sx={{borderRadius: '10px',
+                height: '2px',
+                width: '25px',
+                backgroundColor: 'white',
+                margin: '6px 0',
+                transition: 'all 0.7s cubic-bezier(.25, .8, .25, 1)',
+                transform: show ? 'translateY(9px) rotate(-45deg)' : null}}></p>
+        <p sx={{borderRadius: '10px',
+                height: '2px',
+                width: show ? '25px' : '15px',
+                backgroundColor: 'white',
+                margin: '6px 0',
+                transition: 'all 0.7s cubic-bezier(.25, .8, .25, 1)',
+                transform: show ? 'translateY(1px) rotate(45deg)': null}}></p>
+          <p sx={{borderRadius: '10px',
+                height: '2px',
+                width: show ? '25px' : '20px',
+                backgroundColor: 'white',
+                margin: '6px 0',
+                transition: 'all 0.7s cubic-bezier(.25, .8, .25, 1)',
+                transform: show ? 'translateY(-8px) rotate(45deg)' : null}}></p>
+      </div>
+
+      <div sx={{
+                position: 'fixed',
+                top: 0,
+                height: '100%',
+                maxHeight: '100vh',
+                paddingTop: '30px',
+                width: '150px',
+                right: show ? '0' : 'calc(-200px)',
+                background: 'gradient',
+                boxShadow: 'base',
+                transition: 'all 0.3s cubic-bezier(.25, .8, .25, 1)',
+                color: 'black'}}>
+        <div sx = {{
+          display: 'flex',
+          flexDirection: 'column'
+        }} >
+        <Link to="/projects" >
+          <NavLink sx = {{marginLeft: '32px', mb: 2}}>Projects</NavLink>
+        </Link>
+        <Link to="/team">
+          <NavLink sx={{mb: 2}}>Our Team</NavLink>
+        </Link>
+        <Link to="/join">
+          <NavLink sx={{mb: 2}}>Join Us</NavLink>
+        </Link>
+        <Link to="/resources">
+          <NavLink sx={{mb: 2}}>Resources</NavLink>
+        </Link>
+      </div>
+
+
+      </div>
+    </Box>
+  )
+}
 
 export const NavBackground = () => {
   return (
@@ -73,7 +140,7 @@ export const NavBackground = () => {
         background: "gradient",
         width: "100%",
         minWidth: "100%",
-        height: ["400px", "450px"],
+        height: ["450px", "500px"],
       }}
     ></Container>
   )

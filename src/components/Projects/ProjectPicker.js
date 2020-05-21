@@ -40,7 +40,9 @@ const ProjectPicker = ({ posts }) => {
                             toggleThree(false)
                             toggleFour(false)
                         }}
-                        sx={{ variant: one ? 'styles.projectPickerActive' : 'styles.projectPicker' }}>{featured[0] ? featured[0].node.frontmatter.title : "Coming Soon!"}</Box>
+                        sx={{ variant: one ? 'styles.projectPickerActive' : 'styles.projectPicker',
+                              display: 'flex',
+                              alignItems: 'center' }}>{featured[0] ? featured[0].node.frontmatter.title : "Coming Soon!"}</Box>
                     <Box
                         onClick={() => {
                             toggleOne(false)
@@ -48,7 +50,9 @@ const ProjectPicker = ({ posts }) => {
                             toggleThree(false)
                             toggleFour(false)
                         }}
-                        sx={{ variant: two ? 'styles.projectPickerActive' : 'styles.projectPicker' }}>{featured[1] ? featured[1].node.frontmatter.title : "Coming Soon!"}</Box>
+                        sx={{ variant: two ? 'styles.projectPickerActive' : 'styles.projectPicker',
+                              display: 'flex',
+                              alignItems: 'center' }}>{featured[1] ? featured[1].node.frontmatter.title : "Coming Soon!"}</Box>
                     <Box
                         onClick={() => {
                             toggleOne(false)
@@ -56,7 +60,9 @@ const ProjectPicker = ({ posts }) => {
                             toggleThree(true)
                             toggleFour(false)
                         }}
-                        sx={{ variant: three ? 'styles.projectPickerActive' : 'styles.projectPicker' }}>{featured[2] ? featured[2].node.frontmatter.title : "Coming Soon!"}</Box>
+                        sx={{ variant: three ? 'styles.projectPickerActive' : 'styles.projectPicker',
+                              display: 'flex',
+                              alignItems: 'center' }}>{featured[2] ? featured[2].node.frontmatter.title : "Coming Soon!"}</Box>
                     <Box
                         onClick={() => {
                             toggleOne(false)
@@ -64,7 +70,9 @@ const ProjectPicker = ({ posts }) => {
                             toggleThree(false)
                             toggleFour(true)
                         }}
-                        sx={{ variant: four ? 'styles.projectPickerActive' : 'styles.projectPicker' }}>{featured[3] ? featured[3].node.frontmatter.title : "Coming Soon!"}</Box>
+                        sx={{ variant: four ? 'styles.projectPickerActive' : 'styles.projectPicker',
+                              display: 'flex',
+                              alignItems: 'center' }}>{featured[3] ? featured[3].node.frontmatter.title : "Coming Soon!"}</Box>
                 </Grid>
             </Container>
             {one && <FeaturedProject
