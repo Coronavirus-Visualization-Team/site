@@ -28,6 +28,8 @@ export default ({ data }) => {
             <Image sx = {{
                 mt: 20,
                 width: "100%",
+                borderRadius: 'project',
+                boxShadow: 'base',
             }}
             src = {`../${frontmatter.image}`}/>
             <Text sx = {{
