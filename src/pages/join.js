@@ -112,14 +112,16 @@ const JoinPage = props => {
                 justifyContent: "center",
               }}
             >
-              <Image
-                src={data.image}
-                alt={data.name}
-                sx={{
-                  mb: 2,
-                  objectFit: "contain",
-                }}
-              />
+              <a href={data.website} target="_blank">
+                <Image
+                  src={data.image}
+                  alt={data.name}
+                  sx={{
+                    mb: 2,
+                    objectFit: "contain",
+                  }}
+                />
+              </a>
             </Box>
           )
         })}
@@ -185,6 +187,7 @@ export const query = graphql`
             frontmatter {
               name
               image
+              website
             }
           }
         }
