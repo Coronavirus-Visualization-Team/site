@@ -24,6 +24,7 @@ collections:
     fields:
       - { name: name, label: Name }
       - { name: image, label: Image, widget: image }
+      - { name: website, label: Website }
   - name: team
     label: Team
     folder: team

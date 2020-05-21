@@ -10,6 +10,9 @@ const IndexPage = (props) => {
   const partnersData = props.data.partners.edges;
   const projectsData = props.data.projects.edges;
 
+  console.log("partners")
+  console.log(partnersData)
+
   return (
     <Box
       sx={{
@@ -27,7 +30,7 @@ const IndexPage = (props) => {
           m: "4vh 4vw"
         }}
       >
-        We're the <b>Coronavirus Visualization Team</b>,  a crowdsourced student network of data scientists and analysts, developers, and communicators working to better visualize and share the impacts, present and future, of COVID-19.
+        We're the <b>Coronavirus Visualization Team</b>, a crowdsourced student network of data scientists and analysts, developers, and communicators working to better visualize and share the impacts, present and future, of COVID-19.
       </Text>
 
       <Text
@@ -105,14 +108,19 @@ const IndexPage = (props) => {
                 justifyContent: "center"
               }}
             >
-              <Image
-                src={data.image}
-                alt={data.name}
-                sx={{
-                  mb: 3,
-                  objectFit: "contain"
-                }}
-              />
+              <Link
+                to={data.website}
+                target="_blank"
+              >
+                <Image
+                  src={data.image}
+                  alt={data.name}
+                  sx={{
+                    mb: 3,
+                    objectFit: "contain"
+                  }}
+                />
+              </Link>
             </Box>
           )
         })}
