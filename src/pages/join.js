@@ -28,16 +28,15 @@ const JoinPage = props => {
       </Text>
       <Text sx={{ variant: "styles.bodyText" }}>
         We collaborate on data visualization and analytics projects, economic
-        research, and policy writing to better inform and government entities on
-        the impact of COVID-19, clear misconceptions, and show the good that is
-        happening.
+        research, and policy writing to better inform government entities on
+        the impact of COVID-19, clear misconceptions, and the good that is happening.
       </Text>
 
       <Text sx={{ variant: "styles.headerText" }}>
         Let’s accomplish things together.
       </Text>
       <Text sx={{ variant: "styles.subHeader" }}>
-        Join our global organization comprised of students from institutions and
+        Join our global organization comprised of students from these institutions and
         more:
       </Text>
       <Box
@@ -125,7 +124,7 @@ const JoinPage = props => {
           )
         })}
       </Grid>
-      <Text sx={{ variant: "styles.headerText" }}>Individuals</Text>
+      <Text sx={{ variant: "styles.headerText", mt: "2vh"}}>Individuals</Text>
       <Text sx={{ variant: "styles.bodyText" }}>
         We're looking for driven and talented individuals to join our team
         remotely. Learn more about our teams and ongoing
