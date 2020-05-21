@@ -6,9 +6,6 @@ import { Helmet } from "react-helmet"
 export default ({ data }) => {
     const { edges: posts} = data.allMarkdownRemark
     const { html, frontmatter} = posts[0].node
-    // console.log(post)
-    console.log(posts[0].node.html)
-    console.log(data)
     return (
         <>
         <Helmet title={frontmatter.title} />
@@ -63,6 +60,6 @@ export const query = graphql`
                 }
             }
         }
-    } 
+    }
   }
 `
