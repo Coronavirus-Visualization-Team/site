@@ -3,7 +3,7 @@ path: /blog/gatsbygatsby
 date: 2020-04-26T19:24:35.090Z
 slug: climate-change
 title: COVID and Climate Change
-featured: false
+featured: true
 image: ../img/coronavirus-climate.jpg
 label: Grist / KTSDESIGN / SCIENCE PHOTO LIBRARY / Getty Images
 templateKey: project

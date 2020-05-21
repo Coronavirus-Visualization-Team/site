@@ -3,7 +3,7 @@ path: testing
 date: 2020-04-25T00:28:53.933Z
 slug: south-korea
 title: COVID-19 in South Korea
-featured: true
+featured: false
 image: ../img/covid-south-korea.jpeg
 label: Photo by Ed Jones/AFP via Getty Images
 templateKey: project
