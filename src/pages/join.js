@@ -133,6 +133,7 @@ const JoinPage = props => {
       <Button
         as="a"
         href="http://bit.ly/CVT-apply"
+        target="_blank"
         sx={{
           fontSize: [14, 18],
           px: 3,
@@ -157,6 +158,7 @@ const JoinPage = props => {
       <Button
         as="a"
         href="mailto:coronavirusvisualizationteam@gmail.com"
+        target="_blank"
         sx={{
           fontSize: [14, 18],
           px: 3,
