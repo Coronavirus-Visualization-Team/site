@@ -13,7 +13,7 @@ const Tile = ({ title, img, slug }) => {
             height: ['fit-content', '300px'],
             boxShadow: 'base',
             bg: 'white',
-            p: 4,
+            p: [3,4],
             borderRadius: 'tile',
             color: 'black',
             mb: [0, 60]
