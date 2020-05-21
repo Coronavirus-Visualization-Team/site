@@ -30,7 +30,7 @@ const IndexPage = (props) => {
           m: "4vh 4vw"
         }}
       >
-        We're the <b>Coronavirus Visualization Team</b>, a crowdsourced student network of data scientists and analysts, developers, and communicators working to better visualize and share the impacts, present and future, of COVID-19.
+        We're the <b>Coronavirus Visualization Team</b>,  a crowdsourced student network of data scientists and analysts, developers, and communicators working to better visualize and share the impacts, present and future, of COVID-19.
       </Text>
 
       <Text
