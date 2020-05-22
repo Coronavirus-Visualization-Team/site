@@ -65,12 +65,11 @@ export const Header = () => {
           <NavLink>Resources</NavLink>
         </Link>
       </div>
-      <div sx={{display: ['block', 'none'],
+      <div sx={{display: ['flex', 'none'],
                 transform: show ? 'translateX(-50vw)' : null,
                 transition: 'all 0.2s cubic-bezier(.25, .8, .25, 1)', 
                 '&:hover': {cursor: 'pointer'},
                 width: '25px',
-                display: 'flex',
                 flexDirection: 'column', 
                 alignItems: 'flex-end',
                 justifyContent: 'end'
