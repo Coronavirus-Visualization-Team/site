@@ -17,7 +17,8 @@ const PrivacyPage = props => {
       <Text
         sx={{
           fontSize: [3, 4],
-          maxWidth: ["100%", "65%"]
+          maxWidth: ["100%", "65%"],
+          m: "2vh 0vw"
         }}
       >
         Privacy Policy
@@ -44,7 +45,8 @@ const PrivacyPage = props => {
           sx={{
             fontSize: [3, 4],
             width: "100%",
-            color: "darker"
+            color: "darker",
+            m: "2vh 0vw"
           }}
         >
           Overview
@@ -65,7 +67,7 @@ const PrivacyPage = props => {
             fontSize: [2, 3],
             width: "100%",
             color: "darker",
-            mt: 5
+            m: "2vh 0vw"
           }}
         >
           Personal Information We Collect
@@ -92,7 +94,7 @@ const PrivacyPage = props => {
             fontSize: [2, 3],
             width: "100%",
             color: "darker",
-            mt: 5
+            m: "2vh 0vw"
           }}
         >
           Use of Personal Information
@@ -111,7 +113,7 @@ const PrivacyPage = props => {
             fontSize: [2, 3],
             width: "100%",
             color: "darker",
-            mt: 5
+            m: "2vh 0vw"
           }}
         >
           Sharing of Personal Information
@@ -123,14 +125,14 @@ const PrivacyPage = props => {
             width: "100%",
             color: "slate"
           }}
-        >Your personal information, such as cookies and email addresses, may be shared with third parties to operate the Site and the Service. These third parties include Netlify (used for providing the Site) and MailChimp (used for email communication).<br /><br />Finally, we may also share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights.</Text>
+        >Your personal information, such as cookies and email addresses, may be shared with third parties to operate the Site and the Service. These third parties include Netlify (used for providing the Site) and MailChimp (used for email communication).<br/>Finally, we may also share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights.</Text>
 
         <Text
           sx={{
             fontSize: [2, 3],
             width: "100%",
             color: "darker",
-            mt: 5
+            m: "2vh 0vw"
           }}
         >
           Marketing
@@ -149,7 +151,7 @@ const PrivacyPage = props => {
             fontSize: [2, 3],
             width: "100%",
             color: "darker",
-            mt: 5
+            m: "2vh 0vw"
           }}
         >
           Minors
@@ -168,7 +170,7 @@ const PrivacyPage = props => {
             fontSize: [2, 3],
             width: "100%",
             color: "darker",
-            mt: 5
+            m: "2vh 0vw"
           }}
         >
           EU Rights
@@ -189,7 +191,7 @@ const PrivacyPage = props => {
             fontSize: [2, 3],
             width: "100%",
             color: "darker",
-            mt: 5
+            m: "2vh 0vw"
           }}
         >
           Contact
