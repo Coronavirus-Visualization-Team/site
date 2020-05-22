@@ -66,30 +66,37 @@ export const Header = () => {
         </Link>
       </div>
       <div sx={{display: ['block', 'none'],
-                transform: show ? 'translateX(-150px)' : null,
+                transform: show ? 'translateX(-50vw)' : null,
                 transition: 'all 0.2s cubic-bezier(.25, .8, .25, 1)', 
-                '&:hover': {cursor: 'pointer'}
+                '&:hover': {cursor: 'pointer'},
+                width: '25px',
+                display: 'flex',
+                flexDirection: 'column', 
+                alignItems: 'flex-end',
+                justifyContent: 'end'
+                 
+                
               }}
             onClick={() => toggleShow(!show)}>
         <p sx={{borderRadius: '10px',
                 height: '2px',
                 width: '25px',
                 backgroundColor: 'white',
-                margin: '6px 0',
+                margin: '3px 0',
                 transition: 'all 0.7s cubic-bezier(.25, .8, .25, 1)',
                 transform: show ? 'translateY(9px) rotate(-45deg)' : null}}></p>
         <p sx={{borderRadius: '10px',
                 height: '2px',
                 width: show ? '25px' : '15px',
                 backgroundColor: 'white',
-                margin: '6px 0',
+                margin: '3px 0',
                 transition: 'all 0.7s cubic-bezier(.25, .8, .25, 1)',
                 transform: show ? 'translateY(1px) rotate(45deg)': null}}></p>
           <p sx={{borderRadius: '10px',
                 height: '2px',
                 width: show ? '25px' : '20px',
                 backgroundColor: 'white',
-                margin: '6px 0',
+                margin: '3px 0',
                 transition: 'all 0.7s cubic-bezier(.25, .8, .25, 1)',
                 transform: show ? 'translateY(-8px) rotate(45deg)' : null}}></p>
       </div>
@@ -100,8 +107,8 @@ export const Header = () => {
                 height: '100%',
                 maxHeight: '100vh',
                 paddingTop: '30px',
-                width: '150px',
-                right: show ? '0' : 'calc(-200px)',
+                width: '50vw',
+                right: show ? '0' : 'calc(-50vw)',
                 background: 'gradient',
                 boxShadow: 'base',
                 transition: 'all 0.3s cubic-bezier(.25, .8, .25, 1)',
