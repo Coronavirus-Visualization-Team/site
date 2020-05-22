@@ -32,7 +32,7 @@ export const Header = () => {
         display: "flex",
         alignItems: "center",
         py: 4,
-        height: '100px',
+        height: '16vh',
         "a+a": { ml: [4] },
         zIndex: 10,
         position: "relative",
@@ -146,7 +146,7 @@ export const NavBackground = () => {
         background: "gradient",
         width: "100%",
         minWidth: "100%",
-        height: ["450px", "500px"],
+        height: "65vh",
       }}
     ></Container>
   )

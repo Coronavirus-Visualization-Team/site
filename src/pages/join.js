@@ -22,6 +22,7 @@ const JoinPage = props => {
       <Text
         sx={{
           variant: "styles.headerText",
+          mt: "6vh"
         }}
       >
         Our mission.
@@ -43,7 +44,7 @@ const JoinPage = props => {
         sx={{
           display: "flex",
           flexDirection: ["column", "row"],
-          py: [25, 35, 45],
+          py: 45,
         }}
       >
         <Grid width={["15%"]} gap={["2%"]}>
@@ -91,6 +92,7 @@ const JoinPage = props => {
             src={ColumbiaLogo}
             sx={{
               mb: 2,
+              mt: 1,
               objectFit: "contain",
               width: ["95%", "95%"],
             }}
@@ -98,7 +100,7 @@ const JoinPage = props => {
         </Grid>
       </Box>
 
-      <Text sx={{ variant: "styles.subHeader", py: 15 }}>
+      <Text sx={{ variant: "styles.subHeader", py: 15, mb: 2 }}>
         We’re also partnered with these organizations:{" "}
       </Text>
       <Grid width={["25%"]} gap={["2%"]}>
@@ -126,7 +128,7 @@ const JoinPage = props => {
           )
         })}
       </Grid>
-      <Text sx={{ variant: "styles.headerText", mt: "2vh"}}>Individuals</Text>
+      <Text sx={{ variant: "styles.headerText", mt: "4vh"}}>Individuals</Text>
       <Text sx={{ variant: "styles.bodyText" }}>
         We're looking for driven and talented individuals to join our team
         remotely. Learn more about our teams and ongoing
@@ -150,7 +152,7 @@ const JoinPage = props => {
         Join Us
       </Button>
 
-      <Text sx={{ variant: "styles.headerText" }}>Organizations</Text>
+      <Text sx={{ variant: "styles.headerText", mt: "2vh" }}>Organizations</Text>
       <Text sx={{ variant: "styles.bodyText" }}>
         We’re looking to form partnerships and project collaborations with
         organizations that either have data we can use or seek data. We welcome

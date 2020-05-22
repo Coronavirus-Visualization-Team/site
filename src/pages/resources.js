@@ -18,7 +18,8 @@ export default () => (
       sx={{
         fontSize: [3, 4],
         maxWidth: ["100%", "65%"],
-        mb: 3
+        mb: 3,
+        mt: 3
       }}
     >
       Want to get involved in combating COVID-19?

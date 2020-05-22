@@ -41,8 +41,7 @@ const IndexPage = (props) => {
         sx={{
           width: "100%",
           textAlign: "center",
-          mt: 6,
-          pt: 4,
+          mt: "17vh",
           color: "black",
           fontSize: [3, 4]
         }}
@@ -53,11 +52,10 @@ const IndexPage = (props) => {
       <Container
         sx={{
           maxWidth: "xl",
-          pt: 5
+          mt: "8vh"
         }}
       >
         <Grid width={["45%"]} gap={["10%"]}>
-          {/** TODO: Use CMS to get 4 projects and put them here */}
           {projectsData.slice(0,4).map((item) => {
             const data = item.node.childMarkdownRemark.frontmatter;
             return (
@@ -71,6 +69,7 @@ const IndexPage = (props) => {
           width: "100%",
           textAlign: "center",
           mt: '6.5em',
+          mb: "3vh",
           color: "black",
           fontSize: [1, 2],
           textDecoration: "none"
@@ -131,7 +130,7 @@ const IndexPage = (props) => {
 
       <Divider
         sx={{
-          my: 5
+          my: 2
         }}
       />
 
