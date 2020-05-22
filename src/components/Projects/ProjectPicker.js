@@ -42,7 +42,8 @@ const ProjectPicker = ({ posts }) => {
                         }}
                         sx={{ variant: one ? 'styles.projectPickerActive' : 'styles.projectPicker',
                               display: 'flex',
-                              alignItems: 'center' }}>{featured[0] ? featured[0].node.frontmatter.title : "Coming Soon!"}</Box>
+                              alignItems: 'center',
+                              mx: "2vw" }}>{featured[0] ? featured[0].node.frontmatter.title : "Coming Soon!"}</Box>
                     <Box
                         onClick={() => {
                             toggleOne(false)
@@ -52,7 +53,8 @@ const ProjectPicker = ({ posts }) => {
                         }}
                         sx={{ variant: two ? 'styles.projectPickerActive' : 'styles.projectPicker',
                               display: 'flex',
-                              alignItems: 'center' }}>{featured[1] ? featured[1].node.frontmatter.title : "Coming Soon!"}</Box>
+                              alignItems: 'center',
+                              mx: "2vw"  }}>{featured[1] ? featured[1].node.frontmatter.title : "Coming Soon!"}</Box>
                     <Box
                         onClick={() => {
                             toggleOne(false)
@@ -62,7 +64,8 @@ const ProjectPicker = ({ posts }) => {
                         }}
                         sx={{ variant: three ? 'styles.projectPickerActive' : 'styles.projectPicker',
                               display: 'flex',
-                              alignItems: 'center' }}>{featured[2] ? featured[2].node.frontmatter.title : "Coming Soon!"}</Box>
+                              alignItems: 'center',
+                              mx: "2vw"  }}>{featured[2] ? featured[2].node.frontmatter.title : "Coming Soon!"}</Box>
                     <Box
                         onClick={() => {
                             toggleOne(false)
@@ -72,7 +75,8 @@ const ProjectPicker = ({ posts }) => {
                         }}
                         sx={{ variant: four ? 'styles.projectPickerActive' : 'styles.projectPicker',
                               display: 'flex',
-                              alignItems: 'center' }}>{featured[3] ? featured[3].node.frontmatter.title : "Coming Soon!"}</Box>
+                              alignItems: 'center',
+                              mx: "2vw"  }}>{featured[3] ? featured[3].node.frontmatter.title : "Coming Soon!"}</Box>
                 </Grid>
             </Container>
             {one && <FeaturedProject

@@ -17,7 +17,7 @@ export default ({ data }) => {
                 p: 0
             }}>
             <Text sx = {{
-                fontSize: [5, 6]
+                fontSize: [4, 5]
             }}>
                 {frontmatter.title}
             </Text>

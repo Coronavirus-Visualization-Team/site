@@ -41,7 +41,7 @@ const IndexPage = (props) => {
         sx={{
           width: "100%",
           textAlign: "center",
-          mt: "17vh",
+          mt: "18vh",
           color: "black",
           fontSize: [3, 4]
         }}
