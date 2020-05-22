@@ -16,7 +16,8 @@ const IndexPage = (props) => {
         position: "relative",
 
         display: "flex",
-        flexDirection: "column"
+        flexDirection: "column",
+        alignItems: 'center'
       }}
     >
       <Helmet title="CVT | Home" />
