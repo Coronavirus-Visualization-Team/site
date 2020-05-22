@@ -18,7 +18,7 @@ const Projects = ({ data }) => {
         sx={{
           width: "100%",
           maxWidth: "xl",
-          mb: ["5em", "15em"],
+          mb: ["5em", "20em"],
         }}
       >
         <Container
@@ -35,7 +35,7 @@ const Projects = ({ data }) => {
         >
           <Text
             sx={{
-              mb: "2rem",
+              mb: "1rem",
               fontWeight: "700",
             }}
           >
