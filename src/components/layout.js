@@ -117,16 +117,16 @@ export const Header = () => {
           flexDirection: 'column'
         }} >
         <Link to="/projects" >
-          <NavLink sx = {{marginLeft: '32px', mb: 2}}>Projects</NavLink>
+          <NavLink onClick={() => toggleShow(!show)} sx = {{marginLeft: '32px', mb: 2}}>Projects</NavLink>
         </Link>
         <Link to="/team">
-          <NavLink sx={{mb: 2}}>Our Team</NavLink>
+          <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Our Team</NavLink>
         </Link>
         <Link to="/join">
-          <NavLink sx={{mb: 2}}>Join Us</NavLink>
+          <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Join Us</NavLink>
         </Link>
         <Link to="/resources">
-          <NavLink sx={{mb: 2}}>Resources</NavLink>
+          <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Resources</NavLink>
         </Link>
       </div>
 
