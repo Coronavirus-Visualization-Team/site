@@ -29,6 +29,9 @@ const TeamPage = (props) => {
         <Grid
         gap={2}
         width={[128, null, 192]}
+        sx={{
+          justifyItems: ['center', 'unset']
+        }}
         >
           {teamData.map((item) => {
             const data = item.node.childMarkdownRemark.frontmatter;
