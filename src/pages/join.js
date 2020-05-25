@@ -174,7 +174,7 @@ const JoinPage = props => {
           mt: 4
         }}
       >
-        Join Us
+        Email Us
       </Button>
     </>
   )
