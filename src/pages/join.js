@@ -136,7 +136,7 @@ const JoinPage = props => {
       </Text>
       <Button
         as="a"
-        href="http://bit.ly/CVT-apply"
+        href="http://bit.ly/CVTapply"
         target="_blank"
         sx={{
           fontSize: [14, 18],
