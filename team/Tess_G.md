@@ -1,6 +1,6 @@
 ---
 name: Tess G
-executive: false
+executive: true
 position: External Affairs
-image: ../assets/default_exec_image.png
+image: ../assets/tess.jpg
 ---
