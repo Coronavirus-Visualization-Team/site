@@ -55,7 +55,7 @@ This is the official landing page for CVT! This is worked on by the website team
 - There is no set number of hours you must work each day
 - We expect you to constantly be working on tasks and helping improve the website most of the days of the week
 - The website community manager (Calix) will oversee everyone’s progress and work
-- Those who do not contribute up to the standard are in risk of being kicked off of the website team
+- Those who do not contribute up to the standard are in risk of being removed off of the website team
 
 ## Support
 If you need any help, reach out to Calix, Steve, or Adway!
