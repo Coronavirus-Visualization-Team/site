@@ -2,8 +2,8 @@
 This is the official landing page for CVT! This is worked on by the website team of CVT.
 
 ## Important links
-- https://github.com/Coronavirus-Visualization-Team/site
-- https://www.understandcovid.org/
+- GitHub respository: https://github.com/Coronavirus-Visualization-Team/site
+- Currently deployed website: https://www.understandcovid.org/
 
 ## Current members
 - Steve (Executive, Co-Lead)
@@ -24,7 +24,7 @@ This is the official landing page for CVT! This is worked on by the website team
 - Spaces between “=” and one-lined “{}”
 - Always use curly braces on if statements and loops
 - Use comments, but not too much
-- Follow (React.js best practices)[https://www.codeinwp.com/blog/react-best-practices/]
+- Follow [React.js best practices](https://www.codeinwp.com/blog/react-best-practices/)
 - Avoid using custom CSS, use the “theme-ui” properties/syntax instead
 - Use the same coding-style as used currently
 - If you are not sure if you should delete some code, just comment it out temporarily
