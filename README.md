@@ -7,7 +7,7 @@ This is the official landing page for CVT! This is worked on by the website team
 
 ## Current members
 - Calix (Co-Lead, Lead Dev, Community Manager)
-- Steve (Executive, Co-Lead, Lead Dev)
+- Steve (Executive, Co-Lead)
 - Adway (Co-Lead)
 - Fernanda (Developer)
 - Jake (Developer)
