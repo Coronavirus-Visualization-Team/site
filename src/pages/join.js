@@ -105,7 +105,7 @@ const JoinPage = props => {
               mt: 1,
               objectFit: "contain",
               width: ["95%", "95%"],
-              height: "100%"
+              height: "85%"
             }}
           />
         </Grid>
