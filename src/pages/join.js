@@ -102,10 +102,8 @@ const JoinPage = props => {
             src={JohnHopkinsLogo}
             sx={{
               mb: 2,
-              mt: 1,
               objectFit: "contain",
-              width: ["95%", "95%"],
-              height: "85%"
+              width: ["65%", "65%"],
             }}
           />
         </Grid>
