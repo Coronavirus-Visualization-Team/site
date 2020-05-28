@@ -10,6 +10,7 @@ import CmuLogo from "../../static/img/cmu.png"
 import StanfordLogo from "../../static/img/stanford.png"
 import ColumbiaLogo from "../../static/img/columbia.png"
 import MitLogo from "../../static/img/mit.png"
+import JohnHopkinsLogo from "../../static/img/johnhopkins.png"
 
 const JoinPage = props => {
   const partnersData = props.data.partners.edges
@@ -47,7 +48,7 @@ const JoinPage = props => {
           py: 45,
         }}
       >
-        <Grid width={["15%"]} gap={["2%"]}>
+        <Grid width={["10%"]} gap={["2%"]}>
           <Image
             src={StanfordLogo}
             sx={{
@@ -95,6 +96,16 @@ const JoinPage = props => {
               mt: 1,
               objectFit: "contain",
               width: ["95%", "95%"],
+            }}
+          />
+          <Image
+            src={JohnHopkinsLogo}
+            sx={{
+              mb: 2,
+              mt: 1,
+              objectFit: "contain",
+              width: ["95%", "95%"],
+              height: "100%"
             }}
           />
         </Grid>
