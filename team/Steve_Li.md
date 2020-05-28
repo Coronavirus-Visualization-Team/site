@@ -1,6 +1,6 @@
 ---
 name: Steve Li
-executive: false
+executive: true
 position: Website
-image: ../assets/default_exec_image.png
+image: ../assets/steve.jpeg
 ---

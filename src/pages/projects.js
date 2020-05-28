@@ -78,7 +78,8 @@ export default () => (
     query={graphql`
       query ProjectQuery {
         allMarkdownRemark (
-          filter: { frontmatter: { templateKey: { eq: "project" } } }
+          filter: { frontmatter: { templateKey: { eq: "project" } } },
+          sort: { fields: [frontmatter___featured], order: DESC }
         ) {
           edges {
             node {
