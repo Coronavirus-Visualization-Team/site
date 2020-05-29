@@ -6,11 +6,11 @@ import HeaderImage from "../components/Join/HeaderImage"
 import { Helmet } from "react-helmet"
 import HarvardLogo from "../../static/img/harvard.png"
 import BerkeleyLogo from "../../static/img/berkeley.png"
-import CmuLogo from "../../static/img/cmu.png"
 import StanfordLogo from "../../static/img/stanford.png"
 import ColumbiaLogo from "../../static/img/columbia.png"
 import MitLogo from "../../static/img/mit.png"
 import JohnHopkinsLogo from "../../static/img/johnhopkins.png"
+import GtLogo from "../../static/img/gt-seal.png"
 
 const JoinPage = props => {
   const partnersData = props.data.partners.edges
@@ -66,11 +66,11 @@ const JoinPage = props => {
             }}
           />
           <Image
-            src={CmuLogo}
+            src={GtLogo}
             sx={{
               mb: 2,
               objectFit: "contain",
-              width: ["95%", "90%"],
+              width: ["90%", "90%"],
             }}
           />
           <Image
