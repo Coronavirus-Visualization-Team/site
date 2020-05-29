@@ -55,6 +55,9 @@ export const Header = () => {
         <Link to="/projects">
           <NavLink>Projects</NavLink>
         </Link>
+        <Link to="/visualizations">
+          <NavLink>Visualizations</NavLink>
+        </Link>
         <Link to="/team">
           <NavLink>Our Team</NavLink>
         </Link>
@@ -118,6 +121,9 @@ export const Header = () => {
         }} >
         <Link to="/projects" >
           <NavLink onClick={() => toggleShow(!show)} sx = {{marginLeft: '32px', mb: 2}}>Projects</NavLink>
+        </Link>
+        <Link to="/visualizations">
+          <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Visualizations</NavLink>
         </Link>
         <Link to="/team">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Our Team</NavLink>
