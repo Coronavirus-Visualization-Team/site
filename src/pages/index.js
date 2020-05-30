@@ -55,7 +55,7 @@ const IndexPage = (props) => {
           mt: "8vh"
         }}
       >
-        <Grid width={["100%", "45%"]} gap={["5%", "10%"]}>
+        <Grid width={["100%", "45%"]} gap={5}>
           {projectsData.slice(0,4).map((item) => {
             const data = item.node.childMarkdownRemark.frontmatter;
             return (
@@ -68,7 +68,7 @@ const IndexPage = (props) => {
         sx={{
           width: "100%",
           textAlign: "center",
-          mt: '6.5em',
+          mt: '5vh',
           mb: "3vh",
           color: "black",
           fontSize: [1, 2],
