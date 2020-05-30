@@ -55,6 +55,7 @@ export default () => (
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
+            boxShadow: "base",
             ":hover > #overlay": {
               opacity: 1
             },
@@ -113,6 +114,7 @@ export default () => (
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
+            boxShadow: "base",
             ":hover > #overlay": {
               opacity: 1
             },
@@ -170,6 +172,7 @@ export default () => (
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
+            boxShadow: "base",
             ":hover > #overlay": {
               opacity: 1
             },
@@ -228,6 +231,7 @@ export default () => (
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
+            boxShadow: "base",
             ":hover > #overlay": {
               opacity: 1
             },
@@ -285,6 +289,7 @@ export default () => (
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
+            boxShadow: "base",
             ":hover > #overlay": {
               opacity: 1
             },
@@ -343,6 +348,7 @@ export default () => (
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
+            boxShadow: "base",
             ":hover > #overlay": {
               opacity: 1
             },
@@ -401,6 +407,7 @@ export default () => (
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
+            boxShadow: "base",
             ":hover > #overlay": {
               opacity: 1
             },
