@@ -51,7 +51,7 @@ export default () => (
         <Box
           sx={{
             position: 'relative',
-            width: ["90%", "100%"],
+            width: '100%',
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
@@ -109,7 +109,7 @@ export default () => (
         <Box
           sx={{
             position: 'relative',
-            width: ["90%", "100%"],
+            width: '100%',
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
@@ -166,7 +166,7 @@ export default () => (
         <Box
           sx={{
             position: 'relative',
-            width: ["90%", "100%"],
+            width: '100%',
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
@@ -224,7 +224,7 @@ export default () => (
         <Box
           sx={{
             position: 'relative',
-            width: ["90%", "100%"],
+            width: '100%',
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
@@ -281,7 +281,7 @@ export default () => (
         <Box
           sx={{
             position: 'relative',
-            width: ["90%", "100%"],
+            width: '100%',
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
@@ -339,7 +339,7 @@ export default () => (
         <Box
           sx={{
             position: 'relative',
-            width: ["90%", "100%"],
+            width: '100%',
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
@@ -397,7 +397,7 @@ export default () => (
         <Box
           sx={{
             position: 'relative',
-            width: ["90%", "100%"],
+            width: '100%',
             height: [300, 350],
             mb: "1vh",
             borderRadius: '10px',
