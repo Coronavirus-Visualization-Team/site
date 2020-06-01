@@ -41,7 +41,7 @@ export default () => (
       }}
     >
       <Embed
-        src="https://airtable.com/embed/shrDmhfiEGNl5hmrL?backgroundColor=teal"
+        src="https://airtable.com/embed/shr9Csx0eMqbLByBN?backgroundColor=teal"
         sx={{
           background: "transparent",
           border: "1px solid #ccc",
