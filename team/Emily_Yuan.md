@@ -1,7 +1,7 @@
 ---
-name: Harini
+name: Emily Yuan
 executive: false
-lead: false
-position: Writing
+lead: true
+position: Strategy/Advice
 image: ../assets/default_exec_image.png
 ---

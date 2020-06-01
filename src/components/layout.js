@@ -70,14 +70,12 @@ export const Header = () => {
       </div>
       <div sx={{display: ['flex', 'none'],
                 transform: show ? 'translateX(-50vw)' : null,
-                transition: 'all 0.2s cubic-bezier(.25, .8, .25, 1)', 
+                transition: 'all 0.2s cubic-bezier(.25, .8, .25, 1)',
                 '&:hover': {cursor: 'pointer'},
                 width: '25px',
-                flexDirection: 'column', 
+                flexDirection: 'column',
                 alignItems: 'flex-end',
                 justifyContent: 'end'
-                 
-                
               }}
             onClick={() => toggleShow(!show)}>
         <p sx={{borderRadius: '10px',
