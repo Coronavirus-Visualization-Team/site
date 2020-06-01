@@ -128,7 +128,7 @@ const TeamPage = (props) => {
         {teamData.map((item) => {
             const data = item.node.childMarkdownRemark.frontmatter;
 
-            if(data.executive) {
+            if(data.executive || data.lead) {
               return null;
             }
 
