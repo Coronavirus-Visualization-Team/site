@@ -247,7 +247,7 @@ export const Footer = () => (
           fontSize: [14, 18],
           px: 3,
           bg: "white",
-          background: "gradient",
+          background: "#168CA6",
           borderRadius: "button",
           boxShadow: "base",
           flex: "1",
@@ -347,7 +347,7 @@ const SocialIcon = props => {
       href={props.link}
       target="_blank"
       sx={{
-        background: "gradient",
+        background: "#168CA6",
         borderRadius: "button",
         boxShadow: "base",
         width: 60,
