@@ -1,7 +1,7 @@
 ---
-name: Caitlyn Tran
+name: Ethan Seto
 executive: false
 lead: true
-position: Research
+position: Task Management
 image: ../assets/default_exec_image.png
 ---

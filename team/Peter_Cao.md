@@ -1,7 +1,7 @@
 ---
-name: Caitlyn Tran
+name: Peter Cao
 executive: false
 lead: true
-position: Research
+position: Project Planning
 image: ../assets/default_exec_image.png
 ---

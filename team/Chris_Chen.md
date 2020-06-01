@@ -1,7 +1,7 @@
 ---
-name: Caitlyn Tran
+name: Chris Chen
 executive: false
 lead: true
-position: Research
+position: Media Research
 image: ../assets/default_exec_image.png
 ---

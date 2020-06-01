@@ -1,7 +1,7 @@
 ---
-name: Caitlyn Tran
+name: Allison Burke
 executive: false
 lead: true
-position: Research
+position: Recruitement
 image: ../assets/default_exec_image.png
 ---

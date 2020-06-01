@@ -1,7 +1,7 @@
 ---
-name: Caitlyn Tran
+name: Zain Kalson
 executive: false
 lead: true
-position: Research
+position: Community Management
 image: ../assets/default_exec_image.png
 ---
