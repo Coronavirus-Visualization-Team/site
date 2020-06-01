@@ -35,7 +35,7 @@ const FeaturedProject = ({ img, slug, present }) => {
                 m: 4,
                 px: 3,
                 bg: 'white',
-                background: 'gradient',
+                background: '#168CA6',
                 borderRadius: 'button',
                 boxShadow: 'base',
                 transition: '0.2s', 
