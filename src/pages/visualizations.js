@@ -6,8 +6,6 @@ import { graphql } from "gatsby"
 
 const VizPage = props => {
   const vizData = props.data.viz.edges
-  console.log("here")
-  console.log(vizData)
   return (
     <>
       <Box
