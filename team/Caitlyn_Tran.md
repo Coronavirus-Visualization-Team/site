@@ -2,6 +2,6 @@
 name: Caitlyn Tran
 executive: false
 lead: true
-position: Research
+position: Operations
 image: ../assets/default_exec_image.png
 ---

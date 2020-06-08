@@ -2,6 +2,6 @@
 name: Camden Shultz
 executive: false
 lead: true
-position: ArcGIS, Data Viz, App Development
+position: Projects Technical Stacks
 image: ../assets/default_exec_image.png
 ---
