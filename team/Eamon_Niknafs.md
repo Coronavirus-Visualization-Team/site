@@ -2,6 +2,6 @@
 name: Eamon Niknafs
 executive: false
 lead: false
-position: Econ
+position: undefined
 image: ../assets/default_exec_image.png
 ---

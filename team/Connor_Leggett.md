@@ -2,6 +2,6 @@
 name: Connor Leggett
 executive: false
 lead: false
-position: Opportunity Insights
+position: undefined
 image: ../assets/default_exec_image.png
 ---

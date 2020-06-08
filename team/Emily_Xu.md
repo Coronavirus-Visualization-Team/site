@@ -1,7 +1,7 @@
 ---
-name: Clare Essex
+name: Emily Yuan
 executive: false
 lead: false
-position: undefined
+position: Social Media
 image: ../assets/default_exec_image.png
 ---

@@ -2,6 +2,6 @@
 name: Emily Chang
 executive: false
 lead: false
-position: ArcGIS
+position: undefined
 image: ../assets/default_exec_image.png
 ---

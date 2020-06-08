@@ -2,6 +2,6 @@
 name: Christopher Nguyen
 executive: false
 lead: false
-position: Data Viz
+position: Outreach
 image: ../assets/default_exec_image.png
 ---

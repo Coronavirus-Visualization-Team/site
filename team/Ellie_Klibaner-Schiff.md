@@ -2,6 +2,6 @@
 name: Ellie Klibaner-Schiff
 executive: false
 lead: false
-position: Writer - Policy
+position: undefined
 image: ../assets/default_exec_image.png
 ---

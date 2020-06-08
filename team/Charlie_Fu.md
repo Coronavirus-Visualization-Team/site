@@ -2,6 +2,6 @@
 name: Charlie Fu
 executive: false
 lead: false
-position: OI/Econ
+position: undefined
 image: ../assets/default_exec_image.png
 ---

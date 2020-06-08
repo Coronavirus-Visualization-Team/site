@@ -2,6 +2,6 @@
 name: David Munechika
 executive: false
 lead: false
-position: Research
+position: undefined
 image: ../assets/default_exec_image.png
 ---
