@@ -2,29 +2,19 @@
 import React from "react"
 import { Image, Box, jsx, Text, Grid } from "theme-ui"
 import { Helmet } from "react-helmet"
-import nycPosImg from "../../static/img/NYC-pos-tests.png"
-import usStatsImg from "../../static/img/usStats.png"
-import oilImg from "../../static/img/covid-oil.png"
-import unemploymentImg from "../../static/img/unemployment.png"
-import uiImg from "../../static/img/ui-claims.png"
-import gaImg from "../../static/img/georgia.png"
-import demImg from "../../static/img/demographic.png"
+import { graphql } from "gatsby"
 
-export default () => (
-  <>
-    <Box
-      sx={{
-        position: "relative",
-        display: "flex",
-        flexDirection: "column"
-      }}
-    >
-      <Helmet title="CVT | Visualizations" />
-      <Text
+const VizPage = props => {
+  const vizData = props.data.viz.edges
+  console.log("here")
+  console.log(vizData)
+  return (
+    <>
+      <Box
         sx={{
-          fontSize: [3, 4],
-          maxWidth: ["100%", "65%"],
-          m: "2vh 0vw"
+          position: "relative",
+          display: "flex",
+          flexDirection: "column"
         }}
       >
         Visualizations
@@ -226,17 +216,12 @@ export default () => (
       <a href="https://public.tableau.com/profile/lucas.chu#!/vizhome/NYCMay8/Sheet1" target="_blank" rel="noopener noreferrer">
         <Box
           sx={{
-            position: 'relative',
-            width: '100%',
-            height: [300, 350],
-            mb: "1vh",
-            borderRadius: '10px',
-            boxShadow: "base",
-            ":hover > #overlay": {
-              opacity: 1
-            },
+            fontSize: [3, 4],
+            maxWidth: ["100%", "65%"],
+            m: "2vh 0vw"
           }}
         >
+<<<<<<< HEAD
           <Image src={nycPosImg} sx={{ width: '100%', height: '100%', borderRadius: "10px" }} />
           <Box
             sx={{
@@ -342,63 +327,32 @@ export default () => (
 
       <a href="https://public.tableau.com/profile/camden.shultz#!/vizhome/HarvardCoronavirusTeam-Dashboard1LiveUpdate/PositiveDeathsRecovered" target="_blank" rel="noopener noreferrer">
         <Box
+=======
+          Visualizations
+      </Text>
+
+        <Text
+>>>>>>> 4058f5b92578db4e1682ac5c629f9ead2def0561
           sx={{
-            position: 'relative',
-            width: '100%',
-            height: [300, 350],
-            mb: "1vh",
-            borderRadius: '10px',
-            boxShadow: "base",
-            ":hover > #overlay": {
-              opacity: 1
-            },
+            fontSize: [1, 2],
+            maxWidth: ["100%", "65%"],
+            mb: "2vh"
           }}
         >
-          <Image src={usStatsImg} sx={{ width: '100%', height: '100%', borderRadius: "10px" }} />
-          <Box
-            sx={{
-              position: 'absolute',
-              top: 0,
-              bottom: 0,
-              left: 0,
-              right: 0,
-              borderRadius: '10px',
-              transition: 'ease-in-out 0.12s',
-              backgroundColor: 'black',
-              opacity: 0
-            }}
-            id="overlay"
-          >
-            <Box
-              sx={{
-                position: 'absolute',
-                bottom: '7px',
-                left: '10px',
-              }}
-              id="text"
-            >
-              <Text
-                sx={{
-                  color: "white",
-                  fontWeight: "600",
-                  fontSize: [0, 1]
-                }}
-              >
-                US COVID-19 Statistics
-            </Text>
-              <Text
-                sx={{
-                  color: "rgba(255, 255, 255, 0.7)",
-                  fontSize: [0, 1]
-                }}
-              >
-                Viz Author: Camden Shultz
-            </Text>
-            </Box>
-          </Box>
-        </Box>
-      </a>
+          Check out this sample of our published work.
+      </Text>
+      </Box>
+      <Grid
+        gap={3}
+        width={[300, null, 350]}
+        sx={{
+          justifyItems: ['center', 'unset']
+        }}
+      >
+        {vizData.map(item => {
+          const data = item.node.childMarkdownRemark.frontmatter
 
+<<<<<<< HEAD
       <a href="https://public.tableau.com/profile/melissa.jones3270#!/vizhome/Corona-virusCasesinMilwaukeeCityWI-AnExplorationofRacialDemographicsandDiseaseCtd_/Dashboard2" target="_blank" rel="noopener noreferrer">
         <Box
           sx={{
@@ -428,31 +382,105 @@ export default () => (
             }}
             id="overlay"
           >
+=======
+          return (
+>>>>>>> 4058f5b92578db4e1682ac5c629f9ead2def0561
             <Box
               sx={{
-                position: 'absolute',
-                bottom: '7px',
-                left: '10px',
+                display: "flex",
+                justifyContent: "center",
               }}
-              id="text"
             >
-              <Text
-                sx={{
-                  color: "white",
-                  fontWeight: "600",
-                  fontSize: [0, 1]
-                }}
-              >Number of Cases by Zip Code vs. Demographic Distribution</Text>
-              <Text
-                sx={{
-                  color: "rgba(255, 255, 255, 0.7)",
-                  fontSize: [0, 1]
-                }}
-              >Viz Author: Melissa Jones</Text>
+              <a href={data.link} target="_blank">
+                <Box
+                  sx={{
+                    position: 'relative',
+                    width: '100%',
+                    height: [300, 350],
+                    mb: "1vh",
+                    borderRadius: '10px',
+                    boxShadow: "base",
+                    ":hover > #overlay": {
+                      opacity: 1
+                    },
+                  }}
+                >
+                  <Image src={data.image} sx={{ width: '100%', height: '100%', borderRadius: "10px" }} />
+                  <Box
+                    sx={{
+                      position: 'absolute',
+                      top: 0,
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      borderRadius: '10px',
+                      transition: 'ease-in-out 0.12s',
+                      backgroundColor: 'black',
+                      opacity: 0
+                    }}
+                    id="overlay"
+                  >
+                    <Box
+                      sx={{
+                        position: 'absolute',
+                        bottom: '7px',
+                        left: '10px',
+                      }}
+                      id="text"
+                    >
+                      <Text
+                        sx={{
+                          color: "white",
+                          fontWeight: "600",
+                          fontSize: [0, 1]
+                        }}
+                      >
+                        {data.name}
+                      </Text>
+                      <Text
+                        sx={{
+                          color: "rgba(255, 255, 255, 0.7)",
+                          fontSize: [0, 1]
+                        }}
+                      >
+                        {data.author}
+                  </Text>
+                    </Box>
+                  </Box>
+                </Box>
+              </a>
             </Box>
+<<<<<<< HEAD
           </Box>
         </Box>
       </a>
     </Grid>
   </>
 )
+=======
+          )
+        })}
+      </Grid>
+    </>
+  )
+}
+export default VizPage
+export const query = graphql`
+  query {
+    viz: allFile(filter: { sourceInstanceName: { eq: "viz" } }) {
+      edges {
+        node {
+          childMarkdownRemark {
+            frontmatter {
+              name
+              author
+              image
+              link
+            }
+          }
+        }
+      }
+    }
+  }
+`
+>>>>>>> 4058f5b92578db4e1682ac5c629f9ead2def0561
