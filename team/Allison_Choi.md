@@ -2,6 +2,6 @@
 name: Allison Choi
 executive: false
 lead: false
-position: 
+position: Outreach
 image: ../assets/default_exec_image.png
 ---

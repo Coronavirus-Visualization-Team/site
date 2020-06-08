@@ -1,7 +1,7 @@
 ---
 name: Allison Burke
 executive: false
-lead: true
-position: Recruitement
+lead: false
+position: Outreach
 image: ../assets/default_exec_image.png
 ---
