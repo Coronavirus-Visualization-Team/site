@@ -55,7 +55,7 @@ const VizPage = props => {
                 justifyContent: "center",
               }}
             >
-              <a href={data.link} target="_blank">
+              <a href={data.link} target="_blank" rel="noopener noreferrer">
                 <Box
                   sx={{
                     position: 'relative',
