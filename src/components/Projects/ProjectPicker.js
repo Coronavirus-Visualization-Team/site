@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import React, { useState } from "react"
-import theme from "../../gatsby-plugin-theme-ui"
-import { Container, Styled, jsx, Box, Grid } from "theme-ui"
+import { Container, jsx, Box, Grid } from "theme-ui"
 import FeaturedProject from './FeaturedProject'
 import CoronaImg from './corona.jpg'
 

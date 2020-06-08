@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import React from "react"
-import theme from "../gatsby-plugin-theme-ui"
-import { Styled, jsx, Text, Box, Image, Grid } from "theme-ui"
+import { jsx, Text, Box, Image, Grid } from "theme-ui"
 import { Helmet } from "react-helmet"
 
 const TeamPage = (props) => {

@@ -1,10 +1,9 @@
 /** @jsx jsx */
-import React, { useState } from "react"
+import { useState } from "react"
 import {
   Container,
   Box,
   NavLink,
-  Avatar,
   Divider,
   jsx,
   Image,
@@ -344,6 +343,7 @@ const SocialIcon = props => {
       as="a"
       href={props.link}
       target="_blank"
+      rel="noopener noreferrer"
       sx={{
         background: "#168CA6",
         borderRadius: "button",

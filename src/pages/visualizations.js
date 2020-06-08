@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import React, { useEffect } from "react"
-import { Image, Box, Container, Styled, jsx, Text, Divider, Grid } from "theme-ui"
+import React from "react"
+import { Image, Box, jsx, Text, Grid } from "theme-ui"
 import { Helmet } from "react-helmet"
 import nycPosImg from "../../static/img/NYC-pos-tests.png"
 import usStatsImg from "../../static/img/usStats.png"
@@ -47,7 +47,7 @@ export default () => (
         justifyItems: ['center', 'unset']
       }}
     >
-      <a href="https://public.tableau.com/profile/lucas.chu#!/vizhome/CoronavirusGeorgiaApril1stSnapshot/Dashboard1?publish=yes" target="_blank">
+      <a href="https://public.tableau.com/profile/lucas.chu#!/vizhome/CoronavirusGeorgiaApril1stSnapshot/Dashboard1?publish=yes" target="_blank" rel="noopener noreferrer">
         <Box
           sx={{
             position: 'relative',
@@ -106,7 +106,7 @@ export default () => (
         </Box>
       </a>
 
-      <a href="https://public.tableau.com/profile/lucas.chu#!/vizhome/state_ui_claims/Dashboard1" target="_blank">
+      <a href="https://public.tableau.com/profile/lucas.chu#!/vizhome/state_ui_claims/Dashboard1" target="_blank" rel="noopener noreferrer">
         <Box
           sx={{
             position: 'relative',
@@ -164,7 +164,7 @@ export default () => (
           </Box>
         </Box>
       </a>
-      <a href="https://public.tableau.com/profile/kevin.yang5116#!/vizhome/COVID-19Oil/Dashboard1" target="_blank">
+      <a href="https://public.tableau.com/profile/kevin.yang5116#!/vizhome/COVID-19Oil/Dashboard1" target="_blank" rel="noopener noreferrer">
         <Box
           sx={{
             position: 'relative',
@@ -223,7 +223,7 @@ export default () => (
         </Box>
       </a>
 
-      <a href="https://public.tableau.com/profile/lucas.chu#!/vizhome/NYCMay8/Sheet1" target="_blank">
+      <a href="https://public.tableau.com/profile/lucas.chu#!/vizhome/NYCMay8/Sheet1" target="_blank" rel="noopener noreferrer">
         <Box
           sx={{
             position: 'relative',
@@ -281,7 +281,7 @@ export default () => (
           </Box>
         </Box>
       </a>
-      <a href="https://public.tableau.com/profile/ian.chen#!/vizhome/COVIDEconomicImpacts4102020/AUU" target="_blank">
+      <a href="https://public.tableau.com/profile/ian.chen#!/vizhome/COVIDEconomicImpacts4102020/AUU" target="_blank" rel="noopener noreferrer">
         <Box
           sx={{
             position: 'relative',
@@ -340,7 +340,7 @@ export default () => (
         </Box>
       </a>
 
-      <a href="https://public.tableau.com/profile/camden.shultz#!/vizhome/HarvardCoronavirusTeam-Dashboard1LiveUpdate/PositiveDeathsRecovered" target="_blank">
+      <a href="https://public.tableau.com/profile/camden.shultz#!/vizhome/HarvardCoronavirusTeam-Dashboard1LiveUpdate/PositiveDeathsRecovered" target="_blank" rel="noopener noreferrer">
         <Box
           sx={{
             position: 'relative',
@@ -399,7 +399,7 @@ export default () => (
         </Box>
       </a>
 
-      <a href="https://public.tableau.com/profile/melissa.jones3270#!/vizhome/Corona-virusCasesinMilwaukeeCityWI-AnExplorationofRacialDemographicsandDiseaseCtd_/Dashboard2" target="_blank">
+      <a href="https://public.tableau.com/profile/melissa.jones3270#!/vizhome/Corona-virusCasesinMilwaukeeCityWI-AnExplorationofRacialDemographicsandDiseaseCtd_/Dashboard2" target="_blank" rel="noopener noreferrer">
         <Box
           sx={{
             position: 'relative',

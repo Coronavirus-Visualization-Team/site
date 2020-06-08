@@ -2,8 +2,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
-import theme from "../gatsby-plugin-theme-ui"
-import { Styled, jsx, Text, Divider, Box, Container, Grid, Image } from "theme-ui"
+import { jsx, Text, Divider, Box, Container, Grid, Image } from "theme-ui"
 import Tile from "../components/Projects/Tile"
 
 const IndexPage = (props) => {
@@ -113,7 +112,7 @@ const IndexPage = (props) => {
                 justifyContent: "center"
               }}
             >
-              <a href={data.website} target="_blank">
+              <a href={data.website} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={data.image}
                   alt={data.name}

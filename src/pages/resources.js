@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import React from "react"
-import theme from "../gatsby-plugin-theme-ui"
-import { Styled, jsx, Text, Divider, Box, Embed } from "theme-ui"
+import { jsx, Text, Box, Embed } from "theme-ui"
 import { Helmet } from "react-helmet"
 
 export default () => (

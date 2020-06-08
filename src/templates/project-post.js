@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import { Container, Styled, jsx, Text, Divider, Grid, Box, Image } from "theme-ui"
+import { Container, Text, Divider, Image } from "theme-ui"
 import { Helmet } from "react-helmet"
 
 export default ({ data }) => {

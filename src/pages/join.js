@@ -123,7 +123,7 @@ const JoinPage = props => {
                 justifyContent: "center",
               }}
             >
-              <a href={data.website} target="_blank">
+              <a href={data.website} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={data.image}
                   alt={data.name}
@@ -141,12 +141,13 @@ const JoinPage = props => {
       <Text sx={{ variant: "styles.bodyText" }}>
         We're looking for driven and talented individuals to join our team
         remotely. Learn more about our teams and ongoing
-        projects <a style={{color : 'black', textDecoration: 'none'}} href="https://docs.google.com/document/d/1SHfrZSzl9UMZUQSgxhle_XpVIRJ369YDQTp97ebLeNk/edit?usp=sharing" target="_blank">here.</a>
+        projects <a style={{color : 'black', textDecoration: 'none'}} href="https://docs.google.com/document/d/1SHfrZSzl9UMZUQSgxhle_XpVIRJ369YDQTp97ebLeNk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">here.</a>
       </Text>
       <Button
         as="a"
         href="http://bit.ly/CVTapply"
         target="_blank"
+        rel="noopener noreferrer"
         sx={{
           fontSize: [14, 18],
           px: 3,
@@ -172,6 +173,7 @@ const JoinPage = props => {
         as="a"
         href="mailto:coronavirusvisualizationteam@gmail.com"
         target="_blank"
+        rel="noopener noreferrer"
         sx={{
           fontSize: [14, 18],
           px: 3,

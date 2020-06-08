@@ -1,9 +1,8 @@
 /** @jsx jsx */
-import React, { useEffect } from "react"
-import theme from "../gatsby-plugin-theme-ui"
+import React from "react"
 import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
-import { Container, Styled, jsx, Text, Divider, Grid } from "theme-ui"
+import { Container, jsx, Text, Grid } from "theme-ui"
 import ProjectPicker from "../components/Projects/ProjectPicker"
 import Tile from "../components/Projects/Tile"
 import { Helmet } from "react-helmet"

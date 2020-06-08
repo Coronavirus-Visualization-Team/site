@@ -1,12 +1,9 @@
 /** @jsx jsx */
-import React, { useState } from "react"
-import theme from "../../gatsby-plugin-theme-ui"
-import { Container, Styled, jsx, Box, Grid, Text, Image } from "theme-ui"
-import CoronaImg from './corona.jpg'
- 
+import { jsx, Box, Text, Image } from "theme-ui"
+
 const Tile = ({ title, img, slug }) => {
     return(
-        <Box 
+        <Box
         onClick = {() => window.location.href = `/projects/${slug}`}
         sx = {{
             width: '100%',
@@ -34,7 +31,7 @@ const Tile = ({ title, img, slug }) => {
                         borderRadius: 'tile',
                         boxShadow: 'base',
                         ml: [0, '10px'],
-                        transition: '0.2s', 
+                        transition: '0.2s',
                         '&:hover': {boxShadow: 'hover', cursor: 'pointer'}
                     }}
                     />
@@ -43,4 +40,3 @@ const Tile = ({ title, img, slug }) => {
 }
 
 export default Tile
-
