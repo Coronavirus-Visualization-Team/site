@@ -134,6 +134,16 @@ const TeamPage = (props) => {
             return (
               <Text>
                 {data.name}
+
+                {data.position != "undefined" ?
+                  <small style={{
+                    "fontWeight": "100",
+                    "fontSize": "12.5px",
+                    "display": "block"
+                  }}>{data.position}</small>
+                  :
+                  <span></span>
+                }
               </Text>
             )
           })}
