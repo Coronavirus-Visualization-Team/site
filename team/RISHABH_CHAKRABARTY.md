@@ -2,6 +2,6 @@
 name: Rishabh Chakrabarty
 executive: false
 lead: false
-position: Data Viz
+position: undefined
 image: ../assets/default_exec_image.png
 ---

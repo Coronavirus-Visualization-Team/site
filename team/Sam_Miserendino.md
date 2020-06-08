@@ -2,6 +2,6 @@
 name: Sam Miserendino
 executive: false
 lead: false
-position: Website
+position: undefined
 image: ../assets/default_exec_image.png
 ---

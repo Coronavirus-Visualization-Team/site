@@ -2,6 +2,6 @@
 name: Sabah Hussain
 executive: false
 lead: false
-position: Opportunity Insights/Economic
+position: undefined
 image: ../assets/default_exec_image.png
 ---

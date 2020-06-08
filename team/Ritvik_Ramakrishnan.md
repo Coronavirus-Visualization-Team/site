@@ -2,6 +2,6 @@
 name: Ritvik Ramakrishnan
 executive: false
 lead: true
-position: Research, External Affairs, Data Analysis, Data Viz, Internal Affairs
+position: CGA
 image: ../assets/default_exec_image.png
 ---

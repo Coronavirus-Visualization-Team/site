@@ -2,6 +2,6 @@
 name: Shuming Bao
 executive: false
 lead: false
-position: CGA
+position: undefined
 image: ../assets/default_exec_image.png
 ---
