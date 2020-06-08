@@ -2,6 +2,6 @@
 name: Fernanda Moreno
 executive: false
 lead: false
-position: Research
+position: Website
 image: ../assets/default_exec_image.png
 ---

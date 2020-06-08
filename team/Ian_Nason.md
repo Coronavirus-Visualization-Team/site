@@ -2,6 +2,6 @@
 name: Ian Nason
 executive: false
 lead: false
-position: Data Analysis
+position: undefined
 image: ../assets/default_exec_image.png
 ---

@@ -2,6 +2,6 @@
 name: Ines de la Morena
 executive: false
 lead: false
-position: Design
+position: undefined
 image: ../assets/default_exec_image.png
 ---

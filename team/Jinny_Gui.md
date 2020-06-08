@@ -2,6 +2,6 @@
 name: Jinny Gui
 executive: false
 lead: false
-position: OI
+position: undefined
 image: ../assets/default_exec_image.png
 ---

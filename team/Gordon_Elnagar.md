@@ -2,6 +2,6 @@
 name: Gordon Elnagar
 executive: false
 lead: false
-position: Writer
+position: undefined
 image: ../assets/default_exec_image.png
 ---

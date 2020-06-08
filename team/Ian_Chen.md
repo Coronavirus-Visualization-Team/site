@@ -2,6 +2,6 @@
 name: Ian Chen
 executive: false
 lead: false
-position: Data Viz
+position: Project Technical Stacks
 image: ../assets/default_exec_image.png
 ---
