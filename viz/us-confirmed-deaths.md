@@ -1,6 +1,6 @@
 ---
 name: US Confirmed and Deaths
-author: Coronavirus Visualization Team
+author: Camden Shultz
 image: ../img/us-confirmed-deaths.png
 link: "https://public.domo.com/cards/bDzO5"
 ---
