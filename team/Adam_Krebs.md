@@ -2,6 +2,6 @@
 name: Adam Krebs
 executive: false
 lead: false
-position: 
+position: undefined
 image: ../assets/default_exec_image.png
 ---
