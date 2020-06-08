@@ -2,6 +2,6 @@
 name: Anurag Koyyada
 executive: false
 lead: false
-position: Opportunity Insights/Econ
+position: undefined
 image: ../assets/default_exec_image.png
 ---

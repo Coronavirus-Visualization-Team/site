@@ -2,6 +2,6 @@
 name: Annekathryn Goodman
 executive: false
 lead: false
-position: Policy/oversight
+position: undefined
 image: ../assets/default_exec_image.png
 ---
