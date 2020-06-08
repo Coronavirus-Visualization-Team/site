@@ -2,6 +2,6 @@
 name: Nipun Gorantla
 executive: false
 lead: false
-position: 
+position: Outreach
 image: ../assets/default_exec_image.png
 ---

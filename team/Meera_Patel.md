@@ -2,6 +2,6 @@
 name: Meera Patel
 executive: false
 lead: false
-position: Website, External Affairs
+position: undefined
 image: ../assets/default_exec_image.png
 ---

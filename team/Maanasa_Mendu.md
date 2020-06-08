@@ -2,6 +2,6 @@
 name: Maanasa Mendu
 executive: false
 lead: false
-position: Writing
+position: Outreach
 image: ../assets/default_exec_image.png
 ---

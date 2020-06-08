@@ -2,6 +2,6 @@
 name: Michelle Ly
 executive: false
 lead: false
-position: Writing
+position: undefined
 image: ../assets/default_exec_image.png
 ---

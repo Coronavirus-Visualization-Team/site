@@ -2,6 +2,6 @@
 name: Mauricio Garita
 executive: false
 lead: false
-position: Econ/OI
+position: undefined
 image: ../assets/default_exec_image.png
 ---
