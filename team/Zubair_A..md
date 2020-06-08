@@ -1,7 +1,7 @@
 ---
 name: Zubair A.
 executive: false
-lead: true
+lead: false
 position: undefined
 image: ../assets/default_exec_image.png
 ---

@@ -2,6 +2,6 @@
 name: Calix Huang
 executive: false
 lead: true
-position: Website, Social Media, Community Management
+position: Website
 image: ../assets/default_exec_image.png
 ---

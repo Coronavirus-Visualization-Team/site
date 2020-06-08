@@ -4,7 +4,8 @@ import { jsx, Text, Box, Image, Grid } from "theme-ui"
 import { Helmet } from "react-helmet"
 
 const TeamPage = (props) => {
-  const teamData = props.data.team.edges;
+  let teamData = props.data.team.edges;
+  teamData = teamData.sort((x,y) => { return x.position == "undefined" ? -1 : y.position == "undefined" ? 1 : 0; });
 
   return (
     <Box
@@ -108,6 +109,11 @@ const TeamPage = (props) => {
               return (
                 <Text>
                   {data.name}
+                  <small style={{
+                    "fontWeight": "100",
+                    "fontSize": "12.5px",
+                    "display": "block"
+                  }}>{data.position}</small>
                 </Text>
               )
             } else {
