@@ -2,6 +2,6 @@
 name: Yun Li
 executive: false
 lead: false
-position: CGA
+position: undefined
 image: ../assets/default_exec_image.png
 ---

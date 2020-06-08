@@ -2,6 +2,6 @@
 name: Tyler Kim
 executive: false
 lead: false
-position: External Affairs
+position: undefined
 image: ../assets/default_exec_image.png
 ---

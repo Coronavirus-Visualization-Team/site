@@ -2,6 +2,6 @@
 name: Wendy Guan
 executive: false
 lead: false
-position: Advisor/CGA
+position: undefined
 image: ../assets/default_exec_image.png
 ---
