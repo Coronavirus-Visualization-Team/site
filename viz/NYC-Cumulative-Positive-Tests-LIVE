@@ -1,6 +1,6 @@
 ---
-name: COVID-19 Cases and Deaths by County LIVE - Daily
-author: Lucas Chu & Camden Shultz
-image: ../img/us-death-to-confirmed.png
-link: "https://public.tableau.com/views/NYC-LIVE-UPDATE/Sheet1?:display_count=y&:origin=viz_share_link"
+name: NYC Cumulative Positive Tests Per 1000 People (Live Update - Daily)
+author: Camden Shultz & En Yu Yap
+image: ../imgNYC-Live-Update.png
+link: "https://public.tableau.com/shared/9SCMJFQTK?:display_count=y&:origin=viz_share_link"
 ---
