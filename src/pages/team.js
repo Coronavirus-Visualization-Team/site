@@ -133,7 +133,7 @@ const TeamPage = (props) => {
         {teamData.map((item) => {
             const data = item.node.childMarkdownRemark.frontmatter;
 
-            if(data.executive || data.lead) {
+            if(data.executive || data.lead || data.position == "undefined") {
               return null;
             }
 
@@ -141,18 +141,28 @@ const TeamPage = (props) => {
               <Text>
                 {data.name}
 
-                {data.position != "undefined" ?
-                  <small style={{
-                    "fontWeight": "100",
-                    "fontSize": "12.5px",
-                    "display": "block"
-                  }}>{data.position}</small>
-                  :
-                  <span></span>
-                }
+                <small style={{
+                  "fontWeight": "100",
+                  "fontSize": "12.5px",
+                  "display": "block"
+                }}>{data.position}</small>
               </Text>
             )
           })}
+
+          {teamData.map((item) => {
+              const data = item.node.childMarkdownRemark.frontmatter;
+
+              if(data.executive || data.lead || data.position != "undefined") {
+                return null;
+              }
+
+              return (
+                <Text>
+                  {data.name}
+                </Text>
+              )
+            })}
       </Grid>
     </Text>
   </Box>
