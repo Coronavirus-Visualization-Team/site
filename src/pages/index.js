@@ -35,34 +35,53 @@ const IndexPage = (props) => {
       >
         We're the <b>Coronavirus Visualization Team</b>,  a crowdsourced student network of data scientists and analysts, developers, and communicators working to better visualize and share the impacts, present and future, of COVID-19.
       </Text>
-
+      <Container
+              sx={{
+                position: "relative",
+                background: "white",
+                m: "8vh 0 0 0",
+                width: "100vw",
+                minWidth: "100vw"
+              }}
+      
+      >
       <Text
         sx={{
           width: "100%",
           textAlign: "center",
-          mt: "18vh",
+          m: "8vh 0 0 0",
           color: "black",
-          fontSize: [3, 4]
+          fontSize: [3, 4],
+          background: "white"
         }}
       >
         Projects
       </Text>
+      </Container>
 
       <Container
         sx={{
-          maxWidth: "xl",
-          mt: "8vh"
+          position: "relative",
+          background: "white",
+          m: 0,
+          width: "100vw",
+          minWidth: "100vw",        
         }}
       >
-        <Grid width={["100%", "45%"]} gap={5}>
-          {projectsData.slice(0,4).map((item) => {
-            const data = item.node.childMarkdownRemark.frontmatter;
-            return (
-              <Tile title={data.title} img={data.image} slug={data.slug}/>)
-          })}
-        </Grid>
+        <Container
+          sx={{
+            maxWidth: "xl",
+          }}
+        >
+          <Grid width={["100%", "45%"]} gap={5} marginTop="8vh" marginRight="2vw" marginLeft="2vw">
+            {projectsData.slice(0,4).map((item) => {
+              const data = item.node.childMarkdownRemark.frontmatter;
+              return (
+                <Tile title={data.title} img={data.image} slug={data.slug}/>)
+            })}
+          </Grid>
+        </Container>
       </Container>
-
       <Link
         sx={{
           width: "100%",
