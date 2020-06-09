@@ -3,7 +3,7 @@ path: testing
 date: 2020-04-25T00:28:53.933Z
 slug: infection-prediction
 title: COVID-19 Infection Prediction
-featured: true
+featured: false
 image: ../../img/covid-calculator.jpg
 label: Forbes / Getty Images
 templateKey: project
