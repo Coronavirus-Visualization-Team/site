@@ -1,5 +1,5 @@
 ---
-name: Talal AlRowijri
+name: Talal AlTowijri
 executive: false
 lead: false
 position: Social Media
