@@ -45,6 +45,12 @@ export default ({ data }) => {
             }}>
                 {html.replace(/<p>/g,'').replace('</p>','')}
             </Text>
+            <Text sx = {{
+                color: 'slate',
+                mt: 50
+            }}>
+                <a href={frontmatter.link} target="_blank" style={{color : 'black'}} >{frontmatter.linkTitle}</a>
+            </Text>
         </Container>
         </>
     )
@@ -60,6 +66,8 @@ export const query = graphql`
                     title
                     image
                     label
+                    link
+                    linkTitle
                 }
             }
         }
