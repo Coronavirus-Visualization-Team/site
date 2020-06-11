@@ -2,6 +2,6 @@
 name: Gabriella Gordon
 executive: false
 lead: false
-position: Internal Affairs
+position: Outreach
 image: ../assets/default_exec_image.png
 ---

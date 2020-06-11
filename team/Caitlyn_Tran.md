@@ -2,6 +2,6 @@
 name: Caitlyn Tran
 executive: false
 lead: true
-position: Operations
+position: Task Management
 image: ../assets/default_exec_image.png
 ---

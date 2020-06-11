@@ -1,7 +1,7 @@
 ---
-name: Zubair A.
+name: Winni Zheng
 executive: false
 lead: true
-position: Recruiting
+position: Community Management
 image: ../assets/default_exec_image.png
 ---

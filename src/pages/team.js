@@ -95,7 +95,7 @@ const TeamPage = (props) => {
           })}
       </Grid>
 
-      <Text sx={ { variant: "styles.headerText", mb: 4 } }>Project Leads</Text>
+      <Text sx={ { variant: "styles.headerText", mb: 4 } }>Directors</Text>
       <Text
         sx={ { variant: "styles.bodyText" } }
       >

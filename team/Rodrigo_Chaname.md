@@ -1,7 +1,7 @@
 ---
-name: Zubair A.
+name: Rodrigo Chaname
 executive: false
-lead: true
-position: Recruiting
+lead: false
+position: Outreach
 image: ../assets/default_exec_image.png
 ---

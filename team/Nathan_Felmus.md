@@ -1,7 +1,7 @@
 ---
-name: Zubair A.
+name: Nathan Felmus
 executive: false
 lead: true
-position: Recruiting
+position: Information Management
 image: ../assets/default_exec_image.png
 ---

@@ -1,7 +1,7 @@
 ---
-name: Zubair A.
+name: Talal AlRowijri
 executive: false
-lead: true
-position: Recruiting
+lead: false
+position: Social Media
 image: ../assets/default_exec_image.png
 ---
