@@ -4,6 +4,6 @@ executive: false
 director: false
 lead: false
 position:  
-project:  
+project:  Model combination and ranking
 image: ../assets/default_exec_image.png
 ---

@@ -1,9 +1,9 @@
 ---
-name: Shlok Mehrotra
+name: Srikar Chintala
 executive: false
 director: false
 lead: false
-position:  
-project: 3D Printer and Hospital Map
+position: CGA Projects
+project:  
 image: ../assets/default_exec_image.png
 ---

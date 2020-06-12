@@ -1,9 +1,9 @@
 ---
-name: Shlok Mehrotra
+name: Kaelyn Klatte
 executive: false
 director: false
 lead: false
 position:  
-project: 3D Printer and Hospital Map
+project:  211 Project
 image: ../assets/default_exec_image.png
 ---

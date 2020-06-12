@@ -1,9 +1,9 @@
 ---
-name: Shlok Mehrotra
+name: Leon Chen
 executive: false
 director: false
 lead: false
 position:  
-project: 3D Printer and Hospital Map
+project: CGA Projects
 image: ../assets/default_exec_image.png
 ---

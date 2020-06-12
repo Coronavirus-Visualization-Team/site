@@ -4,6 +4,6 @@ executive: false
 director: false
 lead: false
 position:  
-project:  
+project:  3D Printer and Hospital Map
 image: ../assets/default_exec_image.png
 ---
