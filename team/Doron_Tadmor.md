@@ -2,6 +2,6 @@
 name: Doron Tadmor
 executive: true
 lead: false
-position: External Affairs, HR, Internal Affairs
+position: President, Operations, South Korea Project
 image: ../assets/doron.png
 ---

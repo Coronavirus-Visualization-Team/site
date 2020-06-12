@@ -2,6 +2,6 @@
 name: Jessica Nemeth
 executive: true
 lead: false
-position: Writer - Policy
+position: Secretary, Writing/Policy, COVID and Climate Project
 image: /assets/jessica.png
 ---

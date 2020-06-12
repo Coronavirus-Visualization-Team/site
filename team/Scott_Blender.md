@@ -2,6 +2,6 @@
 name: Scott Blender
 executive: true
 lead: false
-position: External Affairs, HR, Internal Affairs
+position: COO, Social Media, COVID Projects
 image: /assets/scotty.jpg
 ---

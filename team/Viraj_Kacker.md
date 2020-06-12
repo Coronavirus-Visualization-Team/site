@@ -2,6 +2,6 @@
 name: Viraj Kacker
 executive: true
 lead: false
-position: Research, Data Analysis, Data Viz
+position: VP, CGA
 image: /assets/viraj.png
 ---

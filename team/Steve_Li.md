@@ -2,6 +2,6 @@
 name: Steve Li
 executive: true
 lead: false
-position: Website
+position: CTO, Website
 image: ../assets/steve.jpeg
 ---

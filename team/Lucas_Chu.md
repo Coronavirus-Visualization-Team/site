@@ -2,6 +2,6 @@
 name: Lucas Chu
 executive: true
 lead: false
-position: Founder, Data Viz
+position: Founder, CEO, Outreach
 image: /assets/lucas.jpg
 ---
