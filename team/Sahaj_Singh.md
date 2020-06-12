@@ -3,7 +3,7 @@ name: Sahaj Singh
 executive: false
 director: false
 lead: false
-position: undefined
-project: undefined
+position:  
+project:  
 image: ../assets/default_exec_image.png
 ---

@@ -4,6 +4,6 @@ executive: true
 director: false
 lead: false
 position: CTO, Website
-project: undefined
+project:  
 image: ../assets/steve.jpeg
 ---

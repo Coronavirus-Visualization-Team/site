@@ -4,6 +4,6 @@ executive: false
 director: false
 lead: false
 position: Outreach
-project: undefined
+project:  
 image: ../assets/default_exec_image.png
 ---

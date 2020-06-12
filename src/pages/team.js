@@ -161,7 +161,7 @@ const TeamPage = (props) => {
         {teamData.map((item) => {
             const data = item.node.childMarkdownRemark.frontmatter;
 
-            if(data.executive || data.director || data.lead || data.position == "undefined") {
+            if(data.executive || data.director || data.lead) {
               return null;
             }
 
@@ -173,7 +173,9 @@ const TeamPage = (props) => {
                   "fontWeight": "100",
                   "fontSize": "12.5px",
                   "display": "block"
-                }}>{data.position}</small>
+                }}>
+                  {data.position || data.project}
+                </small>
               </Text>
             )
           })}

@@ -4,6 +4,6 @@ executive: false
 director: true
 lead: false
 position: Task Management
-project: undefined
+project:  
 image: ../assets/default_exec_image.png
 ---

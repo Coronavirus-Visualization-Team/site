@@ -4,6 +4,6 @@ executive: false
 director: false
 lead: true
 position: COVID and Climate
-project: undefined
+project:  
 image: ../assets/default_exec_image.png
 ---

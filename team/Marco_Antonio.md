@@ -4,6 +4,6 @@ executive: true
 director: false
 lead: false
 position: CPO, Project Management, Economics Analysis
-project: undefined
+project:  
 image: /assets/marco.png
 ---
