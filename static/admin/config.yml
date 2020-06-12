@@ -35,4 +35,5 @@ collections:
       - { name: director, label: "Director?", widget: boolean }
       - { name: lead, label: "Project Lead?", widget: boolean }
       - { name: position, label: "Position (required if executive director)", required: false }
+      - { name: project, label: "Project (required if project lead)", required: false }
       - { name: image, label: "Photo (required if executive director) (Must be square or it will get stretched)", widget: image, required: false }

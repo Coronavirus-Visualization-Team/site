@@ -2,8 +2,8 @@
 name: Anass Boufrioua
 executive: false
 director: false
-lead: false
+lead: true
 position: undefined
-project: undefined
+project: Why is COVID spreading faster?
 image: ../assets/default_exec_image.png
 ---

@@ -2,8 +2,8 @@
 name: Adway Wadekar
 executive: false
 director: false
-lead: false
-position: Economic Analysis, Website
-project: undefined
+lead: true
+position: Website
+project: Hospitality Industry
 image: ../assets/default_exec_image.png
 ---

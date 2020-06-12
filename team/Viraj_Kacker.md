@@ -2,8 +2,8 @@
 name: Viraj Kacker
 executive: true
 director: false
-lead: false
-position: VP, CGA
-project: undefined
+lead: true
+position: VP
+project: CGA Projects, Time-Series Geospatial 
 image: /assets/viraj.png
 ---

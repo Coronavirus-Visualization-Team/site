@@ -141,7 +141,7 @@ const TeamPage = (props) => {
                   "fontWeight": "100",
                   "fontSize": "12.5px",
                   "display": "block"
-                }}>{data.position}</small>
+                }}>{data.project}</small>
               </Text>
             )
           } else {
@@ -211,6 +211,7 @@ query {
             director
             lead
             position
+            project
             image
         }
       }

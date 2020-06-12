@@ -2,8 +2,8 @@
 name: Ritvik Ramakrishnan
 executive: true
 director: false
-lead: false
+lead: true
 position: Director of Outreach
-project: undefined
+project: Time-Series Geospatial 
 image: ../assets/ritvik.png
 ---

@@ -1,9 +1,9 @@
 ---
-name: Brandon Wong
+name: Amin Boukari
 executive: false
 director: false
 lead: true
 position: undefined
-project: Harvard OI Research
+project: Socioeconomic Factors
 image: ../assets/default_exec_image.png
 ---

@@ -2,8 +2,8 @@
 name: Lucas Chu
 executive: true
 director: false
-lead: false
+lead: true
 position: Founder, CEO, Outreach
-project: undefined
+project: Socioeconomic Factors, NYC Data
 image: /assets/lucas.jpg
 ---
