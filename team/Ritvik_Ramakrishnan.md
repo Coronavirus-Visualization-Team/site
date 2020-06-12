@@ -2,6 +2,6 @@
 name: Ritvik Ramakrishnan
 executive: true
 lead: false
-position: Data Analysis, External Affairs, Outreach
+position: Director of Outreach
 image: ../assets/ritvik.png
 ---
