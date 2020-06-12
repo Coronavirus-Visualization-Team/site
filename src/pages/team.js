@@ -123,6 +123,34 @@ const TeamPage = (props) => {
       </Grid>
     </Text>
 
+    <Text sx={ { variant: "styles.headerText", mb: 4 } }>Project Leads</Text>
+    <Text
+      sx={ { variant: "styles.bodyText" } }
+    >
+
+    {/** width={[ 128, null, 192 ]} */}
+    <Grid columns={[ 2, null, 4 ]}>
+      {teamData.map((item) => {
+          const data = item.node.childMarkdownRemark.frontmatter;
+
+          if(data.lead) {
+            return (
+              <Text>
+                {data.name}
+                <small style={{
+                  "fontWeight": "100",
+                  "fontSize": "12.5px",
+                  "display": "block"
+                }}>{data.position}</small>
+              </Text>
+            )
+          } else {
+            return null;
+          }
+        })}
+    </Grid>
+  </Text>
+
       <Text sx={ { variant: "styles.headerText", mb: 4 } }>Members</Text>
       <Text
         sx={ { variant: "styles.bodyText" } }

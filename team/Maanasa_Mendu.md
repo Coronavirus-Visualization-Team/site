@@ -2,7 +2,7 @@
 name: Maanasa Mendu
 executive: false
 director: false
-lead: false
-position: Outreach
+lead: true
+position: COVID and Climate
 image: ../assets/default_exec_image.png
 ---
