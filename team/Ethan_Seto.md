@@ -1,7 +1,8 @@
 ---
 name: Ethan Seto
 executive: false
-lead: true
+director: true
+lead: false
 position: Task Management
 image: ../assets/default_exec_image.png
 ---

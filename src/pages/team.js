@@ -105,7 +105,7 @@ const TeamPage = (props) => {
         {teamData.map((item) => {
             const data = item.node.childMarkdownRemark.frontmatter;
 
-            if(data.lead) {
+            if(data.director) {
               return (
                 <Text>
                   {data.name}
@@ -180,6 +180,7 @@ query {
           frontmatter {
             name
             executive
+            director
             lead
             position
             image

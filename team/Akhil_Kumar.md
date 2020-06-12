@@ -1,7 +1,8 @@
 ---
 name: Akhil Kumar
 executive: false
-lead: true
+director: true
+lead: false
 position: Internal Affairs
 image: ../assets/default_exec_image.png
 ---
