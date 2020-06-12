@@ -1,9 +1,9 @@
 ---
-name: Emily Yuan
+name: Emily Xu
 executive: false
 director: false
 lead: false
-position: Social Media
+position: Community Manager, Social Media
 project:  
 image: ../assets/default_exec_image.png
 ---
