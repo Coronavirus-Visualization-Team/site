@@ -38,7 +38,7 @@ const IndexPage = (props) => {
       <Container
               sx={{
                 position: "relative",
-                background: "white",
+                background: "mainBackground",
                 m: "8vh 0 0 0",
                 width: "100vw",
                 minWidth: "100vw"
@@ -50,9 +50,9 @@ const IndexPage = (props) => {
           width: "100%",
           textAlign: "center",
           m: "8vh 0 0 0",
-          color: "black",
+          color: "primary",
           fontSize: [3, 4],
-          background: "white"
+          background: "mainBackground"
         }}
       >
         Projects
@@ -62,7 +62,7 @@ const IndexPage = (props) => {
       <Container
         sx={{
           position: "relative",
-          background: "white",
+          background: "mainBackground",
           m: 0,
           width: "100vw",
           minWidth: "100vw",        
@@ -88,7 +88,7 @@ const IndexPage = (props) => {
           textAlign: "center",
           mt: '5vh',
           mb: "3vh",
-          color: "black",
+          color: "primary",
           fontSize: [1, 2],
           textDecoration: "none"
         }}
@@ -102,7 +102,7 @@ const IndexPage = (props) => {
           width: "100%",
           textAlign: "center",
           mt: 4,
-          color: "black",
+          color: "primary",
           fontSize: [3, 4]
         }}
       >
@@ -160,7 +160,7 @@ const IndexPage = (props) => {
       >
         <Text
           sx={{
-            color: "black",
+            color: "primary",
             fontSize: [3, 4]
           }}
         >
@@ -169,7 +169,7 @@ const IndexPage = (props) => {
 
         <Text
           sx={{
-            color: "slate",
+            color: "secondary",
             fontSize: [1, 2],
             my: 4,
             maxWidth: ["100%", "65%"]
@@ -180,7 +180,7 @@ const IndexPage = (props) => {
 
         <Link
           sx={{
-            color: "black",
+            color: "primary",
             fontSize: [1, 2],
             textDecoration: "none"
           }}
