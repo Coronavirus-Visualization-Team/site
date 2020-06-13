@@ -23,6 +23,9 @@ import GithubLogo from "./social-icons/GitHub.png"
 import MediumLogo from "./social-icons/Medium.png"
 import LinkedInLogo from "./social-icons/LinkedIn.png"
 
+import Sun from "../icons/sun.png";
+import Moon from "../icons/moon.png";
+
 export const Header = () => {
   const [show, toggleShow] = useState(false)
   const [colorMode, setColorMode] = useColorMode()
@@ -53,7 +56,14 @@ export const Header = () => {
         />
       </Link>
       <Box sx={{ mx: "auto" }} />
-      <div sx = {{display: ['none', 'block']}}>
+      <div sx = {{
+        display: 'flex',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+        '@media screen and (max-width: 800px)': {
+          display: 'none'
+        }
+      }}>
         <Link to="/projects">
           <NavLink>Projects</NavLink>
         </Link>
@@ -69,22 +79,39 @@ export const Header = () => {
         <Link to="/resources">
           <NavLink>Resources</NavLink>
         </Link>
-        <Button
-          sx={{
-            fontSize: [10, 14],
-            bg: 'white',
-            background: '#168CA6',
-            borderRadius: 'button',
-            boxShadow: 'base',
-            cursor: 'pointer',
-            ml: '32px',
-            '&:focus': {outline: 'none'}
+        <Box sx={{
+          width: '35px',
+          height: '35px',
+
+          borderRadius: '50%',
+          border: 'solid 2px transparent',
+
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+
+          cursor: "pointer",
+
+          ml: '32px',
+
+          transition: "ease-in-out 0.12s",
+
+          '&:hover': {border: 'solid 2px white'},
         }}
-        onClick={() => setColorMode(colorMode === 'default' ? 'dark' : 'default')}>
-          Toggle Theme
-        </Button>
+        onClick={() => setColorMode(colorMode === "dark" ? "default" : "dark")}>
+          <Image
+            sx={{
+              width: "60%",
+              height: "auto",
+            }}
+            src={colorMode === "dark" ? Moon : Sun}
+          />
+        </Box>
       </div>
-      <div sx={{display: ['flex', 'none'],
+      <div sx={{display: 'none',
+                '@media screen and (max-width: 800px)': {
+                  display: 'flex'
+                },
                 transform: show ? 'translateX(-50vw)' : null,
                 transition: 'all 0.2s cubic-bezier(.25, .8, .25, 1)',
                 '&:hover': {cursor: 'pointer'},
@@ -148,21 +175,34 @@ export const Header = () => {
         <Link to="/resources">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Resources</NavLink>
         </Link>
-        <Button
-          sx={{
-            fontSize: [10, 14],
-            bg: 'white',
-            background: '#168CA6',
-            borderRadius: 'button',
-            boxShadow: 'base',
-            cursor: 'pointer',
-            ml: '32px',
-            mr: '32px',
-            '&:focus': {outline: 'none'}
+        <Box sx={{
+          width: '35px',
+          height: '35px',
+
+          borderRadius: '50%',
+          border: 'solid 2px transparent',
+
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+
+          cursor: "pointer",
+
+          transition: "ease-in-out 0.12s",
+
+          ml: '32px',
+
+          '&:hover': {border: 'solid 2px white'},
         }}
-        onClick={() => {toggleShow(!show); setColorMode(colorMode === 'default' ? 'dark' : 'default')}}>
-          Toggle Theme
-        </Button>
+        onClick={() => setColorMode(colorMode === "dark" ? "default" : "dark")}>
+          <Image
+            sx={{
+              width: "60%",
+              height: "auto",
+            }}
+            src={colorMode === "dark" ? Moon : Sun}
+          />
+        </Box>
       </div>
 
 
