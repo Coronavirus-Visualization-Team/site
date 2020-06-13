@@ -18,7 +18,7 @@ export default () => (
         fontSize: [3, 4],
         maxWidth: ["100%", "65%"],
         mb: 3,
-        mt: 3
+        mt: 3,
       }}
     >
       Want to get involved in combating COVID-19?
@@ -62,7 +62,7 @@ export default () => (
           fontSize: [3, 4],
           width: "100%",
           textAlign: "center",
-          color: "darker"
+          color: "primary"
         }}
       >
         Have suggestions?
@@ -73,7 +73,7 @@ export default () => (
           fontSize: [2, 3],
           width: "100%",
           textAlign: "center",
-          color: "slate"
+          color: "secondary"
         }}
       >
         Add to the list!

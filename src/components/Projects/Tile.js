@@ -12,8 +12,9 @@ const Tile = ({ title, img, slug }) => {
             bg: 'white',
             p: [3,4],
             borderRadius: 'tile',
-            color: 'black',
-            mb: [0, 60]
+            color: 'primary',
+            mb: [0, 60],
+            backgroundColor: "secondaryBackground"
 
         }}>
             <Text
