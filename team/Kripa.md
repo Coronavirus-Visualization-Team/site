@@ -2,8 +2,8 @@
 name: Kripa
 executive: false
 director: false
-lead: false
+lead: true
 position:  
-project: NYC Data, Socioeconomic Factors
+project: Socioeconomic Factors
 image: ../assets/default_exec_image.png
 ---
