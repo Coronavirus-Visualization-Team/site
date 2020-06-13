@@ -4,6 +4,6 @@ executive: false
 director: false
 lead: false
 position:  
-project:  
+project: CGA Projects, Hospitality Industry
 image: ../assets/default_exec_image.png
 ---

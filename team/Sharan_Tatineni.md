@@ -4,6 +4,6 @@ executive: false
 director: false
 lead: false
 position:  
-project:  
+project: Avoiding a COVID Depression, FinTech Industry, Harvard OI Research
 image: ../assets/default_exec_image.png
 ---
