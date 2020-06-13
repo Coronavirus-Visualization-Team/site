@@ -33,23 +33,23 @@ export default ({ data }) => {
             }}
             src = {`../${frontmatter.image}`}/>
             <Text sx = {{
-                color: 'black',
+                color: 'primary',
                 textAlign: 'center',
                 mt: '2vh'
             }}>
                 {frontmatter.label}
             </Text>
             <Text sx = {{
-                color: 'black',
+                color: 'primary',
                 mt: 50
             }}>
                 {html.replace(/<p>/g,'').replace('</p>','')}
             </Text>
             <Text sx = {{
-                color: 'slate',
+                color: 'secondary',
                 mt: 50
             }}>
-                <a href={frontmatter.link} target="_blank" style={{color : 'black'}} >{frontmatter.linkTitle}</a>
+                <a href={frontmatter.link} target="_blank" style={{color: 'primary'}} >{frontmatter.linkTitle}</a>
             </Text>
         </Container>
         </>

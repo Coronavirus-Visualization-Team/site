@@ -23,21 +23,22 @@ const JoinPage = props => {
       <Text
         sx={{
           variant: "styles.headerText",
-          mt: "6vh"
+          mt: "6vh",
+          color: "primary"
         }}
       >
         Our mission.
       </Text>
-      <Text sx={{ variant: "styles.bodyText" }}>
+      <Text sx={{ variant: "styles.bodyText", color: "secondary" }}>
         We collaborate on data visualization and analytics projects, economic
         research, and policy writing to better inform government entities on
         the impact of COVID-19, clear misconceptions, and the good that is happening.
       </Text>
 
-      <Text sx={{ variant: "styles.headerText" }}>
+      <Text sx={{ variant: "styles.headerText", color: "primary" }}>
         Let’s accomplish things together.
       </Text>
-      <Text sx={{ variant: "styles.subHeader" }}>
+      <Text sx={{ variant: "styles.subHeader", color: "secondary" }}>
         Join our global organization comprised of students from these institutions and
         more:
       </Text>
@@ -109,7 +110,7 @@ const JoinPage = props => {
         </Grid>
       </Box>
 
-      <Text sx={{ variant: "styles.subHeader", py: 15, mb: 2 }}>
+      <Text sx={{ variant: "styles.subHeader", py: 15, mb: 2, color: "primary" }}>
         We’re also partnered with these organizations:{" "}
       </Text>
       <Grid width={["25%"]} gap={["2%"]}>
@@ -137,11 +138,11 @@ const JoinPage = props => {
           )
         })}
       </Grid>
-      <Text sx={{ variant: "styles.headerText", mt: "4vh"}}>Individuals</Text>
-      <Text sx={{ variant: "styles.bodyText" }}>
+      <Text sx={{ variant: "styles.headerText", mt: "4vh", color: "primary" }}>Individuals</Text>
+      <Text sx={{ variant: "styles.bodyText", color: "secondary" }}>
         We're looking for driven and talented individuals to join our team
         remotely. Learn more about our teams and ongoing
-        projects <a style={{color : 'black', textDecoration: 'none'}} href="https://docs.google.com/document/d/1SHfrZSzl9UMZUQSgxhle_XpVIRJ369YDQTp97ebLeNk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">here.</a>
+        projects <a style={{color : 'primary', textDecoration: 'none'}} href="https://docs.google.com/document/d/1SHfrZSzl9UMZUQSgxhle_XpVIRJ369YDQTp97ebLeNk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">here.</a>
       </Text>
       <Button
         as="a"
@@ -162,8 +163,8 @@ const JoinPage = props => {
         Join Us
       </Button>
 
-      <Text sx={{ variant: "styles.headerText", mt: "2vh" }}>Organizations</Text>
-      <Text sx={{ variant: "styles.bodyText" }}>
+      <Text sx={{ variant: "styles.headerText", mt: "2vh", color: "primary" }}>Organizations</Text>
+      <Text sx={{ variant: "styles.bodyText", color: "secondary" }}>
         We’re looking to form partnerships and project collaborations with
         organizations that either have data we can use or seek data. We welcome
         organizations who are willing to provide mentorship and resources to

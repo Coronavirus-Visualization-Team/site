@@ -17,6 +17,23 @@ export const palette = {
   yellow: "#F5A623",
   cyan: "#79FFE1",
   blue: "#0070F3",
+
+  modes: {
+    default: {
+      background: "#ffffff",
+      secondaryBackground: "#ffffff",
+      primary: "#000000",
+      secondary: "rgba(0, 0, 0, 0.7)",
+      tertiary: "rgba(0, 0, 0, 0.5)",
+    },
+    dark: {
+      background: "#1f1f1f",
+      secondaryBackground: "rgba(255, 255, 255, 0.2)",
+      primary: "#ffffff",
+      secondary: "rgba(255, 255, 255, 0.7)",
+      tertiary: "rgba(255, 255, 255, 0.5)",
+    }
+  }
 }
 
 export default merge(base, {
@@ -62,14 +79,13 @@ export default merge(base, {
     button: 60,
     tile: 20,
   },
-  initialColorModeName: "light",
+  initialColorModeName: "default",
   useColorSchemeMediaQuery: true,
+  useLocalStorage: false,
   colors: {
     ...palette,
     text: palette.white,
-    background: palette.white,
     sunken: palette.snow,
-    primary: palette.blue,
     secondary: palette.muted,
     muted: palette.smoke,
     accent: palette.pink,

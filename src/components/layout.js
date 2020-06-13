@@ -10,6 +10,7 @@ import {
   Text,
   Input,
   Button,
+  useColorMode
 } from "theme-ui"
 import { Link } from "gatsby"
 import favicon from "../../static/assets/favicon.ico"
@@ -24,6 +25,8 @@ import LinkedInLogo from "./social-icons/LinkedIn.png"
 
 export const Header = () => {
   const [show, toggleShow] = useState(false)
+  const [colorMode, setColorMode] = useColorMode()
+  
   return(
     <Box
       as="header"
@@ -66,6 +69,20 @@ export const Header = () => {
         <Link to="/resources">
           <NavLink>Resources</NavLink>
         </Link>
+        <Button
+          sx={{
+            fontSize: [10, 14],
+            bg: 'white',
+            background: '#168CA6',
+            borderRadius: 'button',
+            boxShadow: 'base',
+            cursor: 'pointer',
+            ml: '32px',
+            '&:focus': {outline: 'none'}
+        }}
+        onClick={() => setColorMode(colorMode === 'default' ? 'dark' : 'default')}>
+          Toggle Theme
+        </Button>
       </div>
       <div sx={{display: ['flex', 'none'],
                 transform: show ? 'translateX(-50vw)' : null,
@@ -131,6 +148,21 @@ export const Header = () => {
         <Link to="/resources">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Resources</NavLink>
         </Link>
+        <Button
+          sx={{
+            fontSize: [10, 14],
+            bg: 'white',
+            background: '#168CA6',
+            borderRadius: 'button',
+            boxShadow: 'base',
+            cursor: 'pointer',
+            ml: '32px',
+            mr: '32px',
+            '&:focus': {outline: 'none'}
+        }}
+        onClick={() => {toggleShow(!show); setColorMode(colorMode === 'default' ? 'dark' : 'default')}}>
+          Toggle Theme
+        </Button>
       </div>
 
 
@@ -155,7 +187,10 @@ export const NavBackground = () => {
   )
 }
 
-export const Footer = () => (
+export const Footer = () => {
+  const [colorMode, setColorMode] = useColorMode();
+
+  return (
   <Box
     as="footer"
     sx={{
@@ -177,7 +212,7 @@ export const Footer = () => (
     <Text
       sx={{
         fontSize: [2, 3],
-        color: "black",
+        color: "primary",
       }}
     >
       Stay Updated
@@ -204,7 +239,7 @@ export const Footer = () => (
         name="MERGE1"
         id="MERGE1"
         sx={{
-          color: "slate",
+          color: "secondary",
           borderRadius: "0",
           mr: [0, 4],
           mb: [4, 0],
@@ -217,7 +252,7 @@ export const Footer = () => (
         name="MERGE2"
         id="MERGE2"
         sx={{
-          color: "slate",
+          color: "secondary",
           borderRadius: "0",
           mr: [0, 4],
           mb: [4, 0],
@@ -230,7 +265,7 @@ export const Footer = () => (
         name="MERGE0"
         id="MERGE0"
         sx={{
-          color: "slate",
+          color: "secondary",
           borderRadius: "0",
           mr: [0, 4],
           mb: [4, 0],
@@ -271,7 +306,7 @@ export const Footer = () => (
         <Image
           sx={{
             // vvv To turn logo black
-            filter: "invert(100%)",
+            filter: `${colorMode === 'default' ? 'invert(100%)' : 'invert(0%)'}`,
             maxWidth: 200,
           }}
           src={Logo}
@@ -280,7 +315,7 @@ export const Footer = () => (
         <Text
           sx={{
             fontSize: [1, 2],
-            color: "darker",
+            color: "secondary",
           }}
         >
           Coronavirus Visualization Team
@@ -290,7 +325,7 @@ export const Footer = () => (
           to="/privacy"
           sx={{
             fontSize: [0, 1],
-            color: "dark",
+            color: "tertiary",
             textDecoration: "none",
           }}
         >
@@ -334,7 +369,7 @@ export const Footer = () => (
       </Box>
     </Box>
   </Box>
-)
+)}
 
 // Social icons for us in footer
 const SocialIcon = props => {

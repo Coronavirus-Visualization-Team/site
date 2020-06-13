@@ -95,9 +95,9 @@ const TeamPage = (props) => {
           })}
       </Grid>
 
-      <Text sx={ { variant: "styles.headerText", mb: 4 } }>Directors</Text>
+      <Text sx={ { variant: "styles.headerText", mb: 4, color: "primary" } }>Directors</Text>
       <Text
-        sx={ { variant: "styles.bodyText" } }
+        sx={ { variant: "styles.bodyText", color: "secondary" } }
       >
 
       {/** width={[ 128, null, 192 ]} */}
@@ -123,9 +123,9 @@ const TeamPage = (props) => {
       </Grid>
     </Text>
 
-    <Text sx={ { variant: "styles.headerText", mb: 4 } }>Project Leads</Text>
+    <Text sx={ { variant: "styles.headerText", mb: 4, color: "primary" } }>Project Leads</Text>
     <Text
-      sx={ { variant: "styles.bodyText" } }
+      sx={ { variant: "styles.bodyText", color: "secondary" } }
     >
 
     {/** width={[ 128, null, 192 ]} */}
@@ -151,9 +151,9 @@ const TeamPage = (props) => {
     </Grid>
   </Text>
 
-      <Text sx={ { variant: "styles.headerText", mb: 4 } }>Members</Text>
+      <Text sx={ { variant: "styles.headerText", mb: 4, color: "primary" } }>Members</Text>
       <Text
-        sx={ { variant: "styles.bodyText" } }
+        sx={ { variant: "styles.bodyText", color: "secondary" } }
       >
 
       {/** width={[ 128, null, 192 ]} */}
