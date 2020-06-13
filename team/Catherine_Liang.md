@@ -2,8 +2,8 @@
 name: Catherine Liang
 executive: false
 director: false
-lead: false
+lead: true
 position:  
-project: International Socioeconomic Factors, NYC data, Blood Donations
+project: Socioeconomic Factors
 image: ../assets/default_exec_image.png
 ---
