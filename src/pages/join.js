@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 import { graphql } from "gatsby"
-import { Box, Button, Grid, Image, jsx, Text } from "theme-ui"
+import { Box, Button, Grid, Image, jsx, Text, useColorMode } from "theme-ui"
 import HeaderImage from "../components/Join/HeaderImage"
 import { Helmet } from "react-helmet"
 import HarvardLogo from "../../static/img/harvard.png"
@@ -14,6 +14,8 @@ import GtLogo from "../../static/img/gt-seal.png"
 
 const JoinPage = props => {
   const partnersData = props.data.partners.edges
+  
+  const [colorMode, setColorMode] = useColorMode();
 
   return (
     <>
@@ -112,7 +114,12 @@ const JoinPage = props => {
       <Text sx={{ variant: "styles.subHeader", py: 15, mb: 2, color: "primary" }}>
         We’re also partnered with these organizations:{" "}
       </Text>
-      <Grid width={["25%"]} gap={["2%"]}>
+      <Grid width={["25%"]} gap={["2%"]} sx={{
+          backgroundColor: "white",
+          borderRadius: "5px",
+          boxShadow: colorMode === "dark" ? "0 0 16px rgba(255, 255, 255, 0.3)" : "none",
+          pb: "4em"
+      }}>
         {partnersData.map(item => {
           const data = item.node.childMarkdownRemark.frontmatter
 

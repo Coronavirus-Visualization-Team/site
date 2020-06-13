@@ -2,12 +2,14 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
-import { jsx, Text, Divider, Box, Container, Grid, Image } from "theme-ui"
+import { jsx, Text, Divider, Box, Container, Grid, Image, useColorMode } from "theme-ui"
 import Tile from "../components/Projects/Tile"
 
 const IndexPage = (props) => {
   const partnersData = props.data.partners.edges;
   const projectsData = props.data.projects.edges;
+
+  const [colorMode, setColorMode] = useColorMode();
 
   return (
     <Box
@@ -112,7 +114,10 @@ const IndexPage = (props) => {
           flexDirection: "row",
           flexWrap: "wrap",
           justifyContent: "space-between",
-          mt: 4
+          mt: 4,
+          backgroundColor: "white",
+          borderRadius: "5px",
+          boxShadow: colorMode === "dark" ? "0 0 16px rgba(255, 255, 255, 0.3)" : "none"
         }}
       >
         {partnersData.map((item) => {
