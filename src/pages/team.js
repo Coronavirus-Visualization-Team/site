@@ -161,37 +161,37 @@ const TeamPage = (props) => {
         {teamData.map((item) => {
             const data = item.node.childMarkdownRemark.frontmatter;
 
-            if(data.executive || data.director || data.lead) {
-              return null;
+            if (!data.executive && !data.director && !data.lead) {
+              if (data.position || data.project) {
+                return (
+                  <Text>
+                    {data.name}
+
+                    <small style={{
+                      "fontWeight": "100",
+                      "fontSize": "12.5px",
+                      "display": "block"
+                    }}>
+                      {data.position || data.project}
+                    </small>
+                  </Text>
+                )
+              }
             }
-
-            return (
-              <Text>
-                {data.name}
-
-                <small style={{
-                  "fontWeight": "100",
-                  "fontSize": "12.5px",
-                  "display": "block"
-                }}>
-                  {data.position || data.project}
-                </small>
-              </Text>
-            )
           })}
 
           {teamData.map((item) => {
               const data = item.node.childMarkdownRemark.frontmatter;
 
-              if(data.executive || data.director || data.lead || data.position != "undefined") {
-                return null;
+              if(!data.executive && !data.director && !data.lead) {
+                if (!data.position && !data.project) {
+                  return (
+                    <Text>
+                      {data.name}
+                    </Text>
+                  )
+                }
               }
-
-              return (
-                <Text>
-                  {data.name}
-                </Text>
-              )
             })}
       </Grid>
     </Text>
