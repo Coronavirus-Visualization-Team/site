@@ -1,9 +1,9 @@
 ---
-name: Asad Yamin
+name: Sri Kondapalli
 executive: false
 director: false
 lead: false
 position:  
-project: CGA Projects, Hospitality Industry
+project: FinTech Industry
 image: ../assets/default_exec_image.png
 ---
