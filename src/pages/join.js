@@ -14,8 +14,7 @@ import GtLogo from "../../static/img/gt-seal.png"
 
 const JoinPage = props => {
   const partnersData = props.data.partners.edges
-  console.log("here")
-  console.log(partnersData)
+
   return (
     <>
       <Helmet title="CVT | Join" />

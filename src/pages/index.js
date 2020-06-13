@@ -9,9 +9,6 @@ const IndexPage = (props) => {
   const partnersData = props.data.partners.edges;
   const projectsData = props.data.projects.edges;
 
-  console.log("partners")
-  console.log(partnersData)
-
   return (
     <Box
       sx={{
@@ -43,7 +40,7 @@ const IndexPage = (props) => {
                 width: "100vw",
                 minWidth: "100vw"
               }}
-      
+
       >
       <Text
         sx={{
@@ -65,7 +62,7 @@ const IndexPage = (props) => {
           background: "mainBackground",
           m: 0,
           width: "100vw",
-          minWidth: "100vw",        
+          minWidth: "100vw",
         }}
       >
         <Container
