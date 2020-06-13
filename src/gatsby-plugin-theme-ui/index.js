@@ -27,7 +27,7 @@ export const palette = {
       tertiary: "rgba(0, 0, 0, 0.5)",
     },
     dark: {
-      background: "#1f1f1f",
+      background: "#222020",
       secondaryBackground: "rgba(255, 255, 255, 0.2)",
       primary: "#ffffff",
       secondary: "rgba(255, 255, 255, 0.7)",
