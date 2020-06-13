@@ -1,9 +1,9 @@
 ---
-name: Norah Rami
+name: Emily Lu
 executive: false
 director: false
 lead: false
 position:  
-project: Fact Checking the EPA
+project: Avoiding a COVID Depression
 image: ../assets/default_exec_image.png
 ---

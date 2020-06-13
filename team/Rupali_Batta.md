@@ -1,9 +1,9 @@
 ---
-name: Norah Rami
+name: Rupali Batta
 executive: false
 director: false
 lead: false
 position:  
-project: Fact Checking the EPA
+project: Why is COVID spreading faster?
 image: ../assets/default_exec_image.png
 ---
