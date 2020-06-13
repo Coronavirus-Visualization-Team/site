@@ -1,9 +1,9 @@
 ---
-name: Ivy Ling
+name: Rena Liu
 executive: false
 director: false
 lead: false
 position:  
-project: Why is COVID spreading faster?
+project: Groundbreakers
 image: ../assets/default_exec_image.png
 ---

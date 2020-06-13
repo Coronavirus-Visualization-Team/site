@@ -1,9 +1,9 @@
 ---
-name: Ivy Ling
+name: Andy Wei
 executive: false
 director: false
 lead: false
 position:  
-project: Why is COVID spreading faster?
+project: International Socioeconomic Measures
 image: ../assets/default_exec_image.png
 ---

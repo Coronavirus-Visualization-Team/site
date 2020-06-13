@@ -1,9 +1,9 @@
 ---
-name: Ivy Ling
+name: Anika Nayak
 executive: false
 director: false
 lead: false
 position:  
-project: Why is COVID spreading faster?
+project: Mental Health, COVID and Climate
 image: ../assets/default_exec_image.png
 ---

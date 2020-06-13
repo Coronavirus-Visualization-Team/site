@@ -1,9 +1,9 @@
 ---
-name: Ivy Ling
+name: Akshit Deshpande
 executive: false
 director: false
 lead: false
 position:  
-project: Why is COVID spreading faster?
+project: Time-Series Geospatial Visualization
 image: ../assets/default_exec_image.png
 ---

@@ -1,9 +1,9 @@
 ---
-name: Ivy Ling
+name: Kripa
 executive: false
 director: false
 lead: false
 position:  
-project: Why is COVID spreading faster?
+project: NYC Data
 image: ../assets/default_exec_image.png
 ---

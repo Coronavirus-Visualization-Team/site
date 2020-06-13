@@ -1,9 +1,9 @@
 ---
-name: Ivy Ling
+name: Angela Liu
 executive: false
 director: false
 lead: false
 position:  
-project: Why is COVID spreading faster?
+project: COVID and Climate, COVID South Korea
 image: ../assets/default_exec_image.png
 ---

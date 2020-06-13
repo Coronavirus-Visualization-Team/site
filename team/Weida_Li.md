@@ -1,9 +1,9 @@
 ---
-name: Ivy Ling
+name: Weida Li
 executive: false
 director: false
 lead: false
 position:  
-project: Why is COVID spreading faster?
+project: Groundbreakers, Mental Health
 image: ../assets/default_exec_image.png
 ---
