@@ -37,7 +37,7 @@ const IndexPage = (props) => {
       <Container
               sx={{
                 position: "relative",
-                background: "mainBackground",
+                background: colorMode === "dark" ? "#17171d" : "white",
                 m: "8vh 0 0 0",
                 width: "100vw",
                 minWidth: "100vw"
@@ -51,7 +51,7 @@ const IndexPage = (props) => {
           m: "8vh 0 0 0",
           color: "primary",
           fontSize: [3, 4],
-          background: "mainBackground"
+          background: colorMode === "dark" ? "#17171d" : "white"
         }}
       >
         Projects
@@ -61,7 +61,7 @@ const IndexPage = (props) => {
       <Container
         sx={{
           position: "relative",
-          background: "mainBackground",
+          background: colorMode === "dark" ? "#17171d" : "white",
           m: 0,
           width: "100vw",
           minWidth: "100vw",
