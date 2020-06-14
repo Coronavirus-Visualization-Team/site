@@ -46,10 +46,10 @@ export default ({ data }) => {
                 {html.replace(/<p>/g,'').replace('</p>','')}
             </Text>
             <Text sx = {{
-                color: 'secondary',
+                color: 'grey',
                 mt: 50
             }}>
-                <a href={frontmatter.link} target="_blank" style={{color: 'primary'}} >{frontmatter.linkTitle}</a>
+                <a href={frontmatter.link} target="_blank" style={{color: 'grey'}} >{frontmatter.linkTitle}</a>
             </Text>
         </Container>
         </>
