@@ -34,64 +34,66 @@ const TeamPage = (props) => {
         }}
         >
           {teamData.map((item) => {
-            const data = item.node.childMarkdownRemark.frontmatter;
+            if (item.node.childMarkdownRemark) {
+              const data = item.node.childMarkdownRemark.frontmatter;
 
-            if(!data.executive) {
-              return null;
-            }
+              if(!data.executive) {
+                return null;
+              }
 
-            return (
-              <Box
-                sx={{
-                  position: 'relative',
-                  width: [128, 192],
-                  height: [128, 192],
-                  borderRadius: '10px',
-                  ":hover > #overlay": {
-                    opacity: 1
-                  },
-                }}
-              >
-                <Image src={data.image} sx={{ width: '100%', height: '100%', borderRadius: "10px" }} />
+              return (
                 <Box
                   sx={{
-                    position: 'absolute',
-                    top: 0,
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
+                    position: 'relative',
+                    width: [128, 192],
+                    height: [128, 192],
                     borderRadius: '10px',
-                    transition: 'ease-in-out 0.12s',
-                    backgroundColor: 'black',
-                    opacity: 0
+                    ":hover > #overlay": {
+                      opacity: 1
+                    },
                   }}
-                  id="overlay"
                 >
+                  <Image src={data.image} sx={{ width: '100%', height: '100%', borderRadius: "10px" }} />
                   <Box
                     sx={{
                       position: 'absolute',
-                      bottom: '7px',
-                      left: '10px',
+                      top: 0,
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      borderRadius: '10px',
+                      transition: 'ease-in-out 0.12s',
+                      backgroundColor: 'black',
+                      opacity: 0
                     }}
-                    id="text"
+                    id="overlay"
                   >
-                    <Text
+                    <Box
                       sx={{
-                        color: "white",
-                        fontWeight: "600",
-                        fontSize: [0, 1]
+                        position: 'absolute',
+                        bottom: '7px',
+                        left: '10px',
                       }}
-                    >{data.name}</Text>
-                    <Text
-                      sx={{
-                        color: "rgba(255, 255, 255, 0.7)",
-                        fontSize: [0, 1]
-                      }}
-                    >{data.position}</Text>
+                      id="text"
+                    >
+                      <Text
+                        sx={{
+                          color: "white",
+                          fontWeight: "600",
+                          fontSize: [0, 1]
+                        }}
+                      >{data.name}</Text>
+                      <Text
+                        sx={{
+                          color: "rgba(255, 255, 255, 0.7)",
+                          fontSize: [0, 1]
+                        }}
+                      >{data.position}</Text>
+                    </Box>
                   </Box>
                 </Box>
-              </Box>
-            )
+              )
+            }
           })}
       </Grid>
 
@@ -103,19 +105,21 @@ const TeamPage = (props) => {
       {/** width={[ 128, null, 192 ]} */}
       <Grid columns={[ 2, null, 4 ]}>
         {teamData.map((item) => {
-            const data = item.node.childMarkdownRemark.frontmatter;
+            if (item.node.childMarkdownRemark) {
+              const data = item.node.childMarkdownRemark.frontmatter;
 
-            if(data.director) {
-              return (
-                <Text>
-                  {data.name}
-                  <small style={{
-                    "fontWeight": "100",
-                    "fontSize": "12.5px",
-                    "display": "block"
-                  }}>{data.position}</small>
-                </Text>
-              )
+              if(data.director) {
+                return (
+                  <Text>
+                    {data.name}
+                    <small style={{
+                      "fontWeight": "100",
+                      "fontSize": "12.5px",
+                      "display": "block"
+                    }}>{data.position}</small>
+                  </Text>
+                )
+            }
             } else {
               return null;
             }
@@ -131,19 +135,21 @@ const TeamPage = (props) => {
     {/** width={[ 128, null, 192 ]} */}
     <Grid columns={[ 2, null, 4 ]}>
       {teamData.map((item) => {
-          const data = item.node.childMarkdownRemark.frontmatter;
+          if (item.node.childMarkdownRemark) {
+            const data = item.node.childMarkdownRemark.frontmatter;
 
-          if(data.lead) {
-            return (
-              <Text>
-                {data.name}
-                <small style={{
-                  "fontWeight": "100",
-                  "fontSize": "12.5px",
-                  "display": "block"
-                }}>{data.project}</small>
-              </Text>
-            )
+            if(data.lead) {
+              return (
+                <Text>
+                  {data.name}
+                  <small style={{
+                    "fontWeight": "100",
+                    "fontSize": "12.5px",
+                    "display": "block"
+                  }}>{data.project}</small>
+                </Text>
+              )
+          }
           } else {
             return null;
           }
@@ -159,37 +165,41 @@ const TeamPage = (props) => {
       {/** width={[ 128, null, 192 ]} */}
       <Grid columns={[ 2, null, 4 ]}>
         {teamData.map((item) => {
-            const data = item.node.childMarkdownRemark.frontmatter;
+            if (item.node.childMarkdownRemark) {
+              const data = item.node.childMarkdownRemark.frontmatter;
 
-            if (!data.executive && !data.director && !data.lead) {
-              if (data.position || data.project) {
-                return (
-                  <Text>
-                    {data.name}
+              if (!data.executive && !data.director && !data.lead) {
+                if (data.position || data.project) {
+                  return (
+                    <Text>
+                      {data.name}
 
-                    <small style={{
-                      "fontWeight": "100",
-                      "fontSize": "12.5px",
-                      "display": "block"
-                    }}>
-                      {data.position || data.project}
-                    </small>
-                  </Text>
-                )
+                      <small style={{
+                        "fontWeight": "100",
+                        "fontSize": "12.5px",
+                        "display": "block"
+                      }}>
+                        {data.position || data.project}
+                      </small>
+                    </Text>
+                  )
+                }
               }
             }
           })}
 
           {teamData.map((item) => {
-              const data = item.node.childMarkdownRemark.frontmatter;
+              if (item.node.childMarkdownRemark) {
+                const data = item.node.childMarkdownRemark.frontmatter;
 
-              if(!data.executive && !data.director && !data.lead) {
-                if (!data.position && !data.project) {
-                  return (
-                    <Text>
-                      {data.name}
-                    </Text>
-                  )
+                if(!data.executive && !data.director && !data.lead) {
+                  if (!data.position && !data.project) {
+                    return (
+                      <Text>
+                        {data.name}
+                      </Text>
+                    )
+                  }
                 }
               }
             })}
