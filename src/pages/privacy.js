@@ -45,7 +45,7 @@ const PrivacyPage = props => {
           sx={{
             fontSize: [3, 4],
             width: "100%",
-            color: "darker",
+            color: "primary",
             m: "2vh 0vw"
           }}
         >
@@ -56,17 +56,17 @@ const PrivacyPage = props => {
             fontSize: [0, 1],
             fontWeight: "400",
             width: "100%",
-            color: "slate"
+            color: "secondary"
           }}
         >
-          This Privacy Policy describes how your personal information is collected, used, and shared when you visit and interact with CVT and/or the site https://cvt-site.netlify.app (the “Site” or the "Service").
+          This Privacy Policy describes how your personal information is collected, used, and shared when you visit and interact with CVT and/or the site https://www.understandcovid.org (the “Site” or the "Service").
         </Text>
 
         <Text
           sx={{
             fontSize: [2, 3],
             width: "100%",
-            color: "darker",
+            color: "primary",
             m: "2vh 0vw"
           }}
         >
@@ -77,7 +77,7 @@ const PrivacyPage = props => {
             fontSize: [0, 1],
             fontWeight: "400",
             width: "100%",
-            color: "slate"
+            color: "secondary"
           }}
         >
           <ol>
@@ -93,7 +93,7 @@ const PrivacyPage = props => {
           sx={{
             fontSize: [2, 3],
             width: "100%",
-            color: "darker",
+            color: "primary",
             m: "2vh 0vw"
           }}
         >
@@ -104,7 +104,7 @@ const PrivacyPage = props => {
             fontSize: [0, 1],
             fontWeight: "400",
             width: "100%",
-            color: "slate"
+            color: "secondary"
           }}
         >We use your information, such as your email address, to send emails and communication to you. Your information may also be used to improve and operate the Site and Service.</Text>
 
@@ -112,7 +112,7 @@ const PrivacyPage = props => {
           sx={{
             fontSize: [2, 3],
             width: "100%",
-            color: "darker",
+            color: "primary",
             m: "2vh 0vw"
           }}
         >
@@ -123,7 +123,7 @@ const PrivacyPage = props => {
             fontSize: [0, 1],
             fontWeight: "400",
             width: "100%",
-            color: "slate"
+            color: "secondary"
           }}
         >Your personal information, such as cookies and email addresses, may be shared with third parties to operate the Site and the Service. These third parties include Netlify (used for providing the Site) and MailChimp (used for email communication).<br/>Finally, we may also share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights.</Text>
 
@@ -131,7 +131,7 @@ const PrivacyPage = props => {
           sx={{
             fontSize: [2, 3],
             width: "100%",
-            color: "darker",
+            color: "primary",
             m: "2vh 0vw"
           }}
         >
@@ -142,7 +142,7 @@ const PrivacyPage = props => {
             fontSize: [0, 1],
             fontWeight: "400",
             width: "100%",
-            color: "slate"
+            color: "secondary"
           }}
         >As described above, we use your Personal Information to provide you with marketing communications we believe may be of interest to you. To opt out of these communications, click the "Unsubscribe" link at the bottom of the marketing emails.</Text>
 
@@ -150,7 +150,7 @@ const PrivacyPage = props => {
           sx={{
             fontSize: [2, 3],
             width: "100%",
-            color: "darker",
+            color: "primary",
             m: "2vh 0vw"
           }}
         >
@@ -161,7 +161,7 @@ const PrivacyPage = props => {
             fontSize: [0, 1],
             fontWeight: "400",
             width: "100%",
-            color: "slate"
+            color: "secondary"
           }}
         >The Site and the Service are not intended to be used by children under the age of 13.</Text>
 
@@ -169,7 +169,7 @@ const PrivacyPage = props => {
           sx={{
             fontSize: [2, 3],
             width: "100%",
-            color: "darker",
+            color: "primary",
             m: "2vh 0vw"
           }}
         >
@@ -180,7 +180,7 @@ const PrivacyPage = props => {
             fontSize: [0, 1],
             fontWeight: "400",
             width: "100%",
-            color: "slate"
+            color: "secondary"
           }}
         >If you are a European resident, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below.
 
@@ -190,7 +190,7 @@ const PrivacyPage = props => {
           sx={{
             fontSize: [2, 3],
             width: "100%",
-            color: "darker",
+            color: "primary",
             m: "2vh 0vw"
           }}
         >
@@ -201,7 +201,7 @@ const PrivacyPage = props => {
             fontSize: [0, 1],
             fontWeight: "400",
             width: "100%",
-            color: "slate"
+            color: "secondary"
           }}
         >For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at coronavirusvisualizationteam@gmail.com.</Text>
 
