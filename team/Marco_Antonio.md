@@ -3,7 +3,7 @@ name: Marco Antonio
 executive: true
 director: false
 lead: false
-position: CPO, Project Management, Economics Analysis
+position: CPO, Project Management
 project:  
 image: /assets/marco.png
 ---
