@@ -329,6 +329,18 @@ export const Footer = () => {
       </Button>
     </Box>
 
+    <Text
+      sx={{
+        fontSize: [2, 3],
+        color: "primary",
+        marginBottom: "2vh"
+      }}
+    >
+      Donate
+    </Text>
+    <iframe allowtransparency="true" style={{ backgroundColor: "#000000;"}} frameborder="0" height="700" scrolling="yes" marginWidth="0px" marginHeight="0px" src = "https://give.donatekindly.org/cv790/makedonation/donation/a14fa288-5e88-4663-831a-9b3cc78566a1" width="100%"></iframe>
+
+
     <Box
       sx={{
         display: "flex",
@@ -408,6 +420,7 @@ export const Footer = () => {
         />
       </Box>
     </Box>
+
   </Box>
 )}
 
