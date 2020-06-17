@@ -79,7 +79,7 @@ export const Header = () => {
         <Link to="/resources">
           <NavLink>Resources</NavLink>
         </Link>
-        <a href="https://tinyurl.com/donateCVT" target="_blank" rel="noopener noreferrer">
+        <a href="https://medium.com/coronavirus-visualization-team" target="_blank" rel="noopener noreferrer">
           <NavLink>Donate</NavLink>
         </a>
         <Box sx={{
