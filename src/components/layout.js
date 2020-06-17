@@ -29,7 +29,7 @@ import Moon from "../icons/moon.png";
 export const Header = () => {
   const [show, toggleShow] = useState(false)
   const [colorMode, setColorMode] = useColorMode()
-  
+
   return(
     <Box
       as="header"
