@@ -329,6 +329,17 @@ export const Footer = () => {
       </Button>
     </Box>
 
+  <a href="https://give.donatekindly.org/cv790/makedonation/donation/a14fa288-5e88-4663-831a-9b3cc78566a1" target="_blank" style={{textDecoration: 'none'}} >
+    <Text
+      sx={{
+        fontSize: [2, 3],
+        color: "primary",
+      }}
+    >
+      Donate &#187;
+    </Text>
+  </a>
+
     <Box
       sx={{
         display: "flex",

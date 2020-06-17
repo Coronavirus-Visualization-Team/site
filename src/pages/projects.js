@@ -2,7 +2,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql, StaticQuery } from "gatsby"
-import { Container, jsx, Text, Grid } from "theme-ui"
+import { Container, jsx, Text, Grid, Box } from "theme-ui"
 import ProjectPicker from "../components/Projects/ProjectPicker"
 import Tile from "../components/Projects/Tile"
 import { Helmet } from "react-helmet"
@@ -60,6 +60,28 @@ const Projects = ({ data }) => {
           </Grid>
         )}
       </Container>
+
+
+      <Box
+          sx={{
+            fontSize: [2, 3],
+            display: "flex",
+            flexDirection: "column",
+            mt: 5
+          }}
+        >
+          <Text
+            sx={{
+              mb: "1rem",
+              fontWeight: "700",
+              color: "primary"
+            }}
+          >
+            Project members
+          </Text>
+
+          <iframe class="airtable-embed" src="https://airtable.com/embed/shrviRYlIVs70A3gl?backgroundColor=blueLight" frameborder="0" onmousewheel="" width="100%" height="533" style={{background: 'transparent', border: '1px solid #ccc'}}></iframe>
+        </Box>
     </>
   )
 }

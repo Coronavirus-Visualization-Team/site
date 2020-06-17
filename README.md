@@ -6,9 +6,8 @@ This is the official landing page for CVT! This is worked on by the website team
 - Currently deployed website: https://www.understandcovid.org/
 
 ## Current members
-- Steve (Executive, Co-Lead)
-- Calix (Co-Lead, Lead Dev, Community Manager)
-- Adway (Co-Lead)
+- Steve (Executive)
+- Calix (Lead, Lead Dev, Community Manager)
 - Fernanda (Developer)
 - Jake (Developer)
 
