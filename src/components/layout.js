@@ -419,7 +419,6 @@ export const Footer = () => {
         />
       </Box>
     </Box>
-
   </Box>
 )}
 

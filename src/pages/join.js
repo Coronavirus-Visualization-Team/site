@@ -149,7 +149,7 @@ const JoinPage = props => {
       <Text sx={{ variant: "styles.bodyText", color: "secondary" }}>
         We're looking for driven and talented individuals to join our team
         remotely. Learn more about our teams and ongoing
-        projects <a style={{color : 'primary', textDecoration: 'none'}} href="https://docs.google.com/document/d/1SHfrZSzl9UMZUQSgxhle_XpVIRJ369YDQTp97ebLeNk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">here.</a>
+        projects <a style={{color : 'grey', textDecoration: 'none'}} href="https://docs.google.com/document/d/1SHfrZSzl9UMZUQSgxhle_XpVIRJ369YDQTp97ebLeNk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">here.</a>
       </Text>
       <Button
         as="a"
