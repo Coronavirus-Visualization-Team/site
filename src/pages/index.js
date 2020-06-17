@@ -124,8 +124,6 @@ const IndexPage = (props) => {
         {partnersData.map((item) => {
           const data = item.node.childMarkdownRemark.frontmatter;
 
-          console.log(data)
-
           return (
             <Box
               sx={{
