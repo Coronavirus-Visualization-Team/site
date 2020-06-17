@@ -79,6 +79,9 @@ export const Header = () => {
         <Link to="/resources">
           <NavLink>Resources</NavLink>
         </Link>
+        <a href="https://give.donatekindly.org/cv790/makedonation/donation/a14fa288-5e88-4663-831a-9b3cc78566a1" target="_blank">
+          <NavLink>Donate</NavLink>
+        </a>
         <Box sx={{
           width: '35px',
           height: '35px',
@@ -175,6 +178,9 @@ export const Header = () => {
         <Link to="/resources">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Resources</NavLink>
         </Link>
+        <a href="https://give.donatekindly.org/cv790/makedonation/donation/a14fa288-5e88-4663-831a-9b3cc78566a1" target="_blank">
+          <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Donate</NavLink>
+        </a>
         <Box sx={{
           width: '35px',
           height: '35px',
@@ -329,16 +335,26 @@ export const Footer = () => {
       </Button>
     </Box>
 
-  <a href="https://give.donatekindly.org/cv790/makedonation/donation/a14fa288-5e88-4663-831a-9b3cc78566a1" target="_blank" style={{textDecoration: 'none'}} >
-    <Text
+    <div>
+    <Button
+      as="a"
+      href="https://give.donatekindly.org/cv790/makedonation/donation/a14fa288-5e88-4663-831a-9b3cc78566a1"
+      target="_blank"
+      rel="noopener noreferrer"
       sx={{
-        fontSize: [2, 3],
-        color: "primary",
+        fontSize: [14, 18],
+        px: 3,
+        bg: "white",
+        background: "#168CA6",
+        borderRadius: "button",
+        boxShadow: "base",
+        flex: "1",
+        mt: 2
       }}
     >
       Donate &#187;
-    </Text>
-  </a>
+    </Button>
+    </div>
 
     <Box
       sx={{
