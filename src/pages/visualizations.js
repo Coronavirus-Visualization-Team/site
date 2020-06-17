@@ -123,16 +123,15 @@ const VizPage = props => {
           flexDirection: "column"
         }}
       >
-        <Helmet title="CVT | Visualizations" />
         <Text
           sx={{
             fontSize: [3, 4],
-            maxWidth: ["100%", "65%"],
+            maxWidth: "100%",
             m: "2vh 0vw",
             color: "primary"
           }}
         >
-          More visualizations
+          Harvard CGA Project Visualizations
         </Text>
 
         <iframe title="CoViz Project Team" scrolling="no" frameborder="0" src="https://harvard-cga.maps.arcgis.com/home/webmap/embedGallery.html?displayapps=true&displayinline=true&group=6ee6c2a54beb432cae327c578923b11d" style={{width:'100%', height:'687px'}}></iframe>
