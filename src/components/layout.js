@@ -181,9 +181,9 @@ export const Header = () => {
         <Link to="/resources">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Resources</NavLink>
         </Link>
-        <a href="https://give.donatekindly.org/cv790/makedonation/donation/a14fa288-5e88-4663-831a-9b3cc78566a1" target="_blank">
-          <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Donate</NavLink>
-        </a>
+        <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>
+          <a href="https://give.donatekindly.org/cv790/makedonation/donation/a14fa288-5e88-4663-831a-9b3cc78566a1" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>Donate</a>
+        </NavLink>
         <Box sx={{
           width: '35px',
           height: '35px',
