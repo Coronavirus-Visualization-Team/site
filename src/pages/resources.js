@@ -98,41 +98,5 @@ export default () => (
         }}
       />
     </Box>
-
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        mt: 5
-      }}
-    >
-      <Text
-        sx={{
-          fontSize: [3, 4],
-          width: "100%",
-          textAlign: "center",
-          color: "primary"
-        }}
-      >
-        Donate
-      </Text>
-    </Box>
-
-    <Box
-      sx={{
-        width: "100%",
-        mt: 5
-      }}
-    >
-      <Embed
-        src = "https://give.donatekindly.org/cv790/makedonation/donation/a14fa288-5e88-4663-831a-9b3cc78566a1"
-        sx={{
-          background: "transparent",
-          border: "1px solid #ccc",
-          height: [450, 350]
-        }}
-      />
-    </Box>
   </Box>
 )
