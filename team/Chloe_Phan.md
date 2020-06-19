@@ -1,10 +1,10 @@
 ---
-name: Norah Rami
+name: Chloe Phan
 executive: false
 director: true
 lead: false
 community_manager:   
-position:  Writing
-project: Fact Checking the EPA
+position:  Design
+project: 
 image: ../assets/default_exec_image.png
 ---

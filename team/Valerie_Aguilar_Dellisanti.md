@@ -1,10 +1,10 @@
 ---
-name: Norah Rami
+name: Valerie Aguilar Dellisanti
 executive: false
 director: true
 lead: false
 community_manager:   
-position:  Writing
-project: Fact Checking the EPA
+position:  Partnerships
+project: 
 image: ../assets/default_exec_image.png
 ---
