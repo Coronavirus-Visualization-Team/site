@@ -199,7 +199,7 @@ const TeamPage = (props) => {
             if (item.node.childMarkdownRemark) {
               const data = item.node.childMarkdownRemark.frontmatter;
 
-              if (!data.executive && !data.director && !data.lead) {
+              if (!data.executive && !data.director && !data.lead && !data.community_manager) {
                 if (data.position || data.project) {
                   return (
                     <Text>
@@ -223,7 +223,7 @@ const TeamPage = (props) => {
               if (item.node.childMarkdownRemark) {
                 const data = item.node.childMarkdownRemark.frontmatter;
 
-                if(!data.executive && !data.director && !data.lead) {
+                if(!data.executive && !data.director && !data.lead && !data.community_manager) {
                   if (!data.position && !data.project) {
                     return (
                       <Text>
