@@ -34,6 +34,7 @@ collections:
       - { name: executive, label: "Executive director?", widget: boolean }
       - { name: director, label: "Director?", widget: boolean }
       - { name: lead, label: "Project Lead?", widget: boolean }
+      - { name: community_manager, label: "Community Manager" }
       - { name: position, label: "Position (required if executive director)", required: false }
       - { name: project, label: "Project (required if project lead)", required: false }
       - { name: image, label: "Photo (required if executive director) (Must be square or it will get stretched)", widget: image, required: false }

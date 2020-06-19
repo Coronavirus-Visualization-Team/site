@@ -253,6 +253,7 @@ query {
             executive
             director
             lead
+            community_manager
             position
             project
             image
