@@ -3,7 +3,7 @@ name: Mauricio Garita
 executive: false
 director: false
 lead: false
-community_manager: 
+community_manager:   
 position:  
 project: Avoiding a COVID Depression
 image: ../assets/default_exec_image.png

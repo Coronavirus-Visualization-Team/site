@@ -3,7 +3,7 @@ name: Vishal Dubey
 executive: false
 director: false
 lead: false
-community_manager: 
+community_manager:   
 position:  
 project: Why is COVID spreading faster?
 image: ../assets/default_exec_image.png
