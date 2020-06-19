@@ -127,7 +127,7 @@ const IndexPage = (props) => {
           return (
             <Box
               sx={{
-                width: ["45%", "30%"],
+                width: ["20%"],
                 display: "flex",
                 justifyContent: "center"
               }}
