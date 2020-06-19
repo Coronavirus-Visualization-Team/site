@@ -1,10 +1,10 @@
 ---
-name: Michelle Ly
+name: Genevieve Chin
 executive: false
 director: false
 lead: false
-community_manager: Misc. Visualizations 
-position:  
+community_manager: Hospitality Industry
+position:
 project:  
 image: ../assets/default_exec_image.png
 ---
