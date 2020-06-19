@@ -118,7 +118,8 @@ const IndexPage = (props) => {
           backgroundColor: "white",
           borderRadius: "5px",
           boxShadow: colorMode === "dark" ? "0 0 16px rgba(255, 255, 255, 0.3)" : "none",
-          padding: 3
+          padding: 3,
+          mb: "3em"
         }}
       >
         {partnersData.map((item) => {
