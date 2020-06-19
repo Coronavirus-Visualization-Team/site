@@ -157,6 +157,37 @@ const TeamPage = (props) => {
     </Grid>
   </Text>
 
+    <Text sx={ { variant: "styles.headerText", mb: 4, color: "primary" } }>Community Managers</Text>
+      <Text
+        sx={ { variant: "styles.bodyText", color: "secondary" } }
+      >
+
+      {/** width={[ 128, null, 192 ]} */}
+      <Grid columns={[ 2, null, 4 ]}>
+        {teamData.map((item) => {
+            if (item.node.childMarkdownRemark) {
+              const data = item.node.childMarkdownRemark.frontmatter;
+
+              if(data.community_manager) {
+                return (
+                  <Text>
+                    {data.name}
+                    <small style={{
+                      "fontWeight": "100",
+                      "fontSize": "12.5px",
+                      "display": "block"
+                    }}>{data.community_manager}</small>
+                  </Text>
+                )
+            }
+            } else {
+              return null;
+            }
+          })}
+      </Grid>
+    </Text>
+
+
       <Text sx={ { variant: "styles.headerText", mb: 4, color: "primary" } }>Members</Text>
       <Text
         sx={ { variant: "styles.bodyText", color: "secondary" } }
