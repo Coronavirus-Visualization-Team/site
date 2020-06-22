@@ -81,7 +81,7 @@ const Projects = ({ data }) => {
           </Text>
         </Box>
 
-        <iframe class="airtable-embed" src="https://airtable.com/embed/shrviRYlIVs70A3gl?backgroundColor=blueLight" frameborder="0" onmousewheel="" width="100%" height="533" style={{background: 'transparent', border: '1px solid #ccc'}}></iframe>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shrFnhTP0wtwyTWDw?backgroundColor=blueLight" frameborder="0" onmousewheel="" width="100%" height="533" style={{background: 'transparent', border: '1px solid #ccc'}}></iframe>
     </>
   )
 }
