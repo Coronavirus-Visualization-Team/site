@@ -195,6 +195,37 @@ const JoinPage = props => {
       >
         Email Us
       </Button>
+
+      <Text sx={{ variant: "styles.headerText", mt: "2vh", color: "primary" }}>Join Our Community</Text>
+      <Text sx={{ variant: "styles.bodyText", color: "secondary" }}>
+      The Coronavirus Visualization Community, or the CVC for short, is the larger community of the CVT and has learning opportunities, research projects, 
+      and a community of like-minded individuals who are not as experienced in data science or just want to help out during the COVID-19 pandemic. 
+      Having a community of over 1,000 members we have multiple current initiatives which include:
+      <ul>
+        <li>An Intercollegiate Discord -- a place where high school students can ask for advice and college students can attend events, network, and hangout</li>
+        <li>eLearning Courses and Initiatives -- we have partnered with Beyond The Five to create a series of COVID-19 data science and research courses in addition to creating the Educational Non-Profit Coalition which is a huge mailing list of organizations who are actively contribute to education</li>
+        <li>CVC/JOGL Research Projects -- we have over 15 active projects that CVC members can work on in collaboration with JOGL and partners. Some of our projects include: distribution of FDA approved testing kits, general visualization projects, medical research projects, and many more</li>
+      </ul>
+      If you are interested in joining the CVC please join our Slack Workplace at: <a style={{color : 'grey', textDecoration: 'none'}} href="https://bit.ly/Join-CVC" target="_blank" rel="noopener noreferrer">https://bit.ly/Join-CVC.</a>
+      </Text>
+      <Button
+        as="a"
+        href="https://bit.ly/Join-CVC"
+        target="_blank"
+        rel="noopener noreferrer"
+        sx={{
+          fontSize: [14, 18],
+          px: 3,
+          bg: "white",
+          background: "#168CA6",
+          borderRadius: "button",
+          boxShadow: "base",
+          flex: "1",
+          mt: 4
+        }}
+      >
+        Join CVC
+      </Button>
     </>
   )
 }
