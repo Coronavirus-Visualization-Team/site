@@ -1,5 +1,5 @@
 ---
-name: Aakash Mishra
+name: Ananay Rajput
 executive: false
 director: false
 lead: true
