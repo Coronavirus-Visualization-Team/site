@@ -14,7 +14,7 @@ import GtLogo from "../../static/img/gt-seal.png"
 
 const JoinPage = props => {
   const partnersData = props.data.partners.edges
-  
+
   const [colorMode, setColorMode] = useColorMode();
 
   return (
@@ -153,7 +153,7 @@ const JoinPage = props => {
       </Text>
       <Button
         as="a"
-        href="http://bit.ly/CVTapply"
+        href="https://tiny.cc/CvT"
         target="_blank"
         rel="noopener noreferrer"
         sx={{
