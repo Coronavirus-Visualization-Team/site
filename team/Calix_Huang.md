@@ -2,9 +2,9 @@
 name: Calix Huang
 executive: false
 director: true
-lead: false
-community_manager: Website
-position: Development, Website
-project:  
+lead: true
+community_manager: Development
+position: Development
+project: Website, Superdashboard
 image: ../assets/default_exec_image.png
 ---
