@@ -3,7 +3,7 @@ path: testing11
 date: 2020-04-25T00:28:54.933Z
 slug: time-series-geospatial-vis
 title: Time-Series Geospatial Visualization Before & After COVID-19
-featured: true
+featured: false
 image: ../../img/vis.jpg
 label: Analytics Insight
 templateKey: project

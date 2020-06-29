@@ -2,7 +2,7 @@
 import React, { useState } from "react"
 import theme from "../../gatsby-plugin-theme-ui"
 import { Container, Image, jsx } from "theme-ui"
-import HeroImage from "./headerimage.jpg"
+import HeroImage from "./cvt-group.png"
 const HeaderImage = () => {
   return (
       <Container
