@@ -3,7 +3,7 @@ path: testing5
 date: 2020-04-25T00:28:54.933Z
 slug: harvard-oi-research
 title: Harvard Opportunity Insights Research
-featured: true
+featured: false
 image: ../../img/oi.png
 label: Harvard Opportunity Insights
 templateKey: project
