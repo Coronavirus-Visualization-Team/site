@@ -37,7 +37,7 @@ export default ({ data }) => {
                 textAlign: 'center',
                 mt: '2vh'
             }}>
-                {frontmatter.label}
+                Image Source: {frontmatter.label}
             </Text>
             <Text sx = {{
                 color: 'primary',
