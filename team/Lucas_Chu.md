@@ -7,4 +7,5 @@ community_manager:
 position: Founder, CEO, Outreach
 project: Socioeconomic Factors, NYC Data
 image: /assets/lucas.jpg
+linkedin: "https://www.linkedin.com/"
 ---

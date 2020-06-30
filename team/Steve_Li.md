@@ -7,4 +7,5 @@ community_manager:
 position: CTO, Website
 project:  
 image: ../assets/steve.jpeg
+linkedin: "https://www.linkedin.com/"
 ---

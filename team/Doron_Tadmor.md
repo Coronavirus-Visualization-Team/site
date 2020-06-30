@@ -7,4 +7,5 @@ community_manager:
 position: President, Operations
 project:  
 image: ../assets/doron.png
+linkedin: "https://www.linkedin.com/"
 ---

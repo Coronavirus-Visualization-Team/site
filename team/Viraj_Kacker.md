@@ -5,6 +5,7 @@ director: false
 lead: true
 community_manager:   
 position: VP
-project: CGA Projects, Time-Series Geospatial 
+project: CGA Projects, Time-Series Geospatial
 image: /assets/viraj.png
+linkedin: "https://www.linkedin.com/"
 ---

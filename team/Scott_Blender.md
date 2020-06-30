@@ -7,4 +7,5 @@ community_manager:
 position: COO, HR, Operations, Social Media
 project: 211 Project
 image: /assets/scotty.jpg
+linkedin: "https://www.linkedin.com/"
 ---

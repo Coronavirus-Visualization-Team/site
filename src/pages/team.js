@@ -57,6 +57,7 @@ const TeamPage = (props) => {
                   <Box
                     as="a"
                     href={data.linkedin}
+                    target="_blank"
                     sx={{
                       position: 'absolute',
                       top: 0,

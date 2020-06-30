@@ -7,4 +7,5 @@ community_manager:
 position: Secretary, Writing/Policy
 project: COVID and Climate Project
 image: /assets/jessica.png
+linkedin: "https://www.linkedin.com/"
 ---

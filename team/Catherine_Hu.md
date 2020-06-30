@@ -7,4 +7,5 @@ community_manager:
 position: Advisor, Strategy/Advice, IA
 project:  
 image: /assets/catherine.jpg
+linkedin: "https://www.linkedin.com/"
 ---
