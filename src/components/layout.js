@@ -26,6 +26,8 @@ import LinkedInLogo from "./social-icons/LinkedIn.png"
 import Sun from "../icons/sun.png";
 import Moon from "../icons/moon.png";
 
+import SEO from "../components/seo";
+
 export const Header = () => {
   const [show, toggleShow] = useState(false)
   const [colorMode, setColorMode] = useColorMode()
@@ -43,6 +45,7 @@ export const Header = () => {
         position: "relative",
       }}
     >
+      <SEO />
       <Helmet>
         <link rel="icon" href={favicon} />
       </Helmet>
