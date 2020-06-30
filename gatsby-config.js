@@ -64,7 +64,7 @@ module.exports = {
     description:
       "We're the Coronavirus Visualization Team, a crowdsourced student network of data scientists and analysts, developers, and communicators working to better visualize and share the impacts, present and future, of COVID-19.",
     url: "https://www.understandcovid.org", 
-    image: "/assets/favicon.ico", 
+    image: "/assets/cvt-logo.png", 
     twitterUsername: "@joinCVT",
   },
 }
