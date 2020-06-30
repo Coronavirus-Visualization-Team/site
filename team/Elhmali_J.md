@@ -7,4 +7,5 @@ community_manager:
 position: External Affairs, Website
 project: 3D Printer and Hospital Map
 image: ../assets/default_exec_image.png
+linkedin: "https://www.linkedin.com/"
 ---

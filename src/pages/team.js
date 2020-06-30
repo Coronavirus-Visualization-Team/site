@@ -55,6 +55,8 @@ const TeamPage = (props) => {
                 >
                   <Image src={data.image} sx={{ width: '100%', height: '100%', borderRadius: "10px" }} />
                   <Box
+                    as="a"
+                    href={data.linkedin}
                     sx={{
                       position: 'absolute',
                       top: 0,
@@ -111,7 +113,9 @@ const TeamPage = (props) => {
               if(data.director) {
                 return (
                   <Text>
-                    {data.name}
+                    <a href={data.linkedin} target="_blank" sx={{
+                        color: "secondary"
+                      }}>{data.name}</a>
                     <small style={{
                       "fontWeight": "100",
                       "fontSize": "12.5px",
@@ -141,7 +145,9 @@ const TeamPage = (props) => {
             if(data.lead) {
               return (
                 <Text>
-                  {data.name}
+                  <a href={data.linkedin} target="_blank" sx={{
+                      color: "secondary"
+                    }}>{data.name}</a>
                   <small style={{
                     "fontWeight": "100",
                     "fontSize": "12.5px",
@@ -171,7 +177,9 @@ const TeamPage = (props) => {
               if(data.community_manager) {
                 return (
                   <Text>
-                    {data.name}
+                    <a href={data.linkedin} target="_blank" sx={{
+                        color: "secondary"
+                      }}>{data.name}</a>
                     <small style={{
                       "fontWeight": "100",
                       "fontSize": "12.5px",
@@ -203,7 +211,9 @@ const TeamPage = (props) => {
                 if (data.position || data.project) {
                   return (
                     <Text>
-                      {data.name}
+                      <a href={data.linkedin} target="_blank" sx={{
+                          color: "secondary"
+                        }}>{data.name}</a>
 
                       <small style={{
                         "fontWeight": "100",
@@ -227,7 +237,9 @@ const TeamPage = (props) => {
                   if (!data.position && !data.project) {
                     return (
                       <Text>
-                        {data.name}
+                        <a href={data.linkedin} target="_blank" sx={{
+                            color: "secondary"
+                          }}>{data.name}</a>
                       </Text>
                     )
                   }
@@ -257,6 +269,7 @@ query {
             position
             project
             image
+            linkedin
         }
       }
     }
