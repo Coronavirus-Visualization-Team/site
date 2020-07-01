@@ -1,11 +1,11 @@
 ---
 name: Genevieve Chin
 executive: false
-director: false
+director: true
 lead: false
 community_manager: Hospitality Industry
-position:
+position: Event Planning
 project:  
 image: ../assets/default_exec_image.png
-linkedin: "https://www.linkedin.com/"
+linkedin: "https://www.linkedin.com/in/genevieve-chin/"
 ---
