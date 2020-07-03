@@ -1,11 +1,11 @@
 ---
 name: Varshini Subhash
 executive: false
-director: false
-lead: true
-community_manager: Social Media
+director: true
+lead: false
+community_manager: 
 position:
-project: Project Planning, Gender-Based Violence
+project: Project Planning
 image: ../assets/default_exec_image.png
-linkedin: "https://www.linkedin.com/"
+linkedin: "https://www.linkedin.com/in/varshini-subhash-144882118/"
 ---

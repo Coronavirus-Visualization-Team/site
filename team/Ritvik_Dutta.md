@@ -5,7 +5,7 @@ director: false
 lead: false
 community_manager:   
 position:  
-project: Why is COVID spreading faster?
+project: CGA Projects, COVID & Climate, Why is COVID spreading faster?
 image: ../assets/default_exec_image.png
-linkedin: "https://www.linkedin.com/"
+linkedin: "https://www.linkedin.com/in/ritvik-dutta-7b940319a"
 ---
