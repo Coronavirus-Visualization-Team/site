@@ -83,11 +83,11 @@ export const Header = () => {
           <NavLink>Resources</NavLink>
         </Link>
         <NavLink>
-          <a href="https://give.donatekindly.org/cv790/makedonation/donation/a14fa288-5e88-4663-831a-9b3cc78566a1" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>
+          <a href="https://bank.hackclub.com/donations/start/coronavirus-visualization-team" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>
             Donate
           </a>
         </NavLink>
-        
+
         <Box sx={{
           width: '35px',
           height: '35px',
@@ -185,7 +185,7 @@ export const Header = () => {
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Resources</NavLink>
         </Link>
         <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>
-          <a href="https://give.donatekindly.org/cv790/makedonation/donation/a14fa288-5e88-4663-831a-9b3cc78566a1" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>Donate</a>
+          <a href="https://bank.hackclub.com/donations/start/coronavirus-visualization-team" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>Donate</a>
         </NavLink>
         <Box sx={{
           width: '35px',
@@ -344,7 +344,7 @@ export const Footer = () => {
     <div>
       <Button
         as="a"
-        href="https://give.donatekindly.org/cv790/makedonation/donation/a14fa288-5e88-4663-831a-9b3cc78566a1"
+        href="https://bank.hackclub.com/donations/start/coronavirus-visualization-team"
         target="_blank"
         rel="noopener noreferrer"
         sx={{
