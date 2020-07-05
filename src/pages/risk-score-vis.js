@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 import { graphql } from "gatsby"
-import { Box, Button, Grid, Image, jsx, Text, useColorMode, Container } from "theme-ui"
+import { Box, Button, Grid, Image, jsx, Text, useColorMode, Container , Embed} from "theme-ui"
 import Iframe from 'react-iframe'
 import { Helmet } from "react-helmet"
 
@@ -39,6 +39,22 @@ const RiskScorePage = props => {
         contracting coronavirus than others and might need support
         from other communities to fight this health crisis.
       </Text>
+
+      <Box
+        sx={{
+          width: "100%",
+          mt: 6
+        }}
+      >
+        <Embed
+          src={'/risk_score_viz.html'}
+          sx={{
+            background: "transparent",
+            border: "1px solid #ccc",
+            height: [450, 350]
+          }}
+        />
+      </Box>
     </Box>
  
     /*  <Text
