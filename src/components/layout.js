@@ -73,6 +73,9 @@ export const Header = () => {
         <Link to="/visualizations">
           <NavLink>Visualizations</NavLink>
         </Link>
+        <Link to="/risk-score-vis">
+          <NavLink>Risk Score Model</NavLink>
+        </Link>
         <Link to="/team">
           <NavLink>Our Team</NavLink>
         </Link>
@@ -174,6 +177,9 @@ export const Header = () => {
         </Link>
         <Link to="/visualizations">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Visualizations</NavLink>
+        </Link>
+        <Link to="/risk-score-vis">
+          <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Risk Score Model</NavLink>
         </Link>
         <Link to="/team">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Our Team</NavLink>
