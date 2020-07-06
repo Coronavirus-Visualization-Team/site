@@ -33,11 +33,11 @@ const RiskScorePage = props => {
         }}
       >
         <Embed
-          src={'/risk_score_viz.html'}
+          src={'/risk_score_viz2.html'}
           sx={{
             background: "transparent",
             border: "1px solid #ccc",
-            height: [450, 350], 
+            height: [800, 800], 
             borderRadius: "25px"
           }}
         />
@@ -143,16 +143,16 @@ const RiskScorePage = props => {
         >
         <ol>
         <li>Pull and parse relevant data from credible data sources with proper licenses.</li>
-        <li>Clean datasets.</li>
-        <li>Hone in on 99 socioeconomic variables from ACS Census Bureau 2015-2019.</li> 
-        <li>Pull population density and append with rest of data on a county level.</li>
-        <li>Pull updated case and death data for each county and calculate respective case
-        and fatality rates per 1000 people.</li>
-        <li>Normalize all variables using Z-score.</li>
+        <li>Clean dataset.</li>
+        <li>Hone in on 99 socioeconomic variables from ACS Census Bureau  2015-2019.</li> 
+        <li>Pull population density and append with rest of data.</li>
+        <li>Pull updated case and death data for each county and calculate respective
+            case and fatality rates per 1000 tests.</li>    
+        <li>Normalize all variables using min-max scaler function.</li>    
         <li>Determine correlation coefficients between each variable + case rate / fatality 
-        rate and multiply them by each index to then create a matrix.</li>
-        <li>Sum all indexes across the row to get total risk score for each county.</li> 
-        <li>Visualize data with and without population density.</li>
+            rate and multiply them by each index to then create a matrix.</li>   
+        <li>Sum all indexes across the row to get total risk score for each county.</li>    
+        <li>Visualize data.</li>    
         </ol>
         </Text>
 
