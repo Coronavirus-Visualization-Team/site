@@ -27,12 +27,6 @@ import Sun from "../icons/sun.png";
 import Moon from "../icons/moon.png";
 
 import SEO from "../components/seo";
-import ReactGA from 'react-ga';
-
-const trackingId = "UA-171730199-2"; 
-
-ReactGA.initialize(trackingId);
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 export const Header = () => {
   const [show, toggleShow] = useState(false)

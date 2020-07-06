@@ -6,6 +6,12 @@ import { Container, jsx, Text, Grid, Box } from "theme-ui"
 import ProjectPicker from "../components/Projects/ProjectPicker"
 import Tile from "../components/Projects/Tile"
 import { Helmet } from "react-helmet"
+import ReactGA from 'react-ga';
+
+const trackingId = "UA-171730199-2"; 
+
+ReactGA.initialize(trackingId);
+ReactGA.pageview('/projects');
 
 const Projects = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark

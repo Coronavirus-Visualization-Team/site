@@ -4,6 +4,12 @@ import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import { jsx, Text, Divider, Box, Container, Grid, Image, useColorMode } from "theme-ui"
 import Tile from "../components/Projects/Tile"
+import ReactGA from 'react-ga';
+
+const trackingId = "UA-171730199-2"; 
+
+ReactGA.initialize(trackingId);
+ReactGA.pageview('/');
 
 const IndexPage = (props) => {
   const partnersData = props.data.partners.edges;

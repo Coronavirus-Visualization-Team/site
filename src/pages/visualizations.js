@@ -3,6 +3,12 @@ import React from "react"
 import { Image, Box, jsx, Text, Grid } from "theme-ui"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
+import ReactGA from 'react-ga';
+
+const trackingId = "UA-171730199-2"; 
+
+ReactGA.initialize(trackingId);
+ReactGA.pageview('/visualizations');
 
 const VizPage = props => {
   const vizData = props.data.viz.edges

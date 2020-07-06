@@ -2,6 +2,12 @@
 import React from "react"
 import { jsx, Text, Box, Embed } from "theme-ui"
 import { Helmet } from "react-helmet"
+import ReactGA from 'react-ga';
+
+const trackingId = "UA-171730199-2"; 
+
+ReactGA.initialize(trackingId);
+ReactGA.pageview('/resources');
 
 export default () => (
   <Box

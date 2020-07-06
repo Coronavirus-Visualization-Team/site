@@ -11,6 +11,12 @@ import ColumbiaLogo from "../../static/img/columbia.png"
 import MitLogo from "../../static/img/mit.png"
 import JohnHopkinsLogo from "../../static/img/johnhopkins.png"
 import GtLogo from "../../static/img/gt-seal.png"
+import ReactGA from 'react-ga';
+
+const trackingId = "UA-171730199-2"; 
+
+ReactGA.initialize(trackingId);
+ReactGA.pageview('/join');
 
 const JoinPage = props => {
   const partnersData = props.data.partners.edges
