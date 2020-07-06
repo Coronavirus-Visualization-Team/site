@@ -7,4 +7,5 @@ community_manager:
 position: Mentor Recruiting
 project:
 image: ../assets/default_exec_image.png
+linkedin:
 ---

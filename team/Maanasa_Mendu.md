@@ -7,5 +7,5 @@ community_manager:
 position: COVID and Climate Project Lead
 project: COVID and Climate
 image: ../assets/default_exec_image.png
-linkedin: "https://www.linkedin.com/"
+linkedin: 
 ---
