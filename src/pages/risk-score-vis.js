@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet"
 
 const RiskScorePage = props => {
   return (
+    <>
     <Box
       sx={{
         position: "relative",
@@ -24,26 +25,11 @@ const RiskScorePage = props => {
       >
       COVID-19 Risk Score Model
       </Text>
-
-      <Text
-        sx={{
-          fontSize: [1, 2],
-          //maxWidth: ["100%", "65%"],
-          mb: "2vh"
-        }}
-      >
-        During the ongoing COVID-19 pandemic, different counties
-        in the US are impacted and at risk in various ways. The
-        Risk Score Model designed by Coronavirus Visualizations Team
-        (CVT) analyzes which US counties are at higher risk of
-        contracting coronavirus than others and might need support
-        from other communities to fight this health crisis.
-      </Text>
-
+      </Box>
       <Box
         sx={{
           width: "100%",
-          mt: 6
+          mt: 4
         }}
       >
         <Embed
@@ -51,35 +37,127 @@ const RiskScorePage = props => {
           sx={{
             background: "transparent",
             border: "1px solid #ccc",
-            height: [450, 350]
+            height: [450, 350], 
+            borderRadius: "25px"
           }}
         />
-      </Box>
     </Box>
- 
-    /*  <Text
-        sx={{
-          fontSize: [2, 3],
-          maxWidth: ["100%", "65%"],
-          mb: 3,
-          mt: 3,
+     
+    <Text
+      sx={{
+        variant: "styles.headerText",
+        mt: "6vh",
+        color: "#639FAB"
         }}
       >
-      As of now, these counties are at the highest and lowest risk of
-      having COVID-19 health crisis based on their respective risk 
-      scores shown in the model. 
-    </Text>
-    */
+      Overview
+      </Text>
+      <Text
+        sx={{ 
+          variant: "styles.bodyText", 
+          color: "grey", 
+          fontSize: [0, 1]
+        }}
+        >
+        The pandemic has shed light on societal disparities and economic 
+        inequalities. We are undertaking extensive analysis and drawing 
+        data-driven insights on how the pandemic is disproportionately 
+        affecting marginalized and underserved communities. We are assessing
+        the relationship between socioeconomic variables and the epidemiological
+        profiling of COVID-19 including case, death, and recovery rates on 
+        zip-code, county, state, and nation-wide level through statistical testing
+        and modelling. This has enabled us to understand the distribution of spread
+        and impact across geographies on a local district level to a country wide 
+        level. Through methodologies such as feature extraction and cluster analyses
+        we are able to understand the inherent correlations between socioeconomic
+        variables so we can model appropriately.
+        <br></br>
+        <br></br>
+        Our team has also computed and visualized aggregate risk scores for 
+        specific counties based on the socioeconomic variables, population density, 
+        and testing rate  so we can inform, or rather, assist policy makers and higher
+        officials in their prioritization and allocation of resources.
+        </Text>
+      
+        <Text
+          sx={{
+            variant: "styles.headerText",
+            mt: "6vh",
+            color: "#639FAB"
+          }}
+        >
+        Feature Importance 
+        </Text>
+        <Text
+          sx={{ 
+            variant: "styles.bodyText", 
+            color: "grey", 
+            fontSize: [1, 2]
+          }}
+        >
+        Features that highly correlate and importance in predicting fataility rate
+        </Text>
+        <Text
+          sx={{ 
+            variant: "styles.bodyText", 
+            color: "grey", 
+            fontSize: [1, 2]
+          }}
+        >
+        Features that highly correlate to and important in predicting Case rate
+        </Text>
+        <Text
+          sx={{ 
+            variant: "styles.bodyText", 
+            color: "grey", 
+            fontSize: [1, 2]
+          }}
+        >
+        Inherent correlations between features used
+        </Text>
+        <Text
+          sx={{
+            variant: "styles.headerText",
+            mt: "6vh",
+            color: "#639FAB"
+          }}
+        >
+        Cluster Analysis 
+        </Text>
 
-  )
-  
-    //return (
-    //<Iframe url="risk-score-vis"
-    //width="100%"
-    //height="786px"
-    //display="initial"
-    //position="relative"/>
-  //)
+        <Text
+          sx={{
+            variant: "styles.headerText",
+            mt: "6vh",
+            color: "#639FAB"
+          }}
+        >
+        Methodology For Developing The Model 
+        </Text>
+        <Text
+          sx={{ 
+            variant: "styles.bodyText", 
+            color: "grey", 
+            fontSize: [0, 1]
+          }}
+        >
+        <ol>
+        <li>Pull and parse relevant data from credible data sources with proper licenses.</li>
+        <li>Clean datasets.</li>
+        <li>Hone in on 99 socioeconomic variables from ACS Census Bureau 2015-2019.</li> 
+        <li>Pull population density and append with rest of data on a county level.</li>
+        <li>Pull updated case and death data for each county and calculate respective case
+        and fatality rates per 1000 people.</li>
+        <li>Normalize all variables using Z-score.</li>
+        <li>Determine correlation coefficients between each variable + case rate / fatality 
+        rate and multiply them by each index to then create a matrix.</li>
+        <li>Sum all indexes across the row to get total risk score for each county.</li> 
+        <li>Visualize data with and without population density.</li>
+        </ol>
+        </Text>
+
+      </> 
+  ) 
 }
 
 export default RiskScorePage;
