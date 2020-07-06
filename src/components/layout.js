@@ -27,6 +27,27 @@ import Sun from "../icons/sun.png";
 import Moon from "../icons/moon.png";
 
 import SEO from "../components/seo";
+import ReactGA from 'react-ga';
+import { createBrowserHistory } from 'history';
+import { Router } from 'react-router-dom';
+
+const trackingId = "UA-171730199-2"; 
+
+ReactGA.initialize(trackingId, {
+  debug: true,
+  titleCase: false,
+  gaOptions: {
+    userId: 123
+  }
+});
+
+const history = createBrowserHistory();
+
+// Initialize google analytics page view tracking
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
 
 export const Header = () => {
   const [show, toggleShow] = useState(false)

@@ -19,7 +19,7 @@
   "dependencies": {
     "@theme-ui/preset-base": "^0.3.0",
     "gatsby": "^2.20.29",
-    "gatsby-cli": "^2.11.22",
+    "gatsby-cli": "^2.12.58",
     "gatsby-plugin-client-side-redirect": "^1.1.0",
     "gatsby-plugin-google-analytics": "^2.3.0",
     "gatsby-plugin-layout": "^1.2.3",
@@ -29,11 +29,14 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.2.5",
     "gatsby-transformer-remark": "^2.7.5",
+    "history": "^5.0.0",
     "lodash": "^4.17.15",
     "netlify-cms-app": "^2.12.11",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-ga": "^3.1.1",
     "react-helmet": "^6.0.0",
+    "react-router-dom": "^5.2.0",
     "styled-components": "^5.1.0",
     "theme-ui": "^0.3.1"
   }
