@@ -142,19 +142,19 @@ const VizPage = props => {
 
         <iframe title="CoViz Project Team" scrolling="no" frameborder="0" src="https://harvard-cga.maps.arcgis.com/home/webmap/embedGallery.html?displayapps=true&displayinline=true&group=6ee6c2a54beb432cae327c578923b11d" style={{width:'100%', height:'687px'}}></iframe>
       </Box>
-      
-      <Text
+
+      <a href="https://www.notion.so/8dd166b3e06349fd89696f73d0ca0470?v=7e0a467880384bce8b7d28641ca2faef" target="_blank" rel="noopener noreferrer" style={{color: 'primary', textDecoration: 'none'}}>
+        <Text
           sx={{
-            fontSize: [3, 4],
-            maxWidth: "100%",
-            color: "primary",
-            textAlign: "left"
-          }}
-        >
-          <a href="https://www.notion.so/8dd166b3e06349fd89696f73d0ca0470?v=7e0a467880384bce8b7d28641ca2faef" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>
-            CVT Data Viz Dashboard on Notion &#187;
-          </a>
+              fontSize: [3, 4],
+              maxWidth: "100%",
+              color: "primary",
+              textAlign: "left"
+            }}
+          >
+          CVT Data Viz Dashboard on Notion &#187;
         </Text>
+      </a>
     </>
   )
 }
