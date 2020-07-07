@@ -1,4 +1,9 @@
 const path = require(`path`)
+const express= require('express');
+
+ exports.onCreateDevServer=({app})=>{
+     app.use(express.static('public'))
+ }
 
 // exports.onCreateNode = ({ node, getNode }) => {
 //     if (node.internal.type === `MarkdownRemark`) {
