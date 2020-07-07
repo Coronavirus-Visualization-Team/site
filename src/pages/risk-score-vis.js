@@ -79,7 +79,8 @@ const RiskScorePage = props => {
         officials in their prioritization and allocation of resources.
         </Text>
       
-        <Text
+      
+    {/* <Text
           sx={{
             variant: "styles.headerText",
             mt: "6vh",
@@ -115,7 +116,9 @@ const RiskScorePage = props => {
         >
         Inherent correlations between features used
         </Text>
-        <Text
+        */}
+
+       {/* <Text
           sx={{
             variant: "styles.headerText",
             mt: "6vh",
@@ -124,6 +127,7 @@ const RiskScorePage = props => {
         >
         Cluster Analysis 
         </Text>
+        */}
 
         <Text
           sx={{
