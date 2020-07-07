@@ -41,7 +41,7 @@ const RiskScorePage = props => {
           sx={{
             background: "transparent",
             border: "1px solid #ccc",
-            height: ["100%","45%"], 
+            height: [400, 400], 
             borderRadius: "25px"
           }}
         />
