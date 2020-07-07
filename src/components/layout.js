@@ -85,11 +85,6 @@ export const Header = () => {
         <Link to="/resources">
           <NavLink>Resources</NavLink>
         </Link>
-        <NavLink>
-          <a href="https://bank.hackclub.com/donations/start/coronavirus-visualization-team" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>
-            Donate
-          </a>
-        </NavLink>
 
         <Box sx={{
           width: '35px',
@@ -190,9 +185,6 @@ export const Header = () => {
         <Link to="/resources">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Resources</NavLink>
         </Link>
-        <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>
-          <a href="https://bank.hackclub.com/donations/start/coronavirus-visualization-team" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>Donate</a>
-        </NavLink>
         <Box sx={{
           width: '35px',
           height: '35px',
