@@ -2,6 +2,12 @@
 import React from "react"
 import { Box, jsx, Text, useColorMode, Container , Embed} from "theme-ui"
 import { Helmet } from "react-helmet"
+import ReactGA from 'react-ga';
+
+const trackingId = "UA-171730199-2"; 
+
+ReactGA.initialize(trackingId);
+ReactGA.pageview('/risk-score-vis');
 
 const RiskScorePage = props => {
   return (
@@ -45,7 +51,7 @@ const RiskScorePage = props => {
       sx={{
         variant: "styles.headerText",
         mt: "6vh",
-        color: "#639FAB"
+        color: "primary"
         }}
       >
       Overview
@@ -53,8 +59,8 @@ const RiskScorePage = props => {
       <Text
         sx={{ 
           variant: "styles.bodyText", 
-          color: "grey", 
-          fontSize: [0, 1]
+          color: "secondary", 
+          fontSize: [1, 2]
         }}
         >
         The pandemic has shed light on societal disparities and economic 
@@ -130,8 +136,8 @@ const RiskScorePage = props => {
         <Text
           sx={{
             variant: "styles.headerText",
-            mt: "6vh",
-            color: "#639FAB"
+            mt: "2vh",
+            color: "primary"
           }}
         >
         Methodology For Developing The Model 
@@ -139,8 +145,8 @@ const RiskScorePage = props => {
         <Text
           sx={{ 
             variant: "styles.bodyText", 
-            color: "grey", 
-            fontSize: [0, 1]
+            color: "secondary", 
+            fontSize: [1, 2]
           }}
         >
         <ol>
