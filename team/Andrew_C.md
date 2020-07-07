@@ -1,5 +1,5 @@
 ---
-name: Andrew C
+name: Andrew Chen
 executive: false
 director: false
 lead: false

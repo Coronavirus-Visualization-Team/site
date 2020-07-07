@@ -1,5 +1,5 @@
 ---
-name: Kripa
+name: Kripa Krishnan
 executive: false
 director: false
 lead: true

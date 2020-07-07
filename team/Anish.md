@@ -1,5 +1,5 @@
 ---
-name: Anish
+name: Anish Premkumar
 executive: false
 director: false
 lead: false

@@ -1,5 +1,5 @@
 ---
-name: Anjali K
+name: Anjali Kumar
 executive: false
 director: false
 lead: false

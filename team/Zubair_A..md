@@ -1,5 +1,5 @@
 ---
-name: Zubair A.
+name: Zubair Akram
 executive: false
 director: true
 lead: false

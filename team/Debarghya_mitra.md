@@ -1,5 +1,5 @@
 ---
-name: Debarghya mitra
+name: Debarghya Mitra
 executive: false
 director: false
 lead: false
