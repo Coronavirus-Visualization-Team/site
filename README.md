@@ -8,8 +8,9 @@ This is the official landing page for CVT! This is worked on by the website team
 ## Current members
 - Steve (Executive)
 - Calix (Lead, Lead Dev, Community Manager)
-- Fernanda (Developer)
+- Fernanda (Lead, Developer)
 - Jake (Developer)
+- Wanyu (Developer)
 
 ## Technology stack
 - React.js
@@ -57,4 +58,4 @@ This is the official landing page for CVT! This is worked on by the website team
 - Those who do not contribute up to the standard are in risk of being removed off of the website team
 
 ## Support
-If you need any help, reach out to Calix, Steve, or Adway!
+If you need any help, reach out to Calix, Steve, or Fernanda!
