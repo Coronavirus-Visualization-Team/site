@@ -80,43 +80,50 @@ const RiskScorePage = props => {
         </Text>
       
       
-    {/* <Text
+     <Text
           sx={{
             variant: "styles.headerText",
-            mt: "6vh",
+            mt: "4vh",
             color: "#639FAB"
           }}
         >
         Feature Importance 
-        </Text>
-        <Text
-          sx={{ 
-            variant: "styles.bodyText", 
-            color: "grey", 
-            fontSize: [1, 2]
+      </Text>
+      
+      <Box
+        sx={{
+          width: "100%",
+          mt: 4
+        }}
+      >
+        <Embed
+          src={'/Fatality Rate (1).html'}
+          sx={{
+            background: "transparent",
+            border: "1px solid #ccc",
+            height: [800, 800], 
+            borderRadius: "25px"
           }}
-        >
-        Features that highly correlate and importance in predicting fataility rate
-        </Text>
-        <Text
-          sx={{ 
-            variant: "styles.bodyText", 
-            color: "grey", 
-            fontSize: [1, 2]
+        />
+    </Box>
+
+    <Box
+        sx={{
+          width: "100%",
+          mt: 4
+        }}
+      >
+        <Embed
+          src={'/Case Rate (1).html'}
+          sx={{
+            background: "transparent",
+            border: "1px solid #ccc",
+            height: [800, 800], 
+            borderRadius: "25px"
           }}
-        >
-        Features that highly correlate to and important in predicting Case rate
-        </Text>
-        <Text
-          sx={{ 
-            variant: "styles.bodyText", 
-            color: "grey", 
-            fontSize: [1, 2]
-          }}
-        >
-        Inherent correlations between features used
-        </Text>
-        */}
+        />
+    </Box>
+        
 
        {/* <Text
           sx={{
@@ -132,7 +139,7 @@ const RiskScorePage = props => {
         <Text
           sx={{
             variant: "styles.headerText",
-            mt: "6vh",
+            mt: "4vh",
             color: "#639FAB"
           }}
         >
@@ -160,6 +167,30 @@ const RiskScorePage = props => {
         </ol>
         </Text>
 
+        <Text
+          sx={{
+            variant: "styles.headerText",
+            mt: "4vh",
+            color: "black",
+            fontSize: [0, 1]
+          }}
+        >
+        Credits 
+        </Text>
+        <Text
+          sx={{ 
+            variant: "styles.bodyText", 
+            color: "grey", 
+            fontSize: [0, 1]
+          }}
+        >
+        Amin Boukari&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Bryan Lu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Ispeeta Deka&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Jacob Nardini&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Srikripa Krishnan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </Text> 
+        
       </> 
   ) 
 }
