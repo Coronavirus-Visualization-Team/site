@@ -85,6 +85,9 @@ export const Header = () => {
         <Link to="/resources">
           <NavLink>Resources</NavLink>
         </Link>
+        <Link to="/podcasts">
+          <NavLink>Podcasts</NavLink>
+        </Link>
 
         <Box sx={{
           width: '35px',
@@ -184,6 +187,9 @@ export const Header = () => {
         </Link>
         <Link to="/resources">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Resources</NavLink>
+        </Link>
+        <Link to="/podcasts">
+          <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Podcasts</NavLink>
         </Link>
         <Box sx={{
           width: '35px',
