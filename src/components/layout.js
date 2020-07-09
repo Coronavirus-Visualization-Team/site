@@ -22,6 +22,7 @@ import MailLogo from "./social-icons/Mail.png"
 import GithubLogo from "./social-icons/GitHub.png"
 import MediumLogo from "./social-icons/Medium.png"
 import LinkedInLogo from "./social-icons/LinkedIn.png"
+import SpotifyLogo from "./social-icons/spotify.png"
 
 import Sun from "../icons/sun.png";
 import Moon from "../icons/moon.png";
@@ -84,9 +85,6 @@ export const Header = () => {
         </Link>
         <Link to="/resources">
           <NavLink>Resources</NavLink>
-        </Link>
-        <Link to="/podcasts">
-          <NavLink>Podcasts</NavLink>
         </Link>
 
         <Box sx={{
@@ -187,9 +185,6 @@ export const Header = () => {
         </Link>
         <Link to="/resources">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Resources</NavLink>
-        </Link>
-        <Link to="/podcasts">
-          <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Podcasts</NavLink>
         </Link>
         <Box sx={{
           width: '35px',
@@ -442,6 +437,10 @@ export const Footer = () => {
         <SocialIcon
           link="https://github.com/Coronavirus-Visualization-Team"
           image={GithubLogo}
+        />
+        <SocialIcon
+          link="/podcasts"
+          image={SpotifyLogo}
         />
       </Box>
     </Box>

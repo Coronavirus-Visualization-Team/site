@@ -42,7 +42,7 @@ export default () => (
     <Box
       sx={{
         width: "100%",
-        mt: 6,
+        mt: 5,
         border: "none"
       }}
     >
