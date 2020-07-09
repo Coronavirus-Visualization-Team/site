@@ -21,7 +21,6 @@ const IndexPage = (props) => {
     <Box
       sx={{
         position: "relative",
-
         display: "flex",
         flexDirection: "column",
         alignItems: 'center'
@@ -40,6 +39,7 @@ const IndexPage = (props) => {
       >
         We're the <b>Coronavirus Visualization Team</b>,  a crowdsourced student network of data scientists and analysts, developers, and communicators working to better visualize and share the impacts, present and future, of COVID-19.
       </Text>
+      
       <Container
               sx={{
                 position: "relative",

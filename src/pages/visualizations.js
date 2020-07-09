@@ -40,28 +40,41 @@ const VizPage = props => {
             sx={{
               fontSize: [1, 2],
               maxWidth: ["100%", "65%"],
-              mb: "2vh",
+              mb: "3em",
             }}
           >
-           Members of our team have created empirical data visualizations that educate the public on the pandemic’s ongoing impact.
+           Our team has created empirical data visualizations that educate the public on the pandemic’s ongoing impact
+           and display information from multiple, often overlooked angles such as climate implications, socioeconomic factors, and societal aspects.
         </Text>
-        <Text
-          sx={{
-            fontSize: [2, 3],
-            maxWidth: ["100%"],
-            m: "2vh 0vw",
-            borderTop: '2px solid white'
-          }}
-        >
-          Breaking News
-      </Text>
       </Box>
+      <Container
+              sx={{
+                position: "relative",
+                // m: "8vh 0 0 0",
+                width: "100%",
+                minWidth: "100%",
+              }}
+
+      >
+      <Text
+        sx={{
+          width: "100%",
+          textAlign: "left",
+          m: "1em 0 4vh 0",
+          color: "primary",
+          fontSize: [2, 3],
+
+        }}
+      >
+        Breaking News
+      </Text>
+      </Container>
       <Grid
         gap={3}
         width={[300, null, 350]}
         sx={{
           justifyItems: ['center', 'unset'],
-          borderBottom: '2px solid white'
+          position: "relative"
         }}
       >
         {breakingNewsData.map(item => {
@@ -159,7 +172,7 @@ const VizPage = props => {
         width={[300, null, 350]}
         sx={{
           justifyItems: ['center', 'unset'],
-          borderBottom: '2px solid white'
+          // borderBottom: '2px solid white'
         }}
       >
       {vizData.map(item => {
