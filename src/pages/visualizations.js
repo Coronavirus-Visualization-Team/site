@@ -158,7 +158,8 @@ const VizPage = props => {
         gap={3}
         width={[300, null, 350]}
         sx={{
-          justifyItems: ['center', 'unset']
+          justifyItems: ['center', 'unset'],
+          borderBottom: '2px solid white'
         }}
       >
       {vizData.map(item => {
@@ -250,7 +251,7 @@ const VizPage = props => {
             color: "primary"
           }}
         >
-          Harvard CGA Project
+          Harvard CGA Projects
         </Text>
 
         <iframe title="CoViz Project Team" scrolling="no" frameborder="0" src="https://harvard-cga.maps.arcgis.com/home/webmap/embedGallery.html?displayapps=true&displayinline=true&group=6ee6c2a54beb432cae327c578923b11d" style={{width:'100%', height:'687px'}}></iframe>
