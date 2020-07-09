@@ -420,27 +420,37 @@ export const Footer = () => {
         <SocialIcon
           link="https://instagram.com/joincvt"
           image={InstagramLogo}
+          target="_blank"
         />
-        <SocialIcon link="https://twitter.com/joincvt" image={TwitterLogo} />
+        <SocialIcon 
+          link="https://twitter.com/joincvt" 
+          image={TwitterLogo} 
+          target="_blank"
+        />
         <SocialIcon
           link="mailto:coronavirusvisualizationteam@gmail.com"
           image={MailLogo}
+          target="_blank"
         />
         <SocialIcon
           link="https://linkedin.com/company/coronavirus-visualization-team"
           image={LinkedInLogo}
+          target="_blank"
         />
         <SocialIcon
           link="https://medium.com/coronavirus-visualization-team"
           image={MediumLogo}
+          target="_blank"
         />
         <SocialIcon
           link="https://github.com/Coronavirus-Visualization-Team"
           image={GithubLogo}
+          target="_blank"
         />
         <SocialIcon
           link="/podcasts"
           image={SpotifyLogo}
+          target="_self"
         />
       </Box>
     </Box>
@@ -453,7 +463,7 @@ const SocialIcon = props => {
     <Button
       as="a"
       href={props.link}
-      target="_blank"
+      target={props.target}
       rel="noopener noreferrer"
       sx={{
         background: "#168CA6",
