@@ -96,7 +96,7 @@ const VizPage = props => {
                     mb: "1vh",
                     borderRadius: '10px',
                     boxShadow: "base",
-                    ":hover > #overlay": {
+                    "#overlay": {
                       opacity: 1
                     },
                   }}
@@ -105,7 +105,7 @@ const VizPage = props => {
                   <Box
                     sx={{
                       position: 'absolute',
-                      top: 0,
+                      top: "72%",
                       bottom: 0,
                       left: 0,
                       right: 0,
@@ -119,7 +119,7 @@ const VizPage = props => {
                     <Box
                       sx={{
                         position: 'absolute',
-                        bottom: '7px',
+                        top: '10%',
                         left: '10px',
                       }}
                       id="text"
@@ -160,7 +160,7 @@ const VizPage = props => {
           sx={{
             fontSize: [2, 3],
             maxWidth: ["100%", "65%"],
-            m: "2vh 0vw",
+            m: "4vh 0vw",
             color: "primary"
           }}
         >
@@ -195,7 +195,7 @@ const VizPage = props => {
                     mb: "1vh",
                     borderRadius: '10px',
                     boxShadow: "base",
-                    ":hover > #overlay": {
+                    "#overlay": {
                       opacity: 1
                     },
                   }}
@@ -204,7 +204,7 @@ const VizPage = props => {
                   <Box
                     sx={{
                       position: 'absolute',
-                      top: 0,
+                      top: "72%",
                       bottom: 0,
                       left: 0,
                       right: 0,
@@ -218,7 +218,7 @@ const VizPage = props => {
                     <Box
                       sx={{
                         position: 'absolute',
-                        bottom: '7px',
+                        top: '10%',
                         left: '10px',
                       }}
                       id="text"
@@ -260,7 +260,7 @@ const VizPage = props => {
           sx={{
             fontSize: [2, 3],
             maxWidth: "100%",
-            m: "2vh 0vw",
+            m: "4vh 0vw",
             color: "primary"
           }}
         >
