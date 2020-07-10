@@ -32,6 +32,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `socioeconomics`,
+        path: `${__dirname}/socioeconomics`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `team`,
         path: `${__dirname}/team`,
       },
