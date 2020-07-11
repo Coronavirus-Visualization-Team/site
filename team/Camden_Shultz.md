@@ -7,5 +7,5 @@ community_manager:
 position: Projects Technical Stacks
 project: Misc. Visualizations
 image: ../assets/default_exec_image.png
-linkedin: 
+linkedin: https://www.linkedin.com/in/camdenshultz/
 ---
