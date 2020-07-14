@@ -45,13 +45,22 @@ export default ({ data }) => {
             }}>
                 {html.replace(/<p>/g,'').replace('</p>','')}
             </Text>
-            <a href={frontmatter.link} target="_blank" style={{color: 'secondary', textDecoration: 'none'}} >
+            <a href={frontmatter.link} target={frontmatter.linkTarget} style={{color: 'secondary', textDecoration: 'none'}} >
             <Text sx = {{
                 color: 'secondary',
                 textDecoration: 'none',
                 mt: 50
             }}>
                {frontmatter.linkTitle}
+            </Text>
+            </a>
+            <a href={frontmatter.link2} target={frontmatter.linkTarget} style={{color: 'secondary', textDecoration: 'none'}} >
+            <Text sx = {{
+                color: 'secondary',
+                textDecoration: 'none',
+                mt: 20
+            }}>
+               {frontmatter.link2Title}
             </Text>
             </a>
         </Container>
@@ -71,6 +80,10 @@ export const query = graphql`
                     label
                     link
                     linkTitle
+                    linkTarget
+                    link2Title
+                    link2
+                    link2Target
                 }
             }
         }

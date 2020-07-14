@@ -3,10 +3,11 @@ path: testing4
 date: 2020-04-25T00:28:54.933Z
 slug: avoiding-depression
 title: Avoiding a COVID-19 Depression
-featured: true
+featured: false
 image: ../../img/avoiding-depression.png
 linkTitle: Project Update
 link: "https://docs.google.com/document/d/11AxDRqu1AjKRIs1gYfEOzJZbOJv-bnnFZzi2W1leZg0/edit"
+linkTarget: "_blank"
 label: Emily Chang
 templateKey: project
 ---
