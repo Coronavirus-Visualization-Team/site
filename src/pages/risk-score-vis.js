@@ -45,12 +45,23 @@ const RiskScorePage = props => {
             borderRadius: "25px"
           }}
         />
+        <Text
+          sx={{
+            fontSize: [0, 1],
+            maxWidth: ["100%", "65%"],
+            m: "2vh auto 0 auto",
+            textAlign: "center",
+            color: "primary"
+          }}
+          >
+            By Amin Boukari | Socioeconomic Factors Team
+        </Text>
     </Box>
      
     <Text
       sx={{
         variant: "styles.headerText",
-        mt: "6vh",
+        mt: "2vh",
         color: "primary"
         }}
       >
