@@ -77,9 +77,11 @@ export const Header = () => {
         <Link to="/podcasts">
           <NavLink>Podcasts</NavLink>
         </Link>
-        <a href="https://blog.understandcovid.org/" target="_blank">
-          <NavLink>Blog</NavLink>
-        </a>
+        <NavLink>
+          <a href="https://blog.understandcovid.org/" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}> 
+          Blog
+          </a>
+        </NavLink>
         <Link to="/team">
           <NavLink>Our Team</NavLink>
         </Link>
@@ -180,7 +182,7 @@ export const Header = () => {
         <Link to="/podcasts">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Podcasts</NavLink>
         </Link>
-        <a href="https://blog.understandcovid.org/" target="_blank">
+        <a href="https://blog.understandcovid.org/" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Blog</NavLink>
         </a>
         <Link to="/team">
