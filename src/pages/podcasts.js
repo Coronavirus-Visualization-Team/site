@@ -18,7 +18,7 @@ export default () => (
       flexDirection: "column"
     }}
   >
-    <Helmet title="CVT | Resources" />
+    <Helmet title="CVT | Podcasts" />
     <Text
       sx={{
         fontSize: [3, 4],
@@ -36,7 +36,7 @@ export default () => (
         maxWidth: ["100%", "65%"]
       }}
     >
-      Check out the CVT team's podcasts below.
+      Check out our Coronavirus Visualization Podcast below.
     </Text>
 
     <Box
