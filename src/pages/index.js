@@ -293,6 +293,19 @@ export function DataGraphs() {
   function renderYFormatted(value) {
     return `${value}^10`
   }
+  /**
+  function renderXFormatted(value) {
+    let date = `${value}`;
+
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+    var year = date.substring(0, 4);
+    var month = months[date.substring(4, 6) - 1];
+    var day = date.substring(6, 8);
+
+    return month;
+  }
+  */
 
   function numberWithCommas(x) {
     return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
@@ -366,6 +379,9 @@ export function DataGraphs() {
         {//<XAxis dataKey="name" angle={45} textAnchor="end" />
         }
         <YAxis tickFormatter={renderYFormatted} />
+        {/**<XAxis xAxisId={0} dataKey="name" tickFormatter={renderXFormatted} interval={30} tickLine={false} />
+        <XAxis xAxisId={1} tickFormatter={() => ""} tickLine={false} height={0} />
+        */}
 
         <Tooltip content={<CustomTooltip />} />
         <Legend formatter={renderColorfulLegendText} />
