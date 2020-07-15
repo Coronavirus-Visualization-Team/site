@@ -1,10 +1,15 @@
 /** @jsx jsx */
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import { jsx, Text, Divider, Box, Container, Grid, Image, useColorMode } from "theme-ui"
 import Tile from "../components/Projects/Tile"
+
 import ReactGA from 'react-ga';
+import {
+  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
+} from 'recharts';
+import DefaultTooltipContent from 'recharts/lib/component/DefaultTooltipContent';
 
 const trackingId = "UA-171730199-2"; 
 
@@ -21,6 +26,7 @@ const IndexPage = (props) => {
     <Box
       sx={{
         position: "relative",
+
         display: "flex",
         flexDirection: "column",
         alignItems: 'center'
@@ -39,16 +45,72 @@ const IndexPage = (props) => {
       >
         We're the <b>Coronavirus Visualization Team</b>,  a crowdsourced student network of data scientists and analysts, developers, and communicators working to better visualize and share the impacts, present and future, of COVID-19.
       </Text>
+
+      <Text
+        sx={{
+          width: "100%",
+          textAlign: "center",
+          mt: 6,
+          color: "primary",
+          fontSize: [3, 4]
+        }}
+      >
+        USA Covid-19 Epidemiological Profile
+      </Text>
+
+      <Text
+        sx={{
+          width: "100%",
+          textAlign: "center",
+          mt: 1,
+          color: "secondary",
+          fontSize: ['14px', '16px']
+        }}
+      >
+        Logarithmic
+      </Text>
+
+      <Container
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+
+          width: "100%",
+
+          margin: 0
+        }}
+      >
+        <DataGraphs
+          sx={{
+            flex: "1",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        />
+      </Container>
+
+      <Text
+        sx={{
+          width: "100%",
+          textAlign: "center",
+          mt: 1,
+          color: "tertiary",
+          fontSize: ['12px', '14px']
+        }}
+      >
+        Data provided by <a href="https://covidtracking.com" target="_blank" rel="noopener noreferrer" sx={{ color: "secondary" }}>covidtracking.com</a>, under CC BY-NC-4.0
+      </Text>
       
       <Container
-              sx={{
-                position: "relative",
-                background: colorMode === "dark" ? "#17171d" : "white",
-                m: "8vh 0 0 0",
-                width: "100vw",
-                minWidth: "100vw"
-              }}
-
+        sx={{
+          position: "relative",
+          background: colorMode === "dark" ? "#17171d" : "white",
+          m: "8vh 0 0 0",
+          width: "100vw",
+          minWidth: "100vw"
+        }}
       >
       <Text
         sx={{
@@ -134,7 +196,7 @@ const IndexPage = (props) => {
           return (
             <Box
               sx={{
-                width: ["20%"],
+                width: "20%",
                 display: "flex",
                 justifyContent: "center"
               }}
@@ -202,6 +264,120 @@ const IndexPage = (props) => {
 }
 
 export default IndexPage;
+
+export function DataGraphs() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch('https://covidtracking.com/api/v1/us/daily.json')
+      .then(response => response.json())
+      .then(data => {
+        const parsedData = data.reverse().map(item => {
+          return {
+            name: item.date,
+            Cases: Math.log10(item.positive),
+            Deaths: item.death ? Math.log10(item.death) : null,
+            TotalTests: Math.log10(item.positive + item.negative)
+          }
+        });
+        setData(parsedData);
+      })
+  }, []);
+
+  function renderColorfulLegendText(value, entry) {
+  	const { color } = entry;
+    
+    return <span style={{ color }}>{value === 'TotalTests' ? 'Total Tests' : value}</span>;
+  }
+
+  function renderYFormatted(value) {
+    return `${value}^10`
+  }
+
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  const CustomTooltip = props => {
+    // payload[0] doesn't exist when tooltip isn't visible
+    if (props.payload[0] != null) {
+      try {
+        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        let date = props.payload[0].payload.name.toString();
+  
+        var year = date.substring(0, 4);
+        var month = months[date.substring(4, 6) - 1];
+        var day = date.substring(6, 8);
+  
+        // mutating props directly is against react's conventions
+        // so we create a new payload with the name and value fields set to what we want
+        const newPayload = [
+          {
+            name: 'Date',
+            // all your data which created the tooltip is located in the .payload property
+            value: `${day}-${month}-${year}`,
+            // you can also add "unit" here if you need it,',
+            stroke: "#8884d8",
+            strokeWidth: 1,
+            fill: "#fff"
+          },
+          {
+            name: 'Cases',
+            value: `${numberWithCommas(Math.ceil(Math.pow(10, props.payload[0].payload.Cases)))}`,
+            color: "#8884d8"
+          },
+          {
+            name: 'Deaths',
+            value: `${numberWithCommas(Math.ceil(Math.pow(10, props.payload[0].payload.Deaths)))}`,
+            color: "#82ca9d"
+          },
+          {
+            name: 'Total Tests:',
+            value: `${numberWithCommas(Math.ceil(Math.pow(10, props.payload[0].payload.TotalTests)))}`,
+            color: "#ff7675"
+          },
+          //...filteredPayload
+        ];
+
+        // we render the default, but with our overridden payload
+        return <DefaultTooltipContent {...props} payload={newPayload} />;
+      } catch (error) {
+        console.log(error)
+        
+        return null;
+      }
+    }
+  
+    // we just render the default
+    return <DefaultTooltipContent {...props} />;
+  };
+
+  return (
+    <ResponsiveContainer width="100%" minHeight="400px">
+      <LineChart
+        //width={700}
+        //height={400}
+        data={data}
+        margin={{
+          top: 5, right: 30, left: 20, bottom: 5,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        {//<XAxis dataKey="name" angle={45} textAnchor="end" />
+        }
+        <YAxis tickFormatter={renderYFormatted} />
+
+        <Tooltip content={<CustomTooltip />} />
+        <Legend formatter={renderColorfulLegendText} />
+
+        <Line type="monotone" dataKey="Cases" stroke="#8884d8" activeDot={{ r: 8 }} />
+        <Line type="monotone" dataKey="Deaths" stroke="#82ca9d" />
+        <Line type="monotone" dataKey="TotalTests" stroke="#ff7675" />
+      </LineChart>
+    </ResponsiveContainer>
+  );
+}
+
 
 export const query = graphql`
   query {
