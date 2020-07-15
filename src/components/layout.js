@@ -74,9 +74,12 @@ export const Header = () => {
         <Link to="/visualizations">
           <NavLink>Visualizations</NavLink>
         </Link>
-        <Link to="/visualizations/risk-score-vis">
-           <NavLink>Risk Score Model</NavLink>
-         </Link>
+        <Link to="/podcasts">
+          <NavLink>Podcasts</NavLink>
+        </Link>
+        <a href="https://blog.understandcovid.org/" target="_blank">
+          <NavLink>Blog</NavLink>
+        </a>
         <Link to="/team">
           <NavLink>Our Team</NavLink>
         </Link>
@@ -174,9 +177,12 @@ export const Header = () => {
         <Link to="/visualizations">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Visualizations</NavLink>
         </Link>
-        <Link to="/visualizations/risk-score-vis">
-           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Risk Score Model</NavLink>
-         </Link>
+        <Link to="/podcasts">
+          <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Podcasts</NavLink>
+        </Link>
+        <a href="https://blog.understandcovid.org/" target="_blank">
+          <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Blog</NavLink>
+        </a>
         <Link to="/team">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Our Team</NavLink>
         </Link>
@@ -186,6 +192,7 @@ export const Header = () => {
         <Link to="/resources">
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Resources</NavLink>
         </Link>
+
         <Box sx={{
           width: '35px',
           height: '35px',
