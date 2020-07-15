@@ -88,7 +88,7 @@ const VizPage = props => {
                 justifyContent: "center",
               }}
             >
-              <a href={data.link} target="_blank" rel="noopener noreferrer">
+              <a href={data.link} target={data.linkTarget} rel="noopener noreferrer">
                 <Box
                   sx={{
                     position: 'relative',
@@ -187,7 +187,7 @@ const VizPage = props => {
                 justifyContent: "center",
               }}
             >
-              <a href={data.link} target="_blank" rel="noopener noreferrer">
+              <a href={data.link} target={data.linkTarget} rel="noopener noreferrer">
                 <Box
                   sx={{
                     position: 'relative',
@@ -286,7 +286,7 @@ const VizPage = props => {
                 justifyContent: "center",
               }}
             >
-              <a href={data.link} target="_blank" rel="noopener noreferrer">
+              <a href={data.link} target={data.linkTarget}>
                 <Box
                   sx={{
                     position: 'relative',
@@ -397,6 +397,7 @@ export const query = graphql`
               author
               image
               link
+              linkTarget
             }
           }
         }
@@ -411,6 +412,7 @@ export const query = graphql`
               author
               image
               link
+              linkTarget
             }
           }
         }
@@ -425,6 +427,7 @@ export const query = graphql`
               author
               image
               link
+              linkTarget
             }
           }
         }
