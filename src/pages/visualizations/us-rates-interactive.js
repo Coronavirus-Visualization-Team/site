@@ -7,7 +7,7 @@ import ReactGA from 'react-ga';
 const trackingId = "UA-171730199-2"; 
 
 ReactGA.initialize(trackingId);
-ReactGA.pageview('/us-rates-interactive');
+ReactGA.pageview('/visualizations/us-rates-interactive');
 
 const usRatesInteractivePage = props => {
   return (

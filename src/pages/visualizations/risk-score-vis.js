@@ -7,7 +7,7 @@ import ReactGA from 'react-ga';
 const trackingId = "UA-171730199-2"; 
 
 ReactGA.initialize(trackingId);
-ReactGA.pageview('/risk-score-vis');
+ReactGA.pageview('/visualizations/risk-score-vis');
 
 const RiskScorePage = props => {
   return (
