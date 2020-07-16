@@ -56,7 +56,7 @@ const IndexPage = (props) => {
         sx={{
           width: "100%",
           textAlign: "center",
-          m: "8vh 0 0 0",
+          mt: 4,
           color: "primary",
           fontSize: [3, 4],
           background: colorMode === "dark" ? "#17171d" : "white"
@@ -80,7 +80,7 @@ const IndexPage = (props) => {
             maxWidth: "xl",
           }}
         >
-          <Grid width={["100%", "45%"]} gap={5} marginTop="8vh" marginRight="2vw" marginLeft="2vw">
+          <Grid width={["100%", "45%"]} gap={5} marginTop="4" marginRight="2vw" marginLeft="2vw">
             {projectsData.slice(0,4).map((item) => {
               const data = item.node.childMarkdownRemark.frontmatter;
               return (
@@ -108,7 +108,7 @@ const IndexPage = (props) => {
               sx={{
                 position: "relative",
                 background: colorMode === "dark" ? "#17171d" : "white",
-                m: "8vh 0 0 0",
+                m: 0,
                 width: "100vw",
                 minWidth: "100vw"
               }}
@@ -118,7 +118,7 @@ const IndexPage = (props) => {
         sx={{
           width: "100%",
           textAlign: "center",
-          mt: 2,
+          mt: 4,
           color: "primary",
           fontSize: [3, 4],
           background: colorMode === "dark" ? "#17171d" : "white"
@@ -142,7 +142,7 @@ const IndexPage = (props) => {
             maxWidth: "xl",
           }}
         >
-          <Grid width={["100%", "45%"]} gap={5} marginTop="8vh" marginRight="2vw" marginLeft="2vw">
+          <Grid width={["100%", "45%"]} gap={5} marginTop="4" marginRight="2vw" marginLeft="2vw">
             {vizData.slice(0,4).map((item) => {
               const data = item.node.childMarkdownRemark.frontmatter;
               return (
@@ -157,7 +157,7 @@ const IndexPage = (props) => {
           width: "100%",
           textAlign: "center",
           mt: '5vh',
-          mb: "3vh",
+          mb: 2,
           color: "primary",
           fontSize: [1, 2],
           textDecoration: "none"
