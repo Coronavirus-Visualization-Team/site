@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import { jsx, Text, Divider, Box, Container, Grid, Image, useColorMode } from "theme-ui"
 import Tile from "../components/Projects/Tile"
+import VizTile from "../components/Visualizations/VizTile"
 import ReactGA from 'react-ga';
 
 const trackingId = "UA-171730199-2"; 
@@ -14,6 +15,7 @@ ReactGA.pageview('/');
 const IndexPage = (props) => {
   const partnersData = props.data.partners.edges;
   const projectsData = props.data.projects.edges;
+  const vizData = props.data.breakingnews.edges;
 
   const [colorMode, setColorMode] = useColorMode();
 
@@ -92,12 +94,75 @@ const IndexPage = (props) => {
           width: "100%",
           textAlign: "center",
           mt: '5vh',
-          mb: "3vh",
+          mb: 2,
           color: "primary",
           fontSize: [1, 2],
           textDecoration: "none"
         }}
         to="/projects"
+      >
+        See More &#187;
+      </Link>
+
+      <Container
+              sx={{
+                position: "relative",
+                background: colorMode === "dark" ? "#17171d" : "white",
+                m: "8vh 0 0 0",
+                width: "100vw",
+                minWidth: "100vw"
+              }}
+
+      >
+      <Text
+        sx={{
+          width: "100%",
+          textAlign: "center",
+          mt: 2,
+          color: "primary",
+          fontSize: [3, 4],
+          background: colorMode === "dark" ? "#17171d" : "white"
+        }}
+      >
+        Visualizations
+      </Text>
+      </Container>
+
+      <Container
+        sx={{
+          position: "relative",
+          background: colorMode === "dark" ? "#17171d" : "white",
+          m: 0,
+          width: "100vw",
+          minWidth: "100vw",
+        }}
+      >
+        <Container
+          sx={{
+            maxWidth: "xl",
+          }}
+        >
+          <Grid width={["100%", "45%"]} gap={5} marginTop="8vh" marginRight="2vw" marginLeft="2vw">
+            {vizData.slice(0,4).map((item) => {
+              const data = item.node.childMarkdownRemark.frontmatter;
+              return (
+                <VizTile name={data.name} image={data.image} author={data.author} link={data.link} linkTarget={data.linkTarget} />
+              )
+            })}
+          </Grid>
+        </Container>
+      </Container>
+      <Link
+        sx={{
+          width: "100%",
+          textAlign: "center",
+          mt: '5vh',
+          mb: "3vh",
+          color: "primary",
+          fontSize: [1, 2],
+          textDecoration: "none"
+        }}
+        to="/visualizations"
       >
         See More &#187;
       </Link>
@@ -213,6 +278,21 @@ export const query = graphql`
               name
               image
               website
+            }
+          }
+        }
+      }
+    },
+    breakingnews: allFile(filter: {sourceInstanceName: {eq: "breakingnews"}} limit: 4) {
+      edges {
+        node {
+          childMarkdownRemark {
+            frontmatter {
+              name
+              author
+              image
+              link
+              linkTarget
           }
         }
       }
