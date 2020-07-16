@@ -54,7 +54,7 @@ const RiskScorePage = props => {
             color: "primary"
           }}
           >
-            By Amin Boukari | Socioeconomic Factors Team
+            By Amin Boukari, Bryan Lu, Ispeeta Deka, Jacob Nardini, Srikripa Krishnan | Socioeconomic Factors Team
         </Text>
     </Box>
      
