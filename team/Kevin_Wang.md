@@ -2,7 +2,7 @@
 name: Kevin Wang
 executive: false
 director: true
-lead: true
+lead: false
 community_manager:   
 position: CVT Hackathons
 project: 

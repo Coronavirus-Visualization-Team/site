@@ -3,7 +3,7 @@ name: Mohit Patni
 executive: false
 director: false
 lead: false
-community_manager:   
+community_manager: International Flight Tracking Project
 position: 
 project: CVT Podcast, Social Media, CVT Hackathon  
 image: ../assets/default_exec_image.png
