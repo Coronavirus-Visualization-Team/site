@@ -32,12 +32,13 @@ const RiskScorePage = props => {
       </Box>
       <Box
         sx={{
-          width: "100%",
-          mt: 4
+          width: "92%",
+          mt: 4,
+          m: "auto"
         }}
       >
         <Embed
-          src={'/risk_score_viz2.html'}
+          src={'/us_risk_scores.html'}
           sx={{
             background: "transparent",
             border: "1px solid #ccc",
@@ -51,10 +52,11 @@ const RiskScorePage = props => {
             maxWidth: ["100%", "65%"],
             m: "2vh auto 0 auto",
             textAlign: "center",
-            color: "primary"
+            color: "primary",
+            position: "relative"
           }}
           >
-            By Amin Boukari, Bryan Lu, Ispeeta Deka, Jacob Nardini, Srikripa Krishnan | Socioeconomic Factors Team
+            By Amin Boukari, Aniruddha Murali, Bryan Lu, Ispeeta Deka, Jacob Nardini, and Srikripa Krishnan | Socioeconomic Factors Team
         </Text>
     </Box>
      
@@ -62,7 +64,8 @@ const RiskScorePage = props => {
       sx={{
         variant: "styles.headerText",
         mt: "2vh",
-        color: "primary"
+        color: "primary",
+        position: "relative"
         }}
       >
       Overview
@@ -71,7 +74,8 @@ const RiskScorePage = props => {
         sx={{ 
           variant: "styles.bodyText", 
           color: "secondary", 
-          fontSize: [1, 2]
+          fontSize: [1, 2],
+          position: "relative"
         }}
         >
         The pandemic has shed light on societal disparities and economic 
@@ -148,7 +152,8 @@ const RiskScorePage = props => {
           sx={{
             variant: "styles.headerText",
             mt: "2vh",
-            color: "primary"
+            color: "primary",
+            position: "relative"
           }}
         >
         Methodology For Developing The Model 
@@ -157,7 +162,8 @@ const RiskScorePage = props => {
           sx={{ 
             variant: "styles.bodyText", 
             color: "secondary", 
-            fontSize: [1, 2]
+            fontSize: [1, 2],
+            position: "relative"
           }}
         >
         <ol>
