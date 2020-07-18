@@ -78,7 +78,7 @@ export const Header = () => {
           <NavLink>Podcasts</NavLink>
         </Link>
         <NavLink>
-          <a href="https://blog.understandcovid.org/" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}> 
+          <a href="https://medium.com/coronavirus-visualization-team" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}> 
           Blog
           </a>
         </NavLink>
@@ -183,7 +183,7 @@ export const Header = () => {
           <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>Podcasts</NavLink>
         </Link>
         <NavLink onClick={() => toggleShow(!show)} sx={{mb: 2}}>
-          <a href="https://blog.understandcovid.org/" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>
+          <a href="https://medium.com/coronavirus-visualization-team" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>
           Blog
           </a>
         </NavLink>
@@ -459,9 +459,9 @@ export const Footer = () => {
           target="_blank"
         />
         <SocialIcon
-          link="/podcasts"
+          link="https://open.spotify.com/show/5SuhWvQ6JmwCbL5YPaHWIE?go=1&utm_source=embed_v3&t=0&nd=1"
           image={SpotifyLogo}
-          target="_self"
+          target="_blank"
         />
       </Box>
     </Box>
