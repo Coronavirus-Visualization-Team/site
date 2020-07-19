@@ -51,7 +51,8 @@ const usRatesInteractivePage = props => {
             maxWidth: ["100%", "65%"],
             m: "2vh auto",
             textAlign: "center",
-            color: "primary"
+            color: "primary", 
+            position: "relative"
           }}
           >
             By Maria Izzi
