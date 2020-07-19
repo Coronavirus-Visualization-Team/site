@@ -31,21 +31,22 @@ const JoinPage = props => {
         sx={{
           variant: "styles.headerText",
           mt: "6vh",
-          color: "primary"
+          color: "primary",
+          position: "relative"
         }}
       >
         Our mission.
       </Text>
-      <Text sx={{ variant: "styles.bodyText", color: "secondary" }}>
+      <Text sx={{ variant: "styles.bodyText", color: "secondary", position: "relative" }}>
         We collaborate on data visualization and analytics projects, economic
         research, and policy writing to better inform government entities on
         the impact of COVID-19, clear misconceptions, and the good that is happening.
       </Text>
 
-      <Text sx={{ variant: "styles.headerText", color: "primary" }}>
+      <Text sx={{ variant: "styles.headerText", color: "primary", position: "relative" }}>
         Let’s accomplish things together.
       </Text>
-      <Text sx={{ variant: "styles.subHeader", color: "secondary" }}>
+      <Text sx={{ variant: "styles.subHeader", color: "secondary", position: "relative" }}>
         Join our global organization comprised of students from these institutions and
         more:
       </Text>
@@ -54,6 +55,7 @@ const JoinPage = props => {
           display: "flex",
           flexDirection: ["column", "row"],
           py: 45,
+          position: "relative"
         }}
       >
         <Grid width={["10%"]} gap={["2%"]}>
