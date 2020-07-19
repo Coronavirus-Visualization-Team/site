@@ -53,6 +53,7 @@ const Projects = ({ data }) => {
       <Container
         sx={{
           maxWidth: "xl",
+          position: "relative"
         }}
       >
         {posts && (
