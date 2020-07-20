@@ -3,7 +3,7 @@ path: /blog/gatsbygatsby
 date: 2020-04-26T19:24:35.090Z
 slug: climate-change
 title: COVID & Climate Change
-featured: true
+featured: false
 image: ../img/climate.png
 label: Lily Geller
 link: https://arcg.is/4GbfG

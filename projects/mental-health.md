@@ -1,7 +1,7 @@
 ---
 slug: mental-health
 title: Mental Health
-featured: false
+featured: true
 image: ../../img/mental-health.jpeg
 label: Sactown Magazine
 link: https://medium.com/coronavirus-visualization-team/update-and-restrucutre-mental-health-project-beb561eae6

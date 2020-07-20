@@ -1,7 +1,7 @@
 ---
 slug: xenophobia
 title: Xenophobia Online
-featured: false
+featured: true
 image: ../../img/xenophobia.jpg
 label: Voices of Youth
 templateKey: project

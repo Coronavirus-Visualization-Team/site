@@ -6,7 +6,7 @@ title: Fact-Checking the EPA
 linkTitle: Unemployment vs. Pollution Press Release
 link: https://docs.google.com/document/d/1pE_-Kaqj5nw6fgefzjHvn5W4_jDEphbfTq0Z_YA-WOg/edit
 linkTarget: "_blank"
-featured: true
+featured: false
 image: ../../img/epa.png
 label: US Environmental Protection Agency
 templateKey: project
