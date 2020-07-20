@@ -5,6 +5,9 @@ slug: 211-project
 title: 211 Project
 featured: false
 image: ../../img/United-Way.png
+linkTitle: Project Update
+link: "https://medium.com/coronavirus-visualization-team/211-project-update-1-9a89ada7d8a9?source=friends_link&sk=a4040434ebf57ee6153496bf94c64fb3"
+linkTarget: "_blank"
 label: United Way / Williamson Source
 templateKey: project
 ---
