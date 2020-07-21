@@ -4,7 +4,7 @@ date: 2020-04-26T19:24:35.090Z
 slug: climate-change
 title: COVID & Climate Change
 featured: false
-image: ../img/climate.png
+image: ../img/covid-climate.png
 label: Lily Geller
 link: https://arcg.is/4GbfG
 linkTitle: COVID & Climate Change Story Map
