@@ -4,6 +4,7 @@ executive: false
 director: false
 lead: true
 community_manager: 
+erevna:  
 position: 
 project: Youth COVID-19 Awareness 
 image: ../assets/default_exec_image.png

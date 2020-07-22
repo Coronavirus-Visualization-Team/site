@@ -106,6 +106,38 @@ const TeamPage = (props) => {
           })}
       </Grid>
 
+      <Text sx={ { variant: "styles.headerText", mb: 4, color: "primary" } }>Erevna Board of Directors</Text>
+      <Text
+        sx={ { variant: "styles.bodyText", color: "secondary" } }
+      >
+
+      {/** width={[ 128, null, 192 ]} */}
+      <Grid columns={[ 2, null, 4 ]}>
+        {teamData.map((item) => {
+            if (item.node.childMarkdownRemark) {
+              const data = item.node.childMarkdownRemark.frontmatter;
+
+              if(data.erevna) {
+                return (
+                  <Text>
+                    <a href={data.linkedin} target="_blank" sx={{
+                        color: "secondary"
+                      }}>{data.name}</a>
+                    <small style={{
+                      "fontWeight": "100",
+                      "fontSize": "12.5px",
+                      "display": "block"
+                    }}>{data.erevna}</small>
+                  </Text>
+                )
+            }
+            } else {
+              return null;
+            }
+          })}
+      </Grid>
+    </Text>
+
       <Text sx={ { variant: "styles.headerText", mb: 4, color: "primary" } }>Directors</Text>
       <Text
         sx={ { variant: "styles.bodyText", color: "secondary" } }
@@ -240,7 +272,7 @@ const TeamPage = (props) => {
               if (item.node.childMarkdownRemark) {
                 const data = item.node.childMarkdownRemark.frontmatter;
 
-                if(!data.executive && !data.director && !data.lead && !data.community_manager) {
+                if(!data.executive && !data.erevna && !data.director && !data.lead && !data.community_manager) {
                   if (!data.position && !data.project) {
                     return (
                       <Text>
@@ -270,6 +302,7 @@ query {
           frontmatter {
             name
             executive
+            erevna
             director
             lead
             community_manager

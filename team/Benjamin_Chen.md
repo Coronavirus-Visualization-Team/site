@@ -4,6 +4,7 @@ executive: false
 director: true
 lead: true
 community_manager:  
+erevna:  
 position: Student Advisory Board
 project: Marketing
 image: ../assets/default_exec_image.png

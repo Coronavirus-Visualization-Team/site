@@ -4,6 +4,7 @@ executive: false
 director: true
 lead: true
 community_manager: Social Media
+erevna:
 position: Project Planning
 project: Gender-based Violence
 image: ../assets/default_exec_image.png
