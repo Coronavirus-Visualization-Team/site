@@ -4,6 +4,7 @@ executive: false
 director: false
 lead: false
 community_manager: Website 
+erevna:
 position: 
 project:  CVT Hack for the People
 image: ../assets/default_exec_image.png

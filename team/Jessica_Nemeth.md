@@ -3,7 +3,8 @@ name: Jessica Nemeth
 executive: true
 director: false
 lead: true
-community_manager:   
+community_manager:  
+erevna:   
 position: Secretary, Writing/Policy
 project: COVID and Climate Project
 image: /assets/jessica.png

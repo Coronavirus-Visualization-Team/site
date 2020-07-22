@@ -4,6 +4,7 @@ executive: true
 director: false
 lead: false
 community_manager:   
+erevna:  
 position: President of Advisory Board
 project:  
 image: /assets/91d74ba6-1911-4384-9fe0-8c1e331ba358.png

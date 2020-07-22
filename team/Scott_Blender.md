@@ -3,7 +3,8 @@ name: Scott Blender
 executive: true
 director: false
 lead: true
-community_manager:   
+community_manager:  
+erevna: Executive Director (COO) 
 position: COO, HR, Operations, Social Media
 project: 211 Project
 image: /assets/scotty.jpg

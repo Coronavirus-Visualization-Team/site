@@ -4,6 +4,7 @@ executive: false
 director: false
 lead: false
 community_manager: Social Media
+erevna:  
 position: Social Media & Research
 project:  
 image: ../assets/default_exec_image.png

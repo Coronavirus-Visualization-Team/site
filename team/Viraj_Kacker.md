@@ -3,7 +3,8 @@ name: Viraj Kacker
 executive: true
 director: false
 lead: true
-community_manager:   
+community_manager:  
+erevna: Secretary 
 position: Secretary
 project: CGA Projects, Time-Series Geospatial
 image: /assets/viraj.png

@@ -4,6 +4,7 @@ executive: true
 director: false
 lead: true
 community_manager:   
+erevna:
 position: Director of Outreach
 project: Time-Series Geospatial
 image: ../assets/ritvik.png

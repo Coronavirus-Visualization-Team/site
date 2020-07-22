@@ -3,7 +3,8 @@ name: Abishanka Saha
 executive: false
 director: false
 lead: true
-community_manager:   
+community_manager: 
+erevna:    
 position:  
 project: International Socioeconomic Factors
 image: ../assets/default_exec_image.png
