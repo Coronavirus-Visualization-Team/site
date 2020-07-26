@@ -23,6 +23,7 @@ import GithubLogo from "./social-icons/GitHub.png"
 import MediumLogo from "./social-icons/Medium.png"
 import LinkedInLogo from "./social-icons/LinkedIn.png"
 import SpotifyLogo from "./social-icons/spotify.png"
+import FacebookLogo from "./social-icons/Facebook-Icon-White.png"
 
 import Sun from "../icons/sun.png";
 import Moon from "../icons/moon.png";
@@ -431,6 +432,11 @@ export const Footer = () => {
         <SocialIcon
           link="https://instagram.com/joincvt"
           image={InstagramLogo}
+          target="_blank"
+        />
+        <SocialIcon
+          link="https://facebook.com/joincvt"
+          image={FacebookLogo}
           target="_blank"
         />
         <SocialIcon 
