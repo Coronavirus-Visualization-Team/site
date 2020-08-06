@@ -6,7 +6,7 @@ lead: false
 community_manager: 
 erevna:    
 position:  
-project: 
+project: Research
 image: ../assets/default_exec_image.png
-linkedin:
+linkedin: https://www.linkedin.com/in/mohammed-ghattas-7838791a8/
 ---
